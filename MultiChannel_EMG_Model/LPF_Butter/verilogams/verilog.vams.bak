@@ -1,0 +1,44 @@
+//Verilog-AMS HDL for "MultiChannel_EMG_Model", "LPF_Butter" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module LPF_Butter (Voutp, Voutn, Vinp, Vinn, VDDA, VSSA, VCM );
+
+output Voutp, Voutn;
+input Vinp, Vinn;
+inout VDDA, VSSA, VCM;
+
+electrical Voutp, Voutn, Vinp, Vinn, VDDA, VSSA, VCM;
+
+parameter freq=1.0e3;
+parameter integer order=4;
+real scale, bPrev;
+// Denominator array size
+real den[order:0];
+integer k;
+real out, Vcm_value;
+
+
+analog begin
+// Calculate Butterworth coefficients
+@ (initial_step) begin
+	Vcm_value = V(VCM, VSSA);
+	scale = 1.0/freq/2/`M_PI ;
+	bPrev = 1.0 ;
+	den[0] = 1.0 ;
+	for (k=1 ; k<order+1 ; k=k+1) begin
+		bPrev = scale*cos((k-1.0)/order*(`M_PI*0.5))/sin((k*0.5)/order*`M_PI) * bPrev;
+	den[k] = bPrev ;
+	$strobe("den coeff %d = %g", k, den[k]) ;
+	end
+
+end
+
+// Actual Butterworth filter
+out = laplace_nd( V(Vinp, Vinn), {1.0}, den);
+V(Voutp, VSSA) <+ Vcm_value + 0.5*out;
+V(Voutn, VSSA) <+ Vcm_value - 0.5*out;
+
+end
+endmodule

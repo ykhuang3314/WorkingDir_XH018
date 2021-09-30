@@ -1,0 +1,84 @@
+//Verilog-AMS HDL for "MultiChannel_EMG_Model", "IdealSARADC" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module IdealSARADC (Dout, EoC, count, Vin, En, Clk, Start, Vdda, Vssa, Vsub, Ibias, Vddd, Vssd);
+
+//I/O ports declaration
+output Dout, EoC, count;
+input Vin, En, Clk, Start;
+inout Vdda, Vssa, Vsub, Ibias, Vddd, Vssd;
+
+//Define type of ports
+electrical Vdds, Vssa, Ibias, Vddd, Vssd;
+wreal Vin;
+logic En, Clk, Start;
+reg [11:0] Dout;
+reg EoC;
+reg [3:0] count;
+
+//Parameters
+parameter real VrefH = 1.5;
+parameter real VrefL = 0;
+
+
+//internal varialbes
+integer end_count;
+real Vhold, fvalue, NaN; 
+
+initial begin
+	EoC <= 1'b1;
+	count <= 0;
+	Vhold = VrefL;
+	NaN = 0.0/0.0;
+	end_count = 14;
+	Dout <= 12'd2048;
+end
+
+
+always@(posedge Start) begin
+	if(count == 4'b0) begin
+		count = 4'b0001;
+	end
+end
+
+always@(posedge Clk) begin
+	if(En == 1'b0) begin
+		EoC <= 1'b0;
+		Dout <= 0;
+		Vhold = VrefL;
+	end else begin
+		if(count > 0) begin
+			if (count < end_count) begin
+				count = count + 1'b1;
+			end else begin
+				count = 4'b0;
+			end
+		end	
+		
+		if(count == 4'd2) begin
+			Vhold = Vin; 				// sample the input
+		end else if (count == 4'd3) begin
+			EoC <= 1'b0; 						// start conversion
+		end else if (count == end_count) begin 	// end of conversion
+			if(Vhold == NaN) begin
+				Dout <= 12'b0;
+			end else if (VrefH == NaN) begin
+				Dout <= 12'bx;
+			end else if (Vhold > VrefH) begin
+				Dout <= 12'd4095;
+			end else if (VrefL == NaN) begin
+				Dout <= 12'bx;
+			end else if (Vhold < VrefL) begin
+				Dout <= 12'b0;
+			end else begin
+				fvalue = 4096 * (Vhold - VrefL) / (VrefH-VrefL);
+				Dout <= $rtoi(fvalue + 0.5); 		// convet real number to int by truncation
+			end
+			EoC <= 1'b1;							// End of conversion
+		end
+	end
+end
+
+endmodule

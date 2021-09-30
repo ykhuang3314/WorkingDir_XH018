@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Sep 15 14:41:16 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_TestBench:TransconductanceAmp_TB:1	corner	Nominal - 
+Design parameters: 
+	fin		500m
+	Mag		100u
+	Vin_cm		900m
+	Voffset		0
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.0 completed. 
+Current time: Wed Sep 15 14:42:01 2021 

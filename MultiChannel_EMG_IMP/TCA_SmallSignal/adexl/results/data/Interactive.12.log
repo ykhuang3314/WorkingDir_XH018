@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Sep 22 13:19:06 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_IMP:TCA_SmallSignal:1	corner	Nominal - 
+Design parameters: 
+	gm1		113u
+	IT		0
+	VIN		1
+
+Interactive.12
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.12 completed. 
+Current time: Wed Sep 22 13:19:12 2021 

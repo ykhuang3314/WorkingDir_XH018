@@ -1,0 +1,19 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Jan 10 09:53:32 2020 
+Best design point: 1
+Design specs: 
+	CHARACTERIZATION:NOISE_NMOS:1	corner	Nominal - 
+	CHARACTERIZATION:NOISE_NMOS:2	corner	Nominal - 
+Design parameters: 
+	IDS		1m
+	L		180n
+	NF		80
+	VDS		1
+	WF		10u
+
+Ocean.25
+Number of points completed: 1
+Number of simulation errors: 0
+Ocean.25 completed. 
+Current time: Fri Jan 10 09:53:45 2020 

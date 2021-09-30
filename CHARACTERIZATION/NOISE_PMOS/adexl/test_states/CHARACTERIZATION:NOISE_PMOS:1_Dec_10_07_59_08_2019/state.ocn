@@ -1,0 +1,23 @@
+design( "CHARACTERIZATION" "NOISE_PMOS" "schematic")
+modelFile( 
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" "default")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" "3s")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" "tm")
+)
+analysis('noise ?start "0.1"  ?stop "1e+11"  ?dec "10"  
+		?oprobe "/IPRB1"  ?iprobe "/V2"  )
+analysis('dc ?saveOppoint t  )
+desVar(	  "WF" 1e-05	)
+desVar(	  "VDS" 0.5	)
+desVar(	  "NF" 1	)
+desVar(	  "L" 1.8e-07	)
+desVar(	  "IDS" 1e-06	)
+envOption(
+	'analysisOrder  list("dc" "noise" "pz" "dcmatch" "stb" "tran" "envlp" "ac" "lf" "xf" "sp" "pss" "pac" "pstb" "pnoise" "pxf" "psp" "qpss" "qpac" "qpnoise" "qpxf" "qpsp" "hb" "hbac" "hbstb" "hbnoise" "hbxf" "sens" "acmatch") 
+)
+temp( 27 ) 

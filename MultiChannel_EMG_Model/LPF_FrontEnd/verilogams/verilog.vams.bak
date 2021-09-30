@@ -1,0 +1,35 @@
+//Verilog-AMS HDL for "MultiChannel_EMG_Model", "LPF_FrontEnd" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+
+module LPF_FrontEnd( Vinp, Vinn, Voutp, Voutn, VDDA, VSSA, VCM);
+
+input Vinp, Vinn;
+output Voutp, Voutn;
+inout VDDA, VSSA, VCM;
+
+electrical Vinp, Vinn, Voutp, Voutn;
+electrical VDDA, VSSA, VCM;
+
+
+// The transfer function:
+// H(s) = (Gain)/[1+s[(1/w1)+(1/w2))]+s^2/(w1w2)]
+// set w1 = w2 = w then:
+// H(s) = (Gain)/[1+s(2/w)+s^2/(w^2)]
+
+parameter real Gain = 1; // Gain = 1
+parameter real fc = 1e3; // fc = 1kHz
+parameter real w = `M_TWO_PI*fc; // w = w1 = w2
+real Vid, Vod, Vcm;
+
+analog begin
+	Vcm = V(VCM);
+	Vid = V(Vinp, Vinn); // the input signal
+	Vod = laplace_nd(Vid, {Gain}, {1, 2/w, 1/(w*w)}); // the output signal
+	V(Voutp) <+ Vcm + Vod/2;
+	V(Voutn) <+ Vcm - Vod/2;
+end
+
+endmodule

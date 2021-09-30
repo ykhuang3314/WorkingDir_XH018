@@ -1,0 +1,8 @@
+//Verilog-AMS HDL for "MultiChannel_EMG_Model", "FrontEnd_TCA" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FrontEnd_TCA ( );
+
+endmodule

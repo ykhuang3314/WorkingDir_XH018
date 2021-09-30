@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Sep 22 16:22:54 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_IMP:TCA_1:1	corner	Nominal - 
+Design parameters: 
+	VIN_DC		900m
+
+Interactive.16
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.16 completed. 
+Current time: Wed Sep 22 16:23:01 2021 

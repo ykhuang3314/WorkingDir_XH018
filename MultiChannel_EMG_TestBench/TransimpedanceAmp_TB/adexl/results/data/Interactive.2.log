@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Sep 23 14:34:59 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_TestBench:TransimpedanceAmp_TB:1	corner	Nominal - 
+Design parameters: 
+	Idc		0
+	AMP		100n
+	fsig		16K
+	MagAC		1
+
+Interactive.2
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.2 completed. 
+Current time: Thu Sep 23 14:35:28 2021 

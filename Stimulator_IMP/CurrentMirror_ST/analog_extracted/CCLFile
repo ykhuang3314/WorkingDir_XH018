@@ -1,0 +1,59 @@
+#
+# OPTION COMMAND FILE created by Cadence Quantus Extraction Version 18.2.1-s210 from CCL
+#
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "gnd!"
+extract \
+	 -selection "all" \
+	 -type "rc_coupled"
+extraction_setup \
+	 -array_vias_spacing auto \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -max_via_array_size \
+		"auto" \
+	 -net_name_space "LAYOUT"
+filter_cap \
+	 -exclude_self_cap "true"
+filter_coupling_cap \
+	 -coupling_cap_threshold_absolute 0.01 \
+	 -coupling_cap_threshold_relative 0.001
+filter_res \
+	 -merge_parallel_res false \
+	 -min_res 0.001
+input_db -type pvs \
+	 -design_cell_name "CurrentMirror_ST layout Stimulator_IMP" \
+	 -directory_name "/home/ykhuang/Cadence/PvsLVS/CurrentMirror_ST/svdb" \
+	 -format "DFII" \
+	 -run_name "CurrentMirror_ST"
+log_file \
+	 -file_name "/home/ykhuang/Cadence/PvsLVS/CurrentMirror_ST/svdb/qrc.CurrentMirror_ST.log"
+mos_diffusion_parameter_extraction \
+	 -res "fast"
+output_db -type extracted_view \
+	 -cap_component "p_cap auLvs PRIMLIB" \
+	 -cap_property_name "c" \
+	 -cdl_out_map_directory \
+		"/home/ykhuang/Cadence/PvsLVS/CurrentMirror_ST" \
+	 -device_finger_delimiter "@" \
+	 -enable_cellview_check true \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "false" \
+	 -include_parasitic_res_model "comment" \
+	 -include_res_model "false" \
+	 -res_component "p_res auLvs PRIMLIB" \
+	 -res_property_name "r" \
+	 -view_name "analog_extracted"
+output_setup \
+	 -directory_name "/home/ykhuang/Cadence/PvsLVS/CurrentMirror_ST/svdb" \
+	 -temporary_directory_name "CurrentMirror_ST"
+process_technology \
+	 -technology_corner \
+		"default" \
+	 -technology_library_file "/home/ykhuang/Cadence/pvtech.lib" \
+	 -technology_name "XH018_1143" \
+	 -temperature \
+		27.0
+
+

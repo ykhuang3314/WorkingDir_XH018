@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>Device_Characteristics:Noise_pe:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Noise_pe</value>
+					</option>
+					<option>lib
+						<value>Device_Characteristics</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>Device_Characteristics:Noise_pe:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>Noise_pe</value>
+					</option>
+					<option>lib
+						<value>Device_Characteristics</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>IDS
+				<value>5u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Device_Characteristics:Noise_pe:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>L
+				<value>180n</value>
+				<dependentTests>
+					<dependentTest omitted="0">Device_Characteristics:Noise_pe:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>NF
+				<value>20</value>
+				<dependentTests>
+					<dependentTest omitted="0">Device_Characteristics:Noise_pe:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VDS
+				<value>0.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Device_Characteristics:Noise_pe:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>WF
+				<value>10u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Device_Characteristics:Noise_pe:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+	</active>
+	<history>History</history>
+</setupdb>

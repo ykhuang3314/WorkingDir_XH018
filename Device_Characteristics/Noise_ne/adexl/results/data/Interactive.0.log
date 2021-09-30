@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 16 15:01:01 2021 
+Best design point: 1
+Design specs: 
+	Device_Characteristics:Noise_ne:1	corner	Nominal - 
+	Device_Characteristics:Noise_ne:2	corner	Nominal - 
+	input referred current noise (A/sqrt(Hz))		Error	No
+Design parameters: 
+	IDS		50u
+	L		500n
+	NF		40
+	VDS		500m
+	WF		10u
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.0 completed. 
+Current time: Mon Aug 16 15:01:07 2021 

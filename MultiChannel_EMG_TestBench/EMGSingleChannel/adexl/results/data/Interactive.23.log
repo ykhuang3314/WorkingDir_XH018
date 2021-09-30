@@ -1,0 +1,19 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Sep 14 16:57:53 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_TestBench:EMGSingleChannel:1	corner	Nominal - 
+Design parameters: 
+	fsample		100K
+	fchop		16K
+	fin		500
+	Mag		1m
+	Vin_cm		0
+	Voffset		0
+
+Interactive.23
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.23 completed. 
+Current time: Tue Sep 14 16:58:39 2021 

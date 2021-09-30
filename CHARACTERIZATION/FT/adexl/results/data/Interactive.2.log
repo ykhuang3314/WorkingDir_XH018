@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Jan  7 12:30:12 2020 
+Best design point: 1
+Design specs: 
+	CHARACTERIZATION:FT:1	corner	Nominal - 
+Design parameters: 
+	IDS1		1u
+	L		180n
+	NF		1
+	VDS1		1
+	WF		10u
+	IDS		1m
+	VDS		1
+
+Interactive.2
+Number of points completed: 31
+Number of simulation errors: 0
+Interactive.2 completed. 
+Current time: Tue Jan  7 12:31:01 2020 

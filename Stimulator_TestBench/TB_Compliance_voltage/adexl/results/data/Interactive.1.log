@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue May 18 15:25:03 2021 
+Best design point: 1
+Design specs: 
+	Stimulator_TestBench:TB_Compliance_voltage:1	corner	Nominal - 
+Design parameters: 
+	Iref		280u
+	vout		20
+
+Interactive.1
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.1 completed. 
+Current time: Tue May 18 15:31:47 2021 

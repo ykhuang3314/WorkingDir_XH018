@@ -1,0 +1,105 @@
+//Verilog-AMS HDL for "MultiChannel_EMG_Model", "FrontEnd_Amplifier" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FrontEnd_Amplifier (Voutp, Voutn, Vinp, Vinn, Vcm, Vsub, VDDA, VSSA );
+
+input Vinp, Vinn;
+output Voutp, Voutn;
+inout Vcm, Vsub, VDDA, VSSA;
+
+electrical Voutp, Voutn, Vinp, Vinn, Vcm, Vsub, VDDA, VSSA;
+//electrical n1, n2;
+electrical p1, p2;
+// Parameters for amplifier
+parameter real VCM = 0.9;	// common-mode voltage
+parameter real gain = 100; // gain (V/V)
+parameter real fp1 = 600e3; 	// pole
+parameter real Vsoft = 0.2; // output swing limitation
+parameter real SR = 10e6; // slew rate (V/sec)
+parameter real Zin = 1e9; // input impedance
+parameter real Zout = 100;
+parameter real Vin_offset = 0; // input offset
+
+
+// Parameters for noise modeling obtained from "xh018-TechnicalReport-MOSFET_Noise_Modeling-v1_0_1"
+parameter real Kf_n = 1.2e-27; //flicker noise coefficient of Ne(Nei)
+parameter real EF_n = 0.95; // flicker noise frequency exponent of 1/f
+parameter real AF_n = 1.1; //flicker noise exponent
+
+parameter real Kf_p = 8.0e-26; //flicker noise coefficient of Ne(Nei)
+parameter real EF_p = 1.15; // exponential factor of 1/f 
+parameter real AF_p = 1.5; //flicker noise exponent
+
+// Parameter for devices
+parameter real W = 250e-6;
+parameter real L = 500e-9;
+parameter real tox = 5e-9; 
+parameter real gm = 113e-6; // transconductance of input devices
+parameter real Ids = 5e-6;
+
+// interanl variables
+real e0 = 8.85e-12; //vaccum permittivity
+real er = 3.9; // relative permittivity for SiO2
+real gamma = 2/3; // for non-velocity saturated channel
+real q = 1.602e-19;
+real Ks = 0.5;
+real Vt = 26e-3;
+real RF = 1000;
+real Cox, pwr_flicker, pwr_thermal;
+real Vdd_val, Vss_val;
+real Vin, Vdiff, outp, outn;
+
+
+// analog
+analog begin	
+
+	@(initial_step) begin 
+		Vdd_val = V(VDDA);
+		Vss_val = V(VSSA);
+		Cox = (er*e0)/tox;
+		pwr_flicker = (Kf_n*Ids)/(Cox*L*L*gm*gm); // flicker noise power at 1Hz for nmos
+		pwr_thermal = 4*`P_K * $temperature*RF + (2*q*Vt)/(Ks*gm); // noise power of thermal noise
+	end
+
+// add noise to the input
+
+	//V(n1, Vinp) <+  white_noise(pwr_thermal, "thermal") + flicker_noise(pwr_flicker, EF_n, "flicker");
+
+
+// input impedance
+
+	//I(n1, Vinn) <+ V(Vinp, Vinn)/Zin;
+
+//	I(Vinp, VSSA) <+V(Vinp, VSSA)/Zin;
+//	I(Vinn, VSSA) <+V(Vinn, VSSA)/Zin;
+
+// frequecny response
+
+	Vdiff = laplace_nd(gain*V(Vinp, Vinn), {1}, {1, 1/(`M_TWO_PI*fp1)}); // singel pole	
+	outp = VCM + 0.5*Vdiff;
+	outn = VCM - 0.5*Vdiff;
+
+// output swing limitation	
+//	if(outp>(Vdd_val-Vsoft))
+//		outp = Vdd_val-Vsoft;
+//	if(outp<(Vss_val+Vsoft))
+//		outp = Vss_val+Vsoft;
+//	if(outn>(Vdd_val-Vsoft))
+//		outn = Vdd_val-Vsoft;
+//	if(outn<(Vss_val+Vsoft))
+//		outn = Vss_val+Vsoft;
+	
+	V(p1, VSSA) <+ slew(outp, SR);	
+	V(p2, VSSA) <+ slew(outn, SR);
+
+// output impedance
+	V(Voutp, p1) <+I(Voutp, p1)*Zout;
+	V(Voutn, p2) <+I(Voutn, p2)*Zout;
+	
+
+
+end
+
+endmodule

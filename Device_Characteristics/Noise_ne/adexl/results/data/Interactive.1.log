@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 16 15:01:40 2021 
+Best design point: 1
+Design specs: 
+	Device_Characteristics:Noise_ne:2	corner	Nominal - 
+Design parameters: 
+	IDS		50u
+	L		500n
+	NF		40
+	VDS		500m
+	WF		10u
+
+Interactive.1
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.1 completed. 
+Current time: Mon Aug 16 15:01:44 2021 

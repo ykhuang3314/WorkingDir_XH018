@@ -1,0 +1,8 @@
+//Verilog-AMS HDL for "MultiChannel_EMG_Model", "IdealDAC" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module IdealDAC ( );
+
+endmodule

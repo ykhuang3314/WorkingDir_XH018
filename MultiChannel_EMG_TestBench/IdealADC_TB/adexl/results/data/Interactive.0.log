@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Sep  9 15:57:10 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_TestBench:IdealADC_TB:1	corner	Nominal - 
+Design parameters: 
+	fsample		100K
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.0 completed. 
+Current time: Thu Sep  9 15:57:51 2021 

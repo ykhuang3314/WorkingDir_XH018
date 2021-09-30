@@ -1,0 +1,38 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Sep 21 11:36:10 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_IMP:TCA_SignalPath_1:1	corner	Nominal - 
+Design parameters: 
+	IDS_M3		5u
+	LF_M3		5u
+	NF_M3		10
+	VDS_M3		500m
+	VGS_M3		703.5m
+	WF_M3		1.25u
+	IDS_M1		5u
+	IDS_M2		5u
+	LF_M1		350n
+	LF_M2		2u
+	NF_M1		10
+	NF_M2		10
+	VCM		900m
+	VDS_M1		500m
+	VDS_M2		300m
+	VGS_M1		596m
+	VGS_M2		732m
+	WF_M1		15u
+	WF_M2		6u
+	IDS_M5		5u
+	LF_M5		300n
+	NF_M5		10
+	WF_M5		10u
+	VDS_M5		500m
+	VGS_M5		600m
+
+Interactive.20
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.20 completed. 
+Current time: Tue Sep 21 11:36:17 2021 

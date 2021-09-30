@@ -1,0 +1,40 @@
+//Verilog-AMS HDL for "MultiChannel_EMG_Model", "FrontEnd_TCA" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FrontEnd_TCA (Ioutp, Ioutn, Vinp, Vinn, Vcm, Vsub, VDDA, VSSA );
+
+input Vinp, VInn;
+output Ioutp, Ioutn;
+inout Vcm, Vsub, VDDA, VSSA;
+
+electrical Ioutp, Ioutn, Vinp, Vinn, Vcm, Vsub, VDDA, VSSA;
+
+parameter real Av = 100; // DC gain
+parameter real fp1 = 10e3; // first pole
+parameter real vsoft = 0.3; // limit the output value 
+parameter real slew_rate = 10e6 // slew rate
+
+
+real GBW = fp1 * A0; // gain-bandwidth product
+real wp1 = 6.28 * fp1;
+real wu = 6.28 * GBW;
+
+real VddVal, VssVal, VcmVal;
+real Iout, outp, outn;
+
+analog begin 
+
+@(initial_step) begin
+		VddVal = V(VDDA);
+		VssVal = V(VSSA);
+		VcmVal = V(Vcm);
+end
+
+// output
+
+Iout = laplace_nd(V(Vinp, Vinn), {wu}, {wd, 1});
+outp = 
+
+endmodule

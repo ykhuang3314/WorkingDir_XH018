@@ -1,0 +1,68 @@
+simulator( 'spectre )
+
+;design(	 "/home/saul/Sim/TRANS_S2/spectre/schematic/netlist/netlist")
+design( "DAY3" "TRANS_S2" "schematic")
+createNetlist();
+
+resultsDir( "/home/saul/Sim/TRANS_S2/spectre/schematic" )
+modelFile( 
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" "default")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" "3s")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" "tm")
+)
+
+load("OS/CHARACTERIZATION/global.il")
+
+FMIN = 0.1
+FMAX = 100e9
+
+;NMOS1: W1_tot = 100.00um  L1 = 1.00um  IDS1 = 0.1000mA  VDS1 = 0.50V
+  ;IDS1 = 100u
+  gm1 = 1.576m
+  rds1 = 579303.50
+  cgs1 = 478.16f
+  cgd1 = 33.11f
+  cds1 = 229.60f
+  cdb1 = 148.55f
+  vgs1 = 0.4792
+  Gain1 = 913.07
+  gm_id1 = 15.76
+ ; Ft1 = 490.65 MHz 
+
+desVar(	  "IDS" IDS1	)
+desVar(	  "L" L1)
+desVar(	  "NF" NF1	)
+desVar(	  "vds" VDS1	)
+desVar(	  "vgs" vgs1	)
+desVar(	  "WF" WF1	)
+
+analysis('noise ?start FMIN  ?stop FMAX  ?p "/OUT"  
+		?n ""  ?oprobe ""  ?iprobe "/I1"  )
+analysis('ac ?start FMIN  ?stop FMAX  ?dec "20"  )
+analysis('dc ?saveOppoint t  )
+
+
+envOption(
+	'analysisOrder  list("dc" "ac" "noise") 
+)
+temp( 27 ) 
+run()
+;selectResult( 'dcOp )
+;plot(getData("/OUT") )
+
+newWindow();
+selectResult( 'ac )
+plot(getData("/OUT") )
+
+n_in = getData("in" ?result "noise")
+newWindow();
+plot( n_in ?expr '( "input noise; A / sqrt(Hz)" ) )
+
+addSubwindow();
+
+noiseSummary( 'integrated ?result "noise" ?noiseUnit "A" ?from FMIN ?to FMAX )

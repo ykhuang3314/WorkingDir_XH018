@@ -1,0 +1,64 @@
+//Verilog-AMS HDL for "Stimulator_Model", "H_Bridge" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module H_Bridge (Iano, Icat, Ist, ANO, CAT, DIS, VddH, Vdda, Vssa, Vddd, Vssd);
+
+// Port declaration
+inout Iano, Icat;
+input ANO, CAT, DIS;
+inout Ist, Vdda, VddH, Vssa, Vddd, Vssd;
+
+// Discipline
+electrical Iano, Icat, Ist, Vdda, VddH, Vssa, Vddd, Vssd;
+logic ANO, CAT, DIS;
+
+// Parameters
+parameter Ron = 100; // on-resistance
+parameter Roff = 1G; // off-resistance
+
+
+parameter Rout = 1M;
+//assign ANO_ON = EN & ANO;
+//assign CAT_ON = EN & ANO;
+//assign DIS_ON = EN & ANO;
+
+
+analog begin
+	V(Ist, Vssa) <+ I(Ist, Vssa) * Rout;
+	if(ANO == 1'b1) begin
+		I(VddH, Iano) <+ V(VddH, Iano)/Ron;
+		I(VddH, Icat) <+ V(VddH, Icat)/Roff;
+		I(Iano, Ist) <+ V(Iano, Ist)/Roff;
+		I(Icat, Ist) <+ V(Icat, Ist)/Ron;
+		I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
+		I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
+	end
+	else if(CAT == 1'b1) begin
+		I(VddH, Iano) <+ V(VddH, Iano)/Roff;
+		I(VddH, Icat) <+ V(VddH, Icat)/Ron;
+		I(Iano, Ist) <+ V(Iano, Ist)/Ron;
+		I(Icat, Ist) <+ V(Icat, Ist)/Roff;
+		I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
+		I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
+	end
+	else if(DIS == 1'b1) begin
+		I(VddH, Iano) <+ V(VddH, Iano)/Roff;
+		I(VddH, Icat) <+ V(VddH, Icat)/Roff;
+		I(Iano, Ist) <+ V(Iano, Ist)/Roff;
+		I(Icat, Ist) <+ V(Icat, Ist)/Roff;
+		I(Iano, Vssa) <+ V(Iano, Vssa)/Ron;
+		I(Icat, Vssa) <+ V(Icat, Vssa)/Ron;
+	end
+	else begin
+		I(VddH, Iano) <+ V(VddH, Iano)/Roff;
+		I(VddH, Icat) <+ V(VddH, Icat)/Roff;
+		I(Iano, Ist) <+ V(Iano, Ist)/Roff;
+		I(Icat, Ist) <+ V(Icat, Ist)/Roff;
+		I(Iano, Vssa) <+ V(Iano, Vssa)/Roff;
+		I(Icat, Vssa) <+ V(Icat, Vssa)/Roff;
+	end		
+end
+
+endmodule

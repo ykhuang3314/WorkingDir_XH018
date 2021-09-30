@@ -1,0 +1,21 @@
+--pcdbVlog file, Rev:1.0
+
+#CELL
+* ClockGen *
+CLK1Gen
+CLK16Gen
+CLK15Gen
+CLK14Gen
+CLK13Gen
+CLK12Gen
+CLK11Gen
+CLK10Gen
+CLK9Gen
+CLK8Gen
+CLK7Gen
+CLK6Gen
+CLK5Gen
+CLK4Gen
+CLK3Gen
+CLK2Gen
+
