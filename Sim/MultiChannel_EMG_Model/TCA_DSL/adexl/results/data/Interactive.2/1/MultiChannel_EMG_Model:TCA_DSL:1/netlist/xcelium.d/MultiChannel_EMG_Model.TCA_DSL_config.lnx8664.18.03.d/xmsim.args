@@ -1,0 +1,52 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-AMSINPUT
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-ADE
+-AMSINPUT
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-INPUT
+./probe.tcl
+-RUN
+-EXIT
++amsrawdir
+../psf
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.2/sharedData/CDS/ahdl/input.ahdlSimDB"
+-SIMCOMPATIBLE_AMS
+spectre
+-AMSINPUT
+-ANALOGCONTROL
+./ie_card.scs
+-ANALOGCONTROL
+.amsbind.scs
+-MESSAGES
++EMGRLOG
+../psf/xrun.log
+-XLSTIME
+1633078418
+-XLKEEP
+-XLMODE
+./xcelium.d/MultiChannel_EMG_Model.TCA_DSL_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/MultiChannel_EMG_Model.TCA_DSL_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/MultiChannel_EMG_Model.TCA_DSL_config.lnx8664.18.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	18.03-s018"

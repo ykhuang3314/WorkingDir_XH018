@@ -1,0 +1,78 @@
+// Generated for: spectre
+// Generated on: Oct  4 10:46:07 2021
+// Design library name: MultiChannel_EMG_IMP
+// Design cell name: TCA_3
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters Amp_input=100u Freq_input=500 Vos=0
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: TCA_3
+// View name: schematic
+V6 (net029 VCM) vsource dc=Vos type=dc
+V2 (VCM 0) vsource dc=900m type=dc
+V4 (VDDA 0) vsource dc=1.8 type=dc
+I9 (VDDA net25) isource dc=2u type=dc
+I8 (VDDA net10) isource dc=2u type=dc
+I1 (VDDA IBIAS) isource dc=5u type=dc
+R0 (net10 net25) resistor r=20K
+V1 (VCM Vinn) vsource mag=500.0m type=sine ampl=Amp_input/2 \
+        freq=Freq_input
+V0 (Vinp net029) vsource mag=500.0m type=sine ampl=Amp_input/2 \
+        freq=Freq_input
+M10 (0 net35 net015 net015) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+M6 (0 net36 net8 net8) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+M5 (net25 net13 VDDA VDDA) pel w=300n l=3u as=9.36e-14 ad=8.1e-14 \
+        ps=9.84e-07 pd=8.4e-07 nrs=0.9 nrd=0.9 m=(1)*(10) par1=((1)*(10))
+M4 (net09 net09 VDDA VDDA) pel w=300n l=3u as=1.44e-13 ad=8.1e-14 \
+        ps=1.56e-06 pd=8.4e-07 nrs=0.9 nrd=0.9 m=(1)*(2) par1=((1)*(2))
+M3 (net13 net13 VDDA VDDA) pel w=300n l=3u as=1.44e-13 ad=8.1e-14 \
+        ps=1.56e-06 pd=8.4e-07 nrs=0.9 nrd=0.9 m=(1)*(2) par1=((1)*(2))
+M0 (net10 net09 VDDA VDDA) pel w=300n l=3u as=9.36e-14 ad=8.1e-14 \
+        ps=9.84e-07 pd=8.4e-07 nrs=0.9 nrd=0.9 m=(1)*(10) par1=((1)*(10))
+M11 (net35 Vinn net25 net25) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+M1 (net36 Vinp net10 net10) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+IPRB0 (net13 net015) iprobe
+IPRB1 (net09 net8) iprobe
+M7 (IBIAS IBIAS 0 0) nel w=500n l=10u as=1.56e-13 ad=1.35e-13 ps=1.224e-06 \
+        pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) par1=((1)*(10)) \
+        xf_subext=0
+M15 (net35 IBIAS 0 0) nel w=500n l=10u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10)) xf_subext=0
+M2 (net36 IBIAS 0 0) nel w=500n l=10u as=1.56e-13 ad=1.35e-13 ps=1.224e-06 \
+        pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) par1=((1)*(10)) \
+        xf_subext=0
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+ac ac start=1 stop=100M dec=20 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save IPRB1:in 
+saveOptions options save=allpub

@@ -1,0 +1,6 @@
+
+// Library name: Device_Characteristics
+// Cell name: Bias_pe
+// View name: schematic
+subckt Bias_pe
+parameters WF L NF IDS VDS

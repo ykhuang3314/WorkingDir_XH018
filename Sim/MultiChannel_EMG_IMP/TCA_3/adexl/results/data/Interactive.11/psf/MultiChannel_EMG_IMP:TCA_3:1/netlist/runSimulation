@@ -1,0 +1,1 @@
+spectre  input.scs  +escchars +log ../../../../Interactive.5/psf/MultiChannel_EMG_IMP:TCA_3:1/psf/spectre.out  -format psfxl -raw ../../../../Interactive.5/psf/MultiChannel_EMG_IMP:TCA_3:1/psf   +lqtimeout 900 -maxw 5 -maxn 5 -env ade   

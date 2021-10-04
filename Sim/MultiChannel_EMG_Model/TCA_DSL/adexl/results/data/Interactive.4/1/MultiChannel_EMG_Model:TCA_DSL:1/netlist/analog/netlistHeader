@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct  1 10:56:42 2021
+// Design library name: MultiChannel_EMG_Model
+// Design cell name: TCA_DSL
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

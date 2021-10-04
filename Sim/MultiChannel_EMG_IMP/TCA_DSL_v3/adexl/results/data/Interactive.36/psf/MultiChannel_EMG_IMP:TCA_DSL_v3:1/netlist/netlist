@@ -1,0 +1,101 @@
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: TCA_DSL_v3
+// View name: schematic
+V3 (net061 0) vsource dc=900m type=dc
+V2 (VCM 0) vsource dc=900m type=dc
+V5 (net36 VCM) vsource dc=VOS type=dc
+V4 (VDDA 0) vsource dc=1.8 type=dc
+M31 (AP net084 VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M30 (AN net016 VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M27 (net059 net084 VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 \
+        ps=2.782e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) \
+        par1=((1)*(20))
+M25 (net093 net016 VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 \
+        ps=2.782e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) \
+        par1=((1)*(20))
+M23 (net080 outp VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 \
+        ps=2.782e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) \
+        par1=((1)*(20))
+M22 (net064 outn VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 \
+        ps=2.782e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) \
+        par1=((1)*(20))
+M17 (net030 net061 net029 net029) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 \
+        ps=2.782e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) \
+        par1=((1)*(20))
+M8 (0 net073 net029 net029) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 \
+        ps=2.782e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) \
+        par1=((1)*(20))
+M0 (AP outp VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M1 (net10 Vinp AP AP) pe w=10u l=500n as=2.91e-12 ad=2.7e-12 ps=1.1582e-05 \
+        pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(20) par1=((1)*(20))
+M7 (outp outp VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M6 (0 net10 net039 net039) pe w=8u l=180.0n as=2.496e-12 ad=2.16e-12 \
+        ps=1.0224e-05 pd=8.54e-06 nrs=0.03375 nrd=0.03375 m=(1)*(10) \
+        par1=((1)*(10))
+M13 (AN outn VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M3 (net14 Vinn AN AN) pe w=10u l=500n as=2.91e-12 ad=2.7e-12 ps=1.1582e-05 \
+        pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(20) par1=((1)*(20))
+M12 (outn outn VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M10 (0 net14 net17 net17) pe w=8u l=180.0n as=2.496e-12 ad=2.16e-12 \
+        ps=1.0224e-05 pd=8.54e-06 nrs=0.03375 nrd=0.03375 m=(1)*(10) \
+        par1=((1)*(10))
+IPRB1 (outp net039) iprobe
+IPRB0 (outn net17) iprobe
+M29 (net064 net064 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M28 (net080 net080 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M19 (net084 net026 net059 0) ne w=375.00n l=15.0u as=1.09125e-13 \
+        ad=1.0125e-13 ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 \
+        m=(1)*(20) par1=((1)*(20)) xf_subext=0
+M18 (net016 net023 net093 0) ne w=375.00n l=15.0u as=1.09125e-13 \
+        ad=1.0125e-13 ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 \
+        m=(1)*(20) par1=((1)*(20)) xf_subext=0
+M16 (net030 net030 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M20 (IBIAS2 IBIAS2 IBIAS 0) ne w=375.00n l=15.0u as=1.09125e-13 \
+        ad=1.0125e-13 ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 \
+        m=(1)*(20) par1=((1)*(20)) xf_subext=0
+M21 (IBIAS IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M2 (net10 IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M15 (net14 IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+R4 (net093 net059) resistor r=7k
+R3 (0 net062) resistor r=0
+R2 (net023 net036) resistor r=1M
+R1 (net032 net026) resistor r=1M
+R0 (AP AN) resistor r=10K
+V0 (Vinp net36) vsource mag=500.0m type=sine ampl=AMP_input \
+        freq=freq_input
+V1 (VCM Vinn) vsource mag=500.0m type=sine ampl=AMP_input freq=freq_input
+I16 (VDDA net084) isource dc=1u type=dc
+I15 (VDDA net016) isource dc=1u type=dc
+I14 (net036 0) isource dc=2u type=dc
+I13 (net032 0) isource dc=2u type=dc
+I0 (VDDA net029) isource dc=800.0n type=dc
+I7 (net059 0) isource dc=2u type=dc
+I5 (net093 0) isource dc=2u type=dc
+I1 (VDDA IBIAS2) isource dc=3u type=dc
+C1 (net073 net062) capacitor c=1p
+C0 (net026 net023) capacitor c=1n
+M4 (VDDA AN net036 net036) neli w=5u l=2u as=1.6125e-12 ad=1.35e-12 \
+        ps=6.895e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(8) \
+        par1=((1)*(8))
+M9 (VDDA AP net032 net032) neli w=5u l=2u as=1.6125e-12 ad=1.35e-12 \
+        ps=6.895e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(8) \
+        par1=((1)*(8))

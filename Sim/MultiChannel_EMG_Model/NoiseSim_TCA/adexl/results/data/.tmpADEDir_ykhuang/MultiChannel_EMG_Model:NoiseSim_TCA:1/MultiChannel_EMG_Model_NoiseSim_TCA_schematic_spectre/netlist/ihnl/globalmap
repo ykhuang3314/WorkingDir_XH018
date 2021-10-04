@@ -1,0 +1,21 @@
+CADENCE IHNL11140
+$model
+MultiChannel_EMG_Model/NoiseSim_TCA/schematic NoiseSim_TCA
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+VDS_PMOS VDS_PMOS
+L L
+VGS VGS
+WF_P WF_P
+L_P L_P
+WF WF
+NF_P NF_P
+NF NF
+VGS_PMOS VGS_PMOS
+IDS IDS
+VDS VDS
+IDS_PMOS IDS_PMOS
+$endparam

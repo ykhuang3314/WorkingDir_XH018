@@ -1,0 +1,79 @@
+// Generated for: spectre
+// Generated on: Oct  1 09:40:52 2021
+// Design library name: MultiChannel_EMG_Model
+// Design cell name: DSL
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters Rint=16G
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: MultiChannel_EMG_Model
+// Cell name: DSL
+// View name: schematic
+M1 (net066 n1 net024 0) ne w=2u l=500n as=5.68e-13 ad=5.4e-13 \
+        ps=2.70133e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(30) \
+        par1=((1)*(30)) xf_subext=0
+M0 (net062 net012 net028 0) ne w=2u l=500n as=5.68e-13 ad=5.4e-13 \
+        ps=2.70133e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(30) \
+        par1=((1)*(30)) xf_subext=0
+M31 (net012 net30 net27 0) ne w=10u l=20u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M29 (n1 net25 net27 0) ne w=10u l=20u as=4.8e-12 ad=4.8e-12 ps=2.096e-05 \
+        pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+I3 (net028 0) isource dc=500n type=sine
+I1 (net024 0) isource dc=500n type=sine
+I36 (net28 0) isource dc=50n type=sine
+I30 (net27 0) isource dc=100n type=sine
+V9 (net57 0) vsource dc=1.1 mag=500m type=sine
+V10 (net61 0) vsource dc=1.1 mag=-500m type=sine
+R6 (net065 net028) resistor r=25K
+R5 (net024 net065) resistor r=25K
+R2 (net012 net30) resistor r=Rint
+R1 (net30 net61) resistor r=Rint/20
+R0 (net25 n1) resistor r=Rint
+R10 (net57 net25) resistor r=Rint/20
+M3 (net054 net054 VDDA VDDA) pe w=4u l=10u as=1.92e-12 ad=1.08e-12 \
+        ps=8.96e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(2) \
+        par1=((1)*(2))
+M2 (net029 net029 VDDA VDDA) pe w=4u l=10u as=1.92e-12 ad=1.08e-12 \
+        ps=8.96e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(2) \
+        par1=((1)*(2))
+M53 (net28 net28 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M52 (net012 net28 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M51 (n1 net28 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1))
+C9 (net012 net30) capacitor c=5p
+C8 (n1 net25) capacitor c=10p
+IPRB3 (net029 net062) iprobe
+IPRB0 (net054 net066) iprobe
+V4 (VDDA 0) vsource dc=1.8 type=dc
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+ac ac start=1m stop=100K dec=20 annotate=status 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save IPRB0:in IPRB3:in 
+saveOptions options save=allpub

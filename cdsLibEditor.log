@@ -1,0 +1,89 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 09/03/2019 21:38 (ip-172-18-22-89) $
+\o Sub version:		sub-version  s061 
+\o Arguments:		-display localhost:11.0 -mpssession virtuoso19647 -mpshost s2424 -namespace CDBA -cdslib /home/ykhuang/WorkingDir_XH018/cds.lib 
+\o Working Directory:	s2424:/home/ykhuang/WorkingDir_XH018
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(2017 55 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(2618 207 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(2618 207 500 592))
+\a nrListItemAction(cdsLibEditor->mainTable 49 0)
+\o Active cell: 49 0 "XFABLibs"
+\a nrListItemAction(cdsLibEditor->mainTable 50 0)
+\o Active cell: 50 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 50 0 "Stimulator_IMP")
+\a nrListItemAction(cdsLibEditor->mainTable 50 1)
+\o Active cell: 50 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 50 1 "Stimulator_IMP")
+\a nrListItemAction(cdsLibEditor->mainTable 51 0)
+\o Active cell: 51 0 ""
+\a cdsLibEditor->fileSaveButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 51 0 "Stimulator_TestBench")
+\a nrListItemAction(cdsLibEditor->mainTable 51 1)
+\o Active cell: 51 1 ""
+\a nrListItemAction(cdsLibEditor->mainTable 51 0)
+\o Active cell: 51 0 "Stimulator_TestBench"
+\a nrListItemAction(cdsLibEditor->mainTable 51 1)
+\o Active cell: 51 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 51 1 "Stimulator_TestBench")
+\a nrListItemAction(cdsLibEditor->mainTable 52 0)
+\o Active cell: 52 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 52 0 "Stimulator_Model")
+\a nrListItemAction(cdsLibEditor->mainTable 52 1)
+\o Active cell: 52 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 52 1 "Stimulator_Model")
+\a nrListItemAction(cdsLibEditor->mainTable 53 0)
+\o Active cell: 53 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 53 0 "MultiChannel_EMG_Model")
+\a nrListItemAction(cdsLibEditor->mainTable 53 1)
+\o Active cell: 53 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 53 1 "MultiChannel_EMG_Model")
+\a nrListItemAction(cdsLibEditor->mainTable 54 0)
+\o Active cell: 54 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 54 0 "MultiChannel_EMG_IMP'")
+\a nrListItemAction(cdsLibEditor->mainTable 54 1)
+\o Active cell: 54 1 ""
+\a nrListItemAction(cdsLibEditor->mainTable 54 0)
+\o Active cell: 54 0 "MultiChannel_EMG_IMP'"
+\a nrListItemRename(cdsLibEditor->mainTable, 54 0 "MultiChannel_EMG_IMP")
+\a nrListItemAction(cdsLibEditor->mainTable 54 1)
+\o Active cell: 54 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 54 1 "MultiChannel_EMG_IMP")
+\a nrListItemAction(cdsLibEditor->mainTable 55 0)
+\o Active cell: 55 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 55 0 "MultiChannel_EMG_TestBench")
+\a nrListItemAction(cdsLibEditor->mainTable 55 1)
+\o Active cell: 55 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 55 1 "MultiChannel_EMG_TestBench")
+\a nrListItemAction(cdsLibEditor->mainTable 56 0)
+\o Active cell: 56 0 ""
+\a cdsLibEditor->fileSaveButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 56 0 "CHARACTERIZATION")
+\a nrListItemAction(cdsLibEditor->mainTable 56 1)
+\o Active cell: 56 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 56 1 "CHARACTERIZATION")
+\a nrListItemAction(cdsLibEditor->mainTable 57 0)
+\o Active cell: 57 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/home/ykhuang/WorkingDir_XH018"
+\a newLibraryDialog->useMappedName->value = nil
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(2603 247 531 513))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(newLibraryDialog list(2603 217 531 513))
+\a nrListItemRename(cdsLibEditor->mainTable, 57 0 "Device_Characteristics")
+\a nrListItemAction(cdsLibEditor->mainTable 57 1)
+\o Active cell: 57 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 57 1 "Device_Characteristics")
+\a nrListItemAction(cdsLibEditor->mainTable 58 0)
+\o Active cell: 58 0 ""
+\a cdsLibEditor->fileSaveButton->value = t
+\a exit(0)

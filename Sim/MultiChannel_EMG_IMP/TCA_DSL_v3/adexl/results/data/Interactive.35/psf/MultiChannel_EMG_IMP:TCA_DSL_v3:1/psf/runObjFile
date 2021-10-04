@@ -1,0 +1,37 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Oct  1 14:09:52 2021"
+"date" "Oct  1 14:09:52 2021"
+"simulator" "spectre"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 1
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("VOS")
+)
+"VOS=0.001" "runObject" (
+(
+"../../../1/MultiChannel_EMG_IMP:TCA_DSL_v3:1/psf/logFile"
+"../../../1/MultiChannel_EMG_IMP:TCA_DSL_v3:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/MultiChannel_EMG_IMP:TCA_DSL_v3:1/netlist"
+"dataDir" "../../../1/MultiChannel_EMG_IMP:TCA_DSL_v3:1"
+ "VOS" 1.000000e-03
+)
+
+END

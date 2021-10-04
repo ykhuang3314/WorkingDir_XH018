@@ -1,0 +1,102 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = MultiChannel_EMG_IMP
+	Cell         = TCA_DSL_v3
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = MultiChannel_EMG_IMP:TCA_DSL_v3:1_none_Interactive.16
+	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.16.rdb
+	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.16/1/MultiChannel_EMG_IMP:TCA_DSL_v3:1
+	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data
+	Project Dir  = /home/ykhuang/WorkingDir_XH018/Sim
+	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl
+	File Encoding = 0
+
+
+variable oasisVariableValue redefined
+variable persistNewList redefined
+
+*Info*    The auto suspension is disabled.
+
+
+
+
+
+
+*Info*    Run start for Point ID (16 1) on testbench [
+          MultiChannel_EMG_IMP:TCA_DSL_v3:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var AMP_input = "100u"
+Setting var VOS = "1m"
+Setting var freq_input = "500"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.16/1/MultiChannel_EMG_IMP:TCA_DSL_v3:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.16/1/MultiChannel_EMG_IMP:TCA_DSL_v3:1
+
+
+*Info*    Creating Netlist for Point ID (16 1)
+
+generate netlist...
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Begin Incremental Netlisting Oct  1 13:24:59 2021
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the current netlisting session. It had a value
+'_unl' last time netlisting was done in current run directory. Netlists from last
+session cannot be used for incremental netlisting. Therefore re-netlisting the
+design.
+
+End netlisting Oct  1 13:24:59 2021
+
+Netlisting Statistics:
+	Number of components:   48
+
+	Elapsed time:          1.0s (48.00/s)
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          MultiChannel_EMG_IMP:TCA_DSL_v3:1 ] for Point ID (16 1).
+
+Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.16/1/MultiChannel_EMG_IMP:TCA_DSL_v3:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (16 1) on testbench [
+          MultiChannel_EMG_IMP:TCA_DSL_v3:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables1".
+To save future changes, copy variables to cellView before exiting.

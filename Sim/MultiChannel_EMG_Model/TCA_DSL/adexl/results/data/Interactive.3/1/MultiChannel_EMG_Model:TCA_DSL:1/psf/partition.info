@@ -1,0 +1,95 @@
+( global ( resolution_type basic ) )
+
+( net TCA_DSL.outp TCA_DSL.outp analog electrical )
+( net TCA_DSL.I38.Vinp TCA_DSL.outp analog electrical )
+
+( net TCA_DSL.outn TCA_DSL.outn analog electrical )
+( net TCA_DSL.I38.Vinn TCA_DSL.outn analog electrical )
+
+( net TCA_DSL.LPFoutp TCA_DSL.LPFoutp analog electrical )
+( net TCA_DSL.I38.Voutp TCA_DSL.LPFoutp analog electrical )
+
+( net TCA_DSL.LPFoutn TCA_DSL.LPFoutn analog electrical )
+( net TCA_DSL.I38.Voutn TCA_DSL.LPFoutn analog electrical )
+
+( net TCA_DSL.VDDA TCA_DSL.VDDA analog electrical )
+( net TCA_DSL.I38.VDDA TCA_DSL.VDDA analog electrical )
+
+( net TCA_DSL.I38.VSSA TCA_DSL.I38.VSSA analog electrical )
+( net cds_globals.\gnd!  TCA_DSL.I38.VSSA analog electrical )
+
+( net TCA_DSL.VCM TCA_DSL.VCM analog electrical )
+( net TCA_DSL.I38.VCM TCA_DSL.VCM analog electrical )
+
+( net TCA_DSL.I38.Vid TCA_DSL.I38.Vid analog None )
+
+( net TCA_DSL.I38.Vod TCA_DSL.I38.Vod analog None )
+
+( net TCA_DSL.I38.Vcm TCA_DSL.I38.Vcm analog None )
+
+( net TCA_DSL.net020 TCA_DSL.net020 analog electrical )
+
+( net TCA_DSL.net045 TCA_DSL.net045 analog electrical )
+
+( net TCA_DSL.net024 TCA_DSL.net024 analog electrical )
+
+( net TCA_DSL.n2 TCA_DSL.n2 analog electrical )
+
+( net TCA_DSL.IBIAS TCA_DSL.IBIAS analog electrical )
+
+( net TCA_DSL.IBIAS2 TCA_DSL.IBIAS2 analog electrical )
+
+( net TCA_DSL.net10 TCA_DSL.net10 analog electrical )
+
+( net TCA_DSL.net8 TCA_DSL.net8 analog electrical )
+
+( net TCA_DSL.net052 TCA_DSL.net052 analog electrical )
+
+( net TCA_DSL.n1 TCA_DSL.n1 analog electrical )
+
+( net TCA_DSL.net049 TCA_DSL.net049 analog electrical )
+
+( net TCA_DSL.net054 TCA_DSL.net054 analog electrical )
+
+( net TCA_DSL.Vinp TCA_DSL.Vinp analog electrical )
+
+( net TCA_DSL.Vinn TCA_DSL.Vinn analog electrical )
+
+( net TCA_DSL.net19 TCA_DSL.net19 analog electrical )
+
+( net TCA_DSL.net13 TCA_DSL.net13 analog electrical )
+
+(instance TCA_DSL.I38 analog)
+(instance TCA_DSL.M27 analog)
+(instance TCA_DSL.M28 analog)
+(instance TCA_DSL.M20 analog)
+(instance TCA_DSL.M21 analog)
+(instance TCA_DSL.M15 analog)
+(instance TCA_DSL.M2 analog)
+(instance TCA_DSL.V5 analog)
+(instance TCA_DSL.V2 analog)
+(instance TCA_DSL.V4 analog)
+(instance TCA_DSL.M55 analog)
+(instance TCA_DSL.M54 analog)
+(instance TCA_DSL.M38 analog)
+(instance TCA_DSL.M37 analog)
+(instance TCA_DSL.M0 analog)
+(instance TCA_DSL.M7 analog)
+(instance TCA_DSL.M13 analog)
+(instance TCA_DSL.M12 analog)
+(instance TCA_DSL.M1 analog)
+(instance TCA_DSL.M3 analog)
+(instance TCA_DSL.M6 analog)
+(instance TCA_DSL.M10 analog)
+(instance TCA_DSL.I1 analog)
+(instance TCA_DSL.V1 analog)
+(instance TCA_DSL.V0 analog)
+(instance TCA_DSL.IPRB2 analog)
+(instance TCA_DSL.IPRB1 analog)
+(instance TCA_DSL.IPRB0 analog)
+(instance TCA_DSL.R1 analog)
+(instance TCA_DSL.R8 analog)
+(instance TCA_DSL.I20 analog)
+(instance TCA_DSL.I19 analog)
+(instance TCA_DSL analog)
+(instance cds_globals analog)

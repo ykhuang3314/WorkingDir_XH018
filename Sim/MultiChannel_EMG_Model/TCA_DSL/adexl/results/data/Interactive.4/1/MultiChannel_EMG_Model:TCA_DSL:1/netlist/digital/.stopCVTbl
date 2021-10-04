@@ -1,0 +1,9 @@
+("analogLib" "isin" "spectre" "spectre") t
+("analogLib" "idc" "spectre" "spectre") t
+("analogLib" "res" "spectre" "spectre") t
+("PRIMLIB" "pe" "spectre" "spectre") t
+("PRIMLIB" "rpp1k1" "spectre" "spectre") t
+("analogLib" "iprobe" "spectre" "spectre") t
+("analogLib" "vsin" "spectre" "spectre") t
+("analogLib" "vdc" "spectre" "spectre") t
+("PRIMLIB" "ne" "spectre" "spectre") t

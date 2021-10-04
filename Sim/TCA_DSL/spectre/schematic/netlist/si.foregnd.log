@@ -1,0 +1,20 @@
+Begin Incremental Netlisting Sep 30 11:10:07 2021
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the
+current netlisting session. It had a value
+'_unl' last time netlisting was done
+in current run directory. Netlists from last
+session cannot be used for
+incremental netlisting. Therefore re-netlisting the
+design.
+
+ERROR (OSSHNL-116): Unable to descend into any of the views defined in the view
+list, 'spectre veriloga ahdl cmos_sch schematic', for the
+instance 'I38' in cell
+'TCA_DSL'. Add one of these views to the cell 'LPF_FrontEnd' in the
+library
+'MultiChannel_EMG_Model', or modify the view list so that it contains an
+existing view.
+
+End netlisting Sep 30 11:10:07 2021
+INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+

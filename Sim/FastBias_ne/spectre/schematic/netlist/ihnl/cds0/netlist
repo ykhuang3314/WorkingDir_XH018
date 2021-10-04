@@ -1,0 +1,11 @@
+    M0 (D G 0 0) ne w=W l=L as=(int(((NF)-1)/2.0 )*5.4e-07+((int((NF)/2.0)-(NF)/2.0<-0.1)?1:2)*4.8e-07)*(W)/(NF) \
+         ad=(int((NF)/2.0 )*5.4e-07+(((int((NF)/2.0)-(NF)/2.0<-0.1)?1:0)*4.8e-07))*(W)/(NF) \
+         ps=(int(((NF)-1)/2.0 )*2*(5.4e-07+(W))+((int((NF)/2)-(NF)/2.0<-0.1)?1:2)*2*(4.8e-07+(W)))/(NF) \
+         pd=(int((NF)/2.0 )*2*(5.4e-07+(W))+((int((NF)/2.0)-(NF)/2.0<-0.1)?1:0)*2*(4.8e-07+(W)))/(NF) \
+         nrs=2.7e-07/(W) nrd=2.7e-07/(W) m=(1)*(NF) par1=((1)*(NF)) \
+        xf_subext=0
+    I0 (0 D) isource dc=IDS type=dc
+    E0 (G 0 D net7) vcvs gain=1000
+    V0 (net7 0) vsource dc=VDS type=dc
+ends Bias_ne
+// End of subcircuit definition.

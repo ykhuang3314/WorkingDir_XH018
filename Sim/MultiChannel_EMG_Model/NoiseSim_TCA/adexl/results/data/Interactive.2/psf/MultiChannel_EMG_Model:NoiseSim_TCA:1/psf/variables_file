@@ -1,0 +1,22 @@
+HEADER
+"PSFversion" "1.00"
+"Time Stamp" "Oct  1 17:02:05 2021"
+TYPE
+"variable" STRUCT(
+"value" FLOAT DOUBLE
+) PROP( "key" "element" )
+VALUE
+"WF" "variable" ( 10e-6 ) PROP( )
+"VGS" "variable" ( 503e-3 ) PROP( )
+"VDS" "variable" ( 500e-3 ) PROP( )
+"NF" "variable" ( 25 ) PROP( )
+"L" "variable" ( 500e-9 ) PROP( )
+"IDS" "variable" ( 10e-6 ) PROP( )
+"WF_P" "variable" ( 15e-6 ) PROP( )
+"VGS_PMOS" "variable" ( 596.9e-3 ) PROP( )
+"VDS_PMOS" "variable" ( 500e-3 ) PROP( )
+"NF_P" "variable" ( 10 ) PROP( )
+"L_P" "variable" ( 350e-9 ) PROP( )
+"IDS_PMOS" "variable" ( 5e-6 ) PROP( )
+"temp" "variable" ( 27 ) PROP( )
+END

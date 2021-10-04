@@ -1,0 +1,10 @@
+("MultiChannel_EMG_Model" "LPF_FrontEnd" "verilogams" nil) nil
+("analogLib" "isin" "spectre" spectreSrcPrim) t
+("analogLib" "idc" "spectre" spectreSrcPrim) t
+("analogLib" "res" "spectre" nil) t
+("PRIMLIB" "pe" "spectre" nil) t
+("PRIMLIB" "rpp1k1" "spectre" nil) t
+("analogLib" "iprobe" "spectre" nil) t
+("analogLib" "vsin" "spectre" spectreSrcPrim) t
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
+("PRIMLIB" "ne" "spectre" nil) t

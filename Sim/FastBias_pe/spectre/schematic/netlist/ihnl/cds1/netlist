@@ -1,0 +1,10 @@
+
+// Library name: Device_Characteristics
+// Cell name: FastBias_pe
+// View name: schematic
+I5 Bias_pe WF=WF6 L=L6 NF=NF6 IDS=IDS6 VDS=VDS6
+I4 Bias_pe WF=WF5 L=L5 NF=NF5 IDS=IDS5 VDS=VDS5
+I3 Bias_pe WF=WF4 L=L4 NF=NF4 IDS=IDS4 VDS=VDS4
+I2 Bias_pe WF=WF3 L=L3 NF=NF3 IDS=IDS3 VDS=VDS3
+I1 Bias_pe WF=WF2 L=L2 NF=NF2 IDS=IDS2 VDS=VDS2
+I0 Bias_pe WF=WF1 L=L1 NF=NF1 IDS=IDS1 VDS=VDS1

@@ -1,0 +1,85 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Oct  1 10:10:00 2021"
+"date" "Oct  1 10:10:00 2021"
+"simulator" "spectre"
+"netlistDir" "../../../../../MultiChannel_EMG_TestBench_TCA_DSL_TB_schematic_spectre/netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("VOS")
+)
+"VOS=0/psf" "runObject" (
+(
+"../VOS=0/psf/logFile"
+"../VOS=0/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../../../../../MultiChannel_EMG_TestBench_TCA_DSL_TB_schematic_spectre/netlist"
+"dataDir" "../VOS=0"
+ "VOS" 0.000000e+00
+)
+
+"VOS=0.025/psf" "runObject" (
+(
+"../VOS=0.025/psf/logFile"
+"../VOS=0.025/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../../../../../MultiChannel_EMG_TestBench_TCA_DSL_TB_schematic_spectre/netlist"
+"dataDir" "../VOS=0.025"
+ "VOS" 2.500000e-02
+)
+
+"VOS=0.05/psf" "runObject" (
+(
+"../VOS=0.05/psf/logFile"
+"../VOS=0.05/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../../../../../MultiChannel_EMG_TestBench_TCA_DSL_TB_schematic_spectre/netlist"
+"dataDir" "../VOS=0.05"
+ "VOS" 5.000000e-02
+)
+
+"VOS=0.075/psf" "runObject" (
+(
+"../VOS=0.075/psf/logFile"
+"../VOS=0.075/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../../../../../MultiChannel_EMG_TestBench_TCA_DSL_TB_schematic_spectre/netlist"
+"dataDir" "../VOS=0.075"
+ "VOS" 7.500000e-02
+)
+
+"VOS=0.1/psf" "runObject" (
+(
+"../VOS=0.1/psf/logFile"
+"../VOS=0.1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../../../../../MultiChannel_EMG_TestBench_TCA_DSL_TB_schematic_spectre/netlist"
+"dataDir" "../VOS=0.1"
+ "VOS" 1.000000e-01
+)
+
+END

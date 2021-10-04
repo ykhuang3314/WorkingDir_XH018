@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "FastBias_pel"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/WorkingDir_XH018/Sim/FastBias_pel/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Device_Characteristics/Bias_pel/schematic" "Bias_pel" )
+( "Device_Characteristics/FastBias_pel/schematic" "FastBias_pel" )
+ )
+( "FastBias_pel" "ihnl/cds1/map" )
+( "Bias_pel" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,65 @@
+// Generated for: spectre
+// Generated on: Oct  1 17:02:02 2021
+// Design library name: MultiChannel_EMG_Model
+// Design cell name: NoiseSim_TCA
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters IDS_PMOS=2.5u L_P=500n NF_P=10 VDS_PMOS=0.5 VGS_PMOS=0.59 \
+    WF_P=15u IDS=10u L=500n NF=25 VDS=0.5 VGS=0.503 WF=10u
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: MultiChannel_EMG_Model
+// Cell name: NoiseSim_TCA
+// View name: schematic
+M0 (net2 net7 net1 net1) ne w=WF l=L as=(int(((NF)-1)/2.0 )*5.4e-07+((int((NF)/2.0)-(NF)/2.0<-0.1)?1:2)*4.8e-07)*(WF)/(NF) \
+         ad=(int((NF)/2.0 )*5.4e-07+(((int((NF)/2.0)-(NF)/2.0<-0.1)?1:0)*4.8e-07))*(WF)/(NF) \
+         ps=(int(((NF)-1)/2.0 )*2*(5.4e-07+(WF))+((int((NF)/2)-(NF)/2.0<-0.1)?1:2)*2*(4.8e-07+(WF)))/(NF) \
+         pd=(int((NF)/2.0 )*2*(5.4e-07+(WF))+((int((NF)/2.0)-(NF)/2.0<-0.1)?1:0)*2*(4.8e-07+(WF)))/(NF) \
+         nrs=2.7e-07/(WF) nrd=2.7e-07/(WF) m=(1)*(NF) par1=((1)*(NF)) \
+        xf_subext=0
+I7 (net021 net03) isource dc=IDS_PMOS type=dc
+I0 (net1 net2) isource dc=IDS type=dc
+V7 (net023 net021) vsource dc=VDS_PMOS type=dc
+V10 (net015 0) vsource dc=1.8 type=dc
+V11 (net022 0) vsource dc=1.8 type=dc
+V6 (net022 net07) vsource dc=VGS_PMOS type=dc
+V1 (net3 0) vsource dc=VGS type=dc
+V0 (net2 net9) vsource dc=VDS type=dc
+E3 (net014 net03 net023 net03) vcvs gain=1000
+E0 (net8 net1 net9 net1) vcvs gain=1000
+IPRB2 (net014 0) iprobe
+IPRB0 (0 net8) iprobe
+V5 (net010 net07) vsource mag=1 type=sine
+V2 (net7 net3) vsource mag=1 type=sine
+R3 (net03 net015) resistor r=20K
+R0 (net1 0) resistor r=10K
+M1 (net021 net010 net03 net03) pe w=WF_P l=L_P as=(int(((NF_P)-1)/2.0 )*5.4e-07+((int((NF_P)/2.0)-(NF_P)/2.0<-0.1)?1:2)*4.8e-07)*(WF_P)/(NF_P) \
+         ad=(int((NF_P)/2.0 )*5.4e-07+(((int((NF_P)/2.0)-(NF_P)/2.0<-0.1)?1:0)*4.8e-07))*(WF_P)/(NF_P) \
+         ps=(int(((NF_P)-1)/2.0 )*2*(5.4e-07+(WF_P))+((int((NF_P)/2)-(NF_P)/2.0<-0.1)?1:2)*2*(4.8e-07+(WF_P)))/(NF_P) \
+         pd=(int((NF_P)/2.0 )*2*(5.4e-07+(WF_P))+((int((NF_P)/2.0)-(NF_P)/2.0<-0.1)?1:0)*2*(4.8e-07+(WF_P)))/(NF_P) \
+         nrs=2.7e-07/(WF_P) nrd=2.7e-07/(WF_P) m=(1)*(NF_P) \
+        par1=((1)*(NF_P))
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+noise noise start=10 stop=100M oprobe=IPRB2 iprobe=V5 annotate=status 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save IPRB2:in 
+saveOptions options save=allpub

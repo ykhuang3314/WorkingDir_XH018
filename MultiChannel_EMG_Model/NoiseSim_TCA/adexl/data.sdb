@@ -512,5 +512,182 @@
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>MultiChannel_EMG_Model:NoiseSim_TCA:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>NoiseSim_TCA</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_Model</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_Model:NoiseSim_TCA:1_state1_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>NoiseSim_TCA</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_Model</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>IDS
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NF
+						<value>25</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>0.503</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WF
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IDS_PMOS
+						<value>2.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_P
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>NF_P
+						<value>10</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS_PMOS
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS_PMOS
+						<value>0.59</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WF_P
+						<value>15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_Model:NoiseSim_TCA:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 1 17:01:57 2021</timestamp>
+			<uuid>{c71f76be-ac90-4e93-95ee-e29edd644294}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_170157254</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
 	</history>
 </setupdb>

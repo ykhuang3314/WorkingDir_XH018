@@ -1,0 +1,13 @@
+// Library - MultiChannel_EMG_Model, Cell - TCA_DSL, View - schematic
+// LAST TIME SAVED: Oct  1 10:55:09 2021
+// NETLIST TIME: Oct  1 10:56:41 2021
+`timescale 1ns / 1ps 
+
+`worklib MultiChannel_EMG_Model
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="MultiChannel_EMG_Model", dfII_cell="TCA_DSL", dfII_view="schematic", worklib_name="MultiChannel_EMG_Model", view_name="schematic", last_save_time="Oct  1 10:55:09 2021" *)
+
+module TCA_DSL ();
+

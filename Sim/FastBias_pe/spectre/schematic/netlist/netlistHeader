@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Sep 30 10:29:17 2021
+// Design library name: Device_Characteristics
+// Design cell name: FastBias_pe
+// Design view name: schematic
+simulator lang=spectre
+global 0

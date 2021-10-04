@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-amsdlibdir
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-ALLOWREDEFINITION
+-CDSLIB
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi//dummyMapi.vhms
+-HDLVAR
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-MESSAGES
+-UPDATE

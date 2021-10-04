@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 16 11:10:04 2021 
+Best design point: 1
+Design specs: 
+	Device_Characteristics:DC_Bias_ne:1	corner	Nominal - 
+Design parameters: 
+	L		2u
+	NF		10
+	VDS		0
+	VGS		500m
+	W		10u
+
+Interactive.2
+Number of points completed: 19
+Number of simulation errors: 0
+Interactive.2 completed. 
+Current time: Mon Aug 16 11:10:36 2021 

@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"M8n M5n M31n M29n M20n M21n M15n M2n" "PRIMLIB_ne_spectre"
+"V5n V2n V4n" "analogLib_vdc_spectre"
+"M51n M53n M52n M9n M4n M54n M55n M0n M7n M13n M12n M1n M3n M6n M10n" "PRIMLIB_pe_spectre"
+"V1n V0n" "analogLib_vsin_spectre"
+"I1n" "analogLib_idc_spectre"
+"IPRB2n IPRB3n IPRB1n IPRB0n" "analogLib_iprobe_spectre"
+"R1n" "PRIMLIB_rpp1k1_spectre"
+"I36n I7n I2n I30n" "analogLib_isin_spectre"
+"R3n R2n R6n R5n R0n R10n" "analogLib_res_spectre"
+"C9n C8n" "analogLib_cap_spectre"

@@ -1,0 +1,62 @@
+// Generated for: spectre
+// Generated on: Oct  4 10:27:41 2021
+// Design library name: Device_Characteristics
+// Design cell name: FastBias_pel
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters IDS6=5e-06 VDS6=1.0 WF6=3e-06 L6=5e-06 NF6=10 IDS5=5e-06 \
+    VDS5=0.3 WF5=2.5e-05 L5=3e-07 NF5=10 IDS4=6e-07 VDS4=0.5 WF4=8e-06 \
+    L4=3.5e-07 NF4=10 IDS3=6e-07 VDS3=0.5 WF3=5e-06 L3=3.5e-07 NF3=10 \
+    IDS2=3e-06 VDS2=0.5 WF2=1.5e-06 L2=5e-06 NF2=1 IDS1=3e-06 VDS1=0.5 \
+    WF1=3e-06 L1=6e-06 NF1=1
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: Device_Characteristics
+// Cell name: Bias_pel
+// View name: schematic
+subckt Bias_pel
+parameters IDS VDS WF L NF
+    I0 (D S) isource dc=IDS type=dc
+    E0 (S G net9 D) vcvs gain=1000
+    V1 (S 0) vsource dc=1.8 type=dc
+    V0 (S net9) vsource dc=VDS type=dc
+    M0 (D G S S) pel w=WF l=L as=(int(((NF)-1)/2.0 )*5.4e-07+((int((NF)/2.0)-(NF)/2.0<-0.1)?1:2)*4.8e-07)*(WF)/(NF) \
+         ad=(int((NF)/2.0 )*5.4e-07+(((int((NF)/2.0)-(NF)/2.0<-0.1)?1:0)*4.8e-07))*(WF)/(NF) \
+         ps=(int(((NF)-1)/2.0 )*2*(5.4e-07+(WF))+((int((NF)/2)-(NF)/2.0<-0.1)?1:2)*2*(4.8e-07+(WF)))/(NF) \
+         pd=(int((NF)/2.0 )*2*(5.4e-07+(WF))+((int((NF)/2.0)-(NF)/2.0<-0.1)?1:0)*2*(4.8e-07+(WF)))/(NF) \
+         nrs=2.7e-07/(WF) nrd=2.7e-07/(WF) m=(1)*(NF) par1=((1)*(NF))
+ends Bias_pel
+// End of subcircuit definition.
+
+// Library name: Device_Characteristics
+// Cell name: FastBias_pel
+// View name: schematic
+I5 Bias_pel IDS=IDS6 VDS=VDS6 WF=WF6 L=L6 NF=NF6
+I4 Bias_pel IDS=IDS5 VDS=VDS5 WF=WF5 L=L5 NF=NF5
+I3 Bias_pel IDS=IDS4 VDS=VDS4 WF=WF4 L=L4 NF=NF4
+I2 Bias_pel IDS=IDS3 VDS=VDS3 WF=WF3 L=L3 NF=NF3
+I1 Bias_pel IDS=IDS2 VDS=VDS2 WF=WF2 L=L2 NF=NF2
+I0 Bias_pel IDS=IDS1 VDS=VDS1 WF=WF1 L=L1 NF=NF1
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../../../../Device_Characteristics/FastBias_pel/spectre/schematic/psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

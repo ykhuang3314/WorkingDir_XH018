@@ -1,0 +1,10 @@
+
+ac ac start=1m stop=10M dec=20 annotate=status 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+
+modelParameter info what=models where=rawfile 
+element info what=inst where=rawfile 
+outputParameter info what=output where=rawfile 
+
+save TCA_DSL.IPRB1:in TCA_DSL.IPRB2:in 

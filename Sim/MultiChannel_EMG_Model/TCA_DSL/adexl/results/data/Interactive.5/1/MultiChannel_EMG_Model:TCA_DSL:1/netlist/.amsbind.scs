@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config MultiChannel_EMG_Model.TCA_DSL:config
+// Created On: Oct  1 10:58:15 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="MultiChannel_EMG_Model.TCA_DSL:schematic"
+
+	config cell="pe" view="analogtext"
+	config cell="LPF_FrontEnd" lib="MultiChannel_EMG_Model" view="verilogams"
+	config cell="isource" view="analogtext"
+	config cell="resistor" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="ne" view="analogtext"
+	config cell="rpp1k1" view="analogtext"
+	config cell="iprobe" view="analogtext"
+
+ }

@@ -1,0 +1,5 @@
+netMap,*TCA_DSL,*gnd!,*cds_globals.\gnd! 
+instMap,*TCA_DSL,*I38,*I38
+instMaster,*TCA_DSL,*I38,*MultiChannel_EMG_Model_LPF_FrontEnd_verilogams
+cellMap,*TCA_DSL,*TCA_DSL,*MultiChannel_EMG_Model,*schematic
+topMap,*TCA_DSL

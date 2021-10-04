@@ -1,9 +1,9 @@
 simulator( 'spectre )
 design( "Device_Characteristics" "FastBias_pe" "schematic")
 createNetlist
-resultsDir( "/home/ykhuang/Cadence/Sim/Device_Characteristics/FastBias_pe/spectre/schematic" )
+resultsDir( "/home/ykhuang/WorkingDir_XH018/Sim/Device_Characteristics/FastBias_pe/spectre/schematic" )
 
-load("/home/ykhuang/Cadence/OS/Device_Characteristics/global_pmos.il")
+load("/home/ykhuang/WorkingDir_XH018/OS/Device_Characteristics/global_pmos.il")
 
 modelFile( 
     '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" "default")

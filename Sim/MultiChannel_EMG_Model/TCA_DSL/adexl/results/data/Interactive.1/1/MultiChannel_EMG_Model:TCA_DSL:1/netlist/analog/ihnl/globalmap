@@ -1,0 +1,10 @@
+CADENCE IHNL04120
+$model
+MultiChannel_EMG_Model/TCA_DSL/schematic MultiChannel_EMG_Model/TCA_DSL/schematic/schematic/MultiChannel_EMG_Model_TCA_DSL_config/1 TCA_DSL
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+VOS VOS
+$endparam

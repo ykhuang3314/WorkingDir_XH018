@@ -1,0 +1,4 @@
+simulator lang=spectre
+include "ne.scs"
+include "nel.scs"
+include "pe.scs"

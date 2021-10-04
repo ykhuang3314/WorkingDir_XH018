@@ -1,0 +1,8 @@
+
+dcOpInfo info what=oppoint where=rawfile writedc="dcOp" 
+
+modelParameter info what=models where=rawfile 
+element info what=inst where=rawfile 
+outputParameter info what=output where=rawfile 
+
+save TCA_DSL.IPRB1:in TCA_DSL.IPRB2:in 

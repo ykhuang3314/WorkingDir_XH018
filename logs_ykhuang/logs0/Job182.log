@@ -1,0 +1,110 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = MultiChannel_EMG_Model
+	Cell         = NoiseSim_TCA
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = MultiChannel_EMG_Model:NoiseSim_TCA:1_state1_Interactive.2
+	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2.rdb
+	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:NoiseSim_TCA:1
+	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data
+	Project Dir  = /home/ykhuang/WorkingDir_XH018/Sim
+	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/NoiseSim_TCA/adexl
+	File Encoding = 0
+
+
+variable oasisVariableValue redefined
+variable persistNewList redefined
+
+*Info*    The auto suspension is disabled.
+
+
+
+
+
+
+*Info*    Run start for Point ID (0 1) on testbench [
+          MultiChannel_EMG_Model:NoiseSim_TCA:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var IDS = "10u"
+Setting var IDS_PMOS = "2.5u"
+Setting var L = "500n"
+Setting var L_P = "500n"
+Setting var NF = "25"
+Setting var NF_P = "10"
+Setting var VDS = "0.5"
+Setting var VDS_PMOS = "0.5"
+Setting var VGS = "0.503"
+Setting var VGS_PMOS = "0.59"
+Setting var WF = "10u"
+Setting var WF_P = "15u"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:NoiseSim_TCA:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:NoiseSim_TCA:1
+
+
+*Info*    Creating Netlist for Point ID (0 1)
+
+generate netlist...
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:NoiseSim_TCA:1/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Oct  1 17:02:02 2021
+End netlisting Oct  1 17:02:02 2021
+
+Netlisting Statistics:
+	Number of components:   18
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          MultiChannel_EMG_Model:NoiseSim_TCA:1 ] for Point ID (0 1).
+
+Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/NoiseSim_TCA/adexl/results/data/Interactive.2/1/MultiChannel_EMG_Model:NoiseSim_TCA:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (0 1) on testbench [
+          MultiChannel_EMG_Model:NoiseSim_TCA:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables1".
+To save future changes, copy variables to cellView before exiting.

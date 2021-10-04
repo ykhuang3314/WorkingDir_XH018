@@ -1,0 +1,6 @@
+
+// Library name: Device_Characteristics
+// Cell name: Bias_nel
+// View name: schematic
+subckt Bias_nel
+parameters IDS VDS W L NF

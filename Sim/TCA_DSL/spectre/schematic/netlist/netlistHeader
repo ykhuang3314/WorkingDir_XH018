@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Sep 30 10:45:32 2021
+// Design library name: MultiChannel_EMG_Model
+// Design cell name: TCA_DSL
+// Design view name: schematic
+simulator lang=spectre
+global 0

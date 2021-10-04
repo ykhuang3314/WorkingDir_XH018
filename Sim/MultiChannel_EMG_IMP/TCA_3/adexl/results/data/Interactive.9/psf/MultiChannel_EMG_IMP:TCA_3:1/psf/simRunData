@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"MultiChannel_EMG_IMP\" \"TCA_3\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Oct  4 10:49:14 2021"
+"title" ""
+"analysisList" "()"
+END

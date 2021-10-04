@@ -1,0 +1,131 @@
+
+// Library name: MultiChannel_EMG_Model
+// Cell name: TCA_DSL
+// View name: schematic
+M31 (net098 net082 net090 0) ne w=10u l=20u as=3.4e-12 ad=3.4e-12 \
+        ps=1.40133e-05 pd=1.40133e-05 nrs=0.027 nrd=0.027 m=(1)*(3) \
+        par1=((1)*(3)) xf_subext=0
+M29 (net091 net092 net090 0) ne w=10u l=20u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M27 (net087 inp_TCA net033 0) ne w=2u l=500n as=5.68e-13 ad=5.4e-13 \
+        ps=2.70133e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(30) \
+        par1=((1)*(30)) xf_subext=0
+M28 (net036 inn_TCA net035 0) ne w=2u l=500n as=5.68e-13 ad=5.4e-13 \
+        ps=2.70133e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(30) \
+        par1=((1)*(30)) xf_subext=0
+M20 (IBIAS2 IBIAS2 IBIAS 0) ne w=375.00n l=15.0u as=1.09125e-13 \
+        ad=1.0125e-13 ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 \
+        m=(1)*(20) par1=((1)*(20)) xf_subext=0
+M21 (IBIAS IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M15 (net10 IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M2 (net8 IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+V2 (VCM 0) vsource dc=900m type=dc
+V4 (VDDA 0) vsource dc=1.8 type=dc
+M53 (net043 net043 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M52 (net098 net043 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M51 (net091 net043 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M38 (net069 net069 VDDA VDDA) pe w=4u l=10u as=1.92e-12 ad=1.08e-12 \
+        ps=8.96e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(2) \
+        par1=((1)*(2))
+M37 (net036 net036 VDDA VDDA) pe w=4u l=10u as=1.92e-12 ad=1.08e-12 \
+        ps=8.96e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(2) \
+        par1=((1)*(2))
+M48 (net057 net029 VDDA VDDA) pe w=2u l=2u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M43 (net079 net079 net029 net029) pe w=4u l=2u as=1.164e-12 ad=1.08e-12 \
+        ps=4.982e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(20) \
+        par1=((1)*(20))
+M34 (net029 net029 VDDA VDDA) pe w=2u l=2u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M47 (outn_TIA net079 net057 net057) pe w=4u l=2u as=1.164e-12 ad=1.08e-12 \
+        ps=4.982e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(20) \
+        par1=((1)*(20))
+M42 (net037 inn_TCA net072 net072) pe w=4u l=3u as=1.164e-12 ad=1.08e-12 \
+        ps=4.982e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(20) \
+        par1=((1)*(20))
+M41 (net088 net088 VDDA VDDA) pe w=5u l=10u as=1.7e-12 ad=1.35e-12 \
+        ps=7.34667e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(6) \
+        par1=((1)*(6))
+M40 (net072 net072 VDDA VDDA) pe w=5u l=10u as=1.7e-12 ad=1.35e-12 \
+        ps=7.34667e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(6) \
+        par1=((1)*(6))
+M39 (net037 inp_TCA net068 net068) pe w=4u l=3u as=1.164e-12 ad=1.08e-12 \
+        ps=4.982e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(20) \
+        par1=((1)*(20))
+M44 (outp_TIA net075 net074 net074) pe w=4u l=2u as=1.164e-12 ad=1.08e-12 \
+        ps=4.982e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(20) \
+        par1=((1)*(20))
+M46 (net075 net075 net023 net023) pe w=4u l=2u as=1.164e-12 ad=1.08e-12 \
+        ps=4.982e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(20) \
+        par1=((1)*(20))
+M30 (net023 net023 VDDA VDDA) pe w=2u l=2u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M45 (net074 net023 VDDA VDDA) pe w=2u l=2u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M0 (net9 outp VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M7 (outp outp VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M13 (net24 outn VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 \
+        ps=2.782e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) \
+        par1=((1)*(20))
+M12 (outn outn VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M1 (net8 Vinp net9 net9) pe w=10u l=500n as=2.91e-12 ad=2.7e-12 \
+        ps=1.1582e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(20) \
+        par1=((1)*(20))
+M3 (net10 Vinn net24 net24) pe w=10u l=500n as=2.91e-12 ad=2.7e-12 \
+        ps=1.1582e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(20) \
+        par1=((1)*(20))
+M6 (0 net8 net19 net19) pe w=8u l=180.0n as=2.496e-12 ad=2.16e-12 \
+        ps=1.0224e-05 pd=8.54e-06 nrs=0.03375 nrd=0.03375 m=(1)*(10) \
+        par1=((1)*(10))
+M10 (0 net10 net13 net13) pe w=8u l=180.0n as=2.496e-12 ad=2.16e-12 \
+        ps=1.0224e-05 pd=8.54e-06 nrs=0.03375 nrd=0.03375 m=(1)*(10) \
+        par1=((1)*(10))
+I1 (VDDA IBIAS2) isource dc=2u type=dc
+V10 (net078 0) vsource dc=1.1 mag=-500m type=sine
+V9 (net077 0) vsource dc=1.1 mag=500m type=sine
+V8 (inn_TCA 0) vsource dc=900m mag=-500m type=sine
+V7 (inp_TCA 0) vsource dc=900m mag=500m type=sine
+V1 (VCM Vinn) vsource mag=500.0m type=sine
+V0 (Vinp VCM) vsource mag=500.0m type=sine
+IPRB2 (net069 net087) iprobe
+IPRB3 (net088 net068) iprobe
+IPRB1 (outp net19) iprobe
+IPRB0 (outn net13) iprobe
+R1 (net9 net24) rpp1k1 l=20.09u w=2u m=1 par1=(1)
+C9 (net098 net082) capacitor c=5p
+C8 (net091 net092) capacitor c=5p
+C7 (outn_TIA outp_TIA) capacitor c=5p
+R11 (net082 net078) resistor r=Rint
+R10 (net077 net092) resistor r=Rint
+R8 (net033 net035) resistor r=50K
+R4 (outp_TIA outn_TIA) resistor r=Rint
+R9 (net068 net072) resistor r=200K
+I36 (net043 0) isource dc=50n type=sine
+I30 (net090 0) isource dc=100n type=sine
+I20 (net035 0) isource dc=500n type=sine
+I15 (outn_TIA 0) isource dc=100n type=sine
+I13 (0 net079) isource dc=-100n mag=500.0m type=sine
+I19 (net033 0) isource dc=500n type=sine
+I26 (net037 0) isource dc=1u type=sine
+I11 (outp_TIA 0) isource dc=100n type=sine
+I9 (net075 0) isource dc=100n mag=500.0m type=sine

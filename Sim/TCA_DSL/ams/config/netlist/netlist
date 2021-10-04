@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  MultiChannel_EMG_Model 
+cell: TCA_DSL 
+view: config 
+topCellLib: MultiChannel_EMG_Model 

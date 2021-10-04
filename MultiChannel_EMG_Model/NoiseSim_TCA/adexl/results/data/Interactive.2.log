@@ -1,0 +1,25 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Oct  1 17:01:59 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_Model:NoiseSim_TCA:1	corner	Nominal - 
+Design parameters: 
+	IDS		10u
+	L		500n
+	NF		25
+	VDS		500m
+	VGS		503m
+	WF		10u
+	IDS_PMOS		2.5u
+	L_P		500n
+	NF_P		10
+	VDS_PMOS		500m
+	VGS_PMOS		590m
+	WF_P		15u
+
+Interactive.2
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.2 completed. 
+Current time: Fri Oct  1 17:02:05 2021 

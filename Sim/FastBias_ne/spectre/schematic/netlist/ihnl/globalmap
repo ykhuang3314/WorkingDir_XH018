@@ -1,0 +1,35 @@
+CADENCE IHNL11140
+$model
+Device_Characteristics/Bias_ne/schematic Bias_ne
+Device_Characteristics/FastBias_ne/schematic FastBias_ne
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+L4 L4
+VDS4 VDS4
+L1 L1
+WF4 WF4
+IDS2 IDS2
+WF1 WF1
+VDS2 VDS2
+IDS4 IDS4
+NF2 NF2
+WF2 WF2
+L5 L5
+NF1 NF1
+IDS5 IDS5
+VDS1 VDS1
+NF3 NF3
+L3 L3
+NF4 NF4
+VDS3 VDS3
+IDS1 IDS1
+WF5 WF5
+VDS5 VDS5
+NF5 NF5
+WF3 WF3
+IDS3 IDS3
+L2 L2
+$endparam

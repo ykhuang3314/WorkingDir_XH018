@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TCA_DSL_v2"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v2/adexl/results/data/Interactive.30/1/MultiChannel_EMG_IMP:TCA_DSL_v2:1/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "MultiChannel_EMG_IMP/TCA_DSL_v2/schematic" "TCA_DSL_v2" )
+ )
+( "TCA_DSL_v2" "ihnl/cds0/map" )
+ )

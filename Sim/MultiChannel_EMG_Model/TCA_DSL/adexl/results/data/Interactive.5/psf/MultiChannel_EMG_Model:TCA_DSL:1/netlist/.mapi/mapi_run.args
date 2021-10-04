@@ -1,0 +1,8 @@
+-64bit  -compile -NOCOPYRIGHT -nostdout -nowarn DLNOHV
+-logfile /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.5/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi/mapirun.log
+-nowarn DLNOHV -nowarn DLCLAP -v93 -allowredefinition -incdir /home/ykhuang/WorkingDir_XH018/ 
+-nclibdirpath /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.5/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi/
+-cdslib /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.5/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi/cds.lib
+-amscompilefile "file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/LPF_FrontEnd/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:LPF_FrontEnd view:verilogams"
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.5/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi//dummyMapi.vams
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_Model/TCA_DSL/adexl/results/data/Interactive.5/1/MultiChannel_EMG_Model:TCA_DSL:1/netlist/.mapi//dummyMapi.vhms

@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+MultiChannel_EMG_TestBench/TCA_DSL_TB/schematic TCA_DSL_TB
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+Rint Rint
+AMP_input AMP_input
+VOS VOS
+freq_input freq_input
+$endparam

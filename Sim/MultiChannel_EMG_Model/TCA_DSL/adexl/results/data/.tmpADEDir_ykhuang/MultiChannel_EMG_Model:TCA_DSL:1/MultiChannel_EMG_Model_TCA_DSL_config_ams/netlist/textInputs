@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - MultiChannel_EMG_Model ,Cell - LPF_FrontEnd, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/MultiChannel_EMG_Model/LPF_FrontEnd/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:LPF_FrontEnd view:verilogams"
+

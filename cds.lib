@@ -1,3 +1,5 @@
+# File Created by ykhuang at Thu Sep 30 09:55:38 2021
+# assisted by CdsLibEditor
 # ------------------------------------------------------------------------------
 # XKIT library definition files
 #   xh018.lib:
@@ -22,3 +24,11 @@ INCLUDE ./xh018_combine.lib
 
 # ------------------------------------------------------------------------------
 # Add user specific libraries below this line 
+DEFINE Stimulator_IMP Stimulator_IMP
+DEFINE Stimulator_TestBench Stimulator_TestBench
+DEFINE Stimulator_Model Stimulator_Model
+DEFINE MultiChannel_EMG_Model MultiChannel_EMG_Model
+DEFINE MultiChannel_EMG_IMP MultiChannel_EMG_IMP
+DEFINE MultiChannel_EMG_TestBench MultiChannel_EMG_TestBench
+DEFINE CHARACTERIZATION CHARACTERIZATION
+DEFINE Device_Characteristics Device_Characteristics

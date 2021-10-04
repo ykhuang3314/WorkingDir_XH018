@@ -1,0 +1,94 @@
+
+// Library name: MultiChannel_EMG_TestBench
+// Cell name: TCA_DSL_TB
+// View name: schematic
+M8 (net63 net22 net24 0) ne w=2u l=500n as=5.68e-13 ad=5.4e-13 \
+        ps=2.70133e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(30) \
+        par1=((1)*(30)) xf_subext=0
+M5 (net62 net31 net29 0) ne w=2u l=500n as=5.68e-13 ad=5.4e-13 \
+        ps=2.70133e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(30) \
+        par1=((1)*(30)) xf_subext=0
+M31 (net31 net32 net28 0) ne w=10u l=20u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M29 (net22 net20 net28 0) ne w=10u l=20u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1)) xf_subext=0
+M20 (IBIAS2 IBIAS2 IBIAS 0) ne w=375.00n l=15.0u as=1.09125e-13 \
+        ad=1.0125e-13 ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 \
+        m=(1)*(20) par1=((1)*(20)) xf_subext=0
+M21 (IBIAS IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M15 (net14 IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+M2 (net10 IBIAS 0 0) ne w=375.00n l=15.0u as=1.09125e-13 ad=1.0125e-13 \
+        ps=9.945e-07 pd=9.15e-07 nrs=0.72 nrd=0.72 m=(1)*(20) \
+        par1=((1)*(20)) xf_subext=0
+V5 (net059 VCM) vsource dc=VOS type=dc
+V2 (VCM 0) vsource dc=900m type=dc
+V4 (VDDA 0) vsource dc=1.8 type=dc
+M51 (net22 net27 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M53 (net27 net27 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M52 (net31 net27 VDDA VDDA) pe w=2u l=40u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M9 (DSLoutn DSLoutn VDDA VDDA) pe w=4u l=10u as=1.92e-12 ad=1.08e-12 \
+        ps=8.96e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(2) \
+        par1=((1)*(2))
+M4 (DSLoutp DSLoutp VDDA VDDA) pe w=4u l=10u as=1.92e-12 ad=1.08e-12 \
+        ps=8.96e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(2) \
+        par1=((1)*(2))
+M54 (net13 DSLoutn VDDA VDDA) pe w=4u l=10u as=1.92e-12 ad=1.08e-12 \
+        ps=8.96e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(3)*(2) \
+        par1=((3)*(2))
+M55 (net12 DSLoutp VDDA VDDA) pe w=4u l=10u as=1.92e-12 ad=1.08e-12 \
+        ps=8.96e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(3)*(2) \
+        par1=((3)*(2))
+M0 (net12 outp VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M7 (outp outp VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M13 (net13 outn VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 \
+        ps=2.782e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) \
+        par1=((1)*(20))
+M12 (outn outn VDDA VDDA) pe w=2u l=2u as=5.82e-13 ad=5.4e-13 ps=2.782e-06 \
+        pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(20) par1=((1)*(20))
+M1 (net10 Vinp net12 net12) pe w=10u l=500n as=2.91e-12 ad=2.7e-12 \
+        ps=1.1582e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(20) \
+        par1=((1)*(20))
+M3 (net14 Vinn net13 net13) pe w=10u l=500n as=2.91e-12 ad=2.7e-12 \
+        ps=1.1582e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(20) \
+        par1=((1)*(20))
+M6 (0 net10 net40 net40) pe w=8u l=180.0n as=2.496e-12 ad=2.16e-12 \
+        ps=1.0224e-05 pd=8.54e-06 nrs=0.03375 nrd=0.03375 m=(1)*(10) \
+        par1=((1)*(10))
+M10 (0 net14 net17 net17) pe w=8u l=180.0n as=2.496e-12 ad=2.16e-12 \
+        ps=1.0224e-05 pd=8.54e-06 nrs=0.03375 nrd=0.03375 m=(1)*(10) \
+        par1=((1)*(10))
+V1 (VCM Vinn) vsource mag=500.0m type=sine ampl=AMP_input freq=freq_input
+V0 (Vinp net059) vsource mag=500.0m type=sine ampl=AMP_input \
+        freq=freq_input
+I1 (VDDA IBIAS2) isource dc=2u type=dc
+IPRB2 (DSLoutp net63) iprobe
+IPRB3 (DSLoutn net62) iprobe
+IPRB1 (outp net40) iprobe
+IPRB0 (outn net17) iprobe
+R1 (net12 net13) rpp1k1 l=20.09u w=2u m=1 par1=(1)
+I36 (net27 0) isource dc=50n type=sine
+I7 (net29 0) isource dc=500n type=sine
+I2 (net24 0) isource dc=500n type=sine
+I30 (net28 0) isource dc=100n type=sine
+R3 (net20 net22) resistor r=Rint
+R2 (net31 net32) resistor r=Rint
+R6 (net64 net29) resistor r=25K
+R5 (net24 net64) resistor r=25K
+R0 (net32 outn) resistor r=Rint/20
+R10 (outp net20) resistor r=Rint/20
+C9 (net31 net32) capacitor c=5p
+C8 (net22 net20) capacitor c=10p
