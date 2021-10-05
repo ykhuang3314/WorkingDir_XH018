@@ -1,13 +1,13 @@
 // Generated for: spectre
-// Generated on: Oct  4 10:27:41 2021
+// Generated on: Oct  4 11:55:29 2021
 // Design library name: Device_Characteristics
 // Design cell name: FastBias_pel
 // Design view name: schematic
 simulator lang=spectre
 global 0
-parameters IDS6=5e-06 VDS6=1.0 WF6=3e-06 L6=5e-06 NF6=10 IDS5=5e-06 \
-    VDS5=0.3 WF5=2.5e-05 L5=3e-07 NF5=10 IDS4=6e-07 VDS4=0.5 WF4=8e-06 \
-    L4=3.5e-07 NF4=10 IDS3=6e-07 VDS3=0.5 WF3=5e-06 L3=3.5e-07 NF3=10 \
+parameters IDS6=3e-07 VDS6=1.0 WF6=8e-06 L6=1e-06 NF6=10 IDS5=3e-07 \
+    VDS5=0.3 WF5=1.5e-05 L5=1e-06 NF5=10 IDS4=3e-07 VDS4=0.5 WF4=5e-06 \
+    L4=5e-07 NF4=10 IDS3=3e-07 VDS3=0.5 WF3=1e-05 L3=5e-07 NF3=10 \
     IDS2=3e-06 VDS2=0.5 WF2=1.5e-06 L2=5e-06 NF2=1 IDS1=3e-06 VDS1=0.5 \
     WF1=3e-06 L1=6e-06 NF1=1
 include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default

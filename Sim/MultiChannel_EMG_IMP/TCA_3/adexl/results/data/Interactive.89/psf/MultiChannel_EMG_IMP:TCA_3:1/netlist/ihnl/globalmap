@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+MultiChannel_EMG_IMP/TCA_3/schematic TCA_3
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+Vos Vos
+CM_DC CM_DC
+Amp_input Amp_input
+Freq_input Freq_input
+$endparam

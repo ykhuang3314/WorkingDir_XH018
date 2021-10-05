@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = MultiChannel_EMG_IMP
-	Cell         = TCA_DSL_v2
+	Cell         = TCA_3
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = MultiChannel_EMG_IMP:TCA_DSL_v2:1_none_Interactive.7
-	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_DSL_v2/adexl/results/data/Interactive.7.rdb
-	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_IMP:TCA_DSL_v2:1
-	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v2/adexl/results/data
+	State Name   = MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.30
+	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.30.rdb
+	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.30/1/MultiChannel_EMG_IMP:TCA_3:1
+	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data
 	Project Dir  = /home/ykhuang/WorkingDir_XH018/Sim
-	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_DSL_v2/adexl
+	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl
 	File Encoding = 0
 
 
@@ -30,41 +30,36 @@ variable persistNewList redefined
 
 
 
-*Info*    Run start for Point ID (7 1) on testbench [
-          MultiChannel_EMG_IMP:TCA_DSL_v2:1 ].
+*Info*    Run start for Point ID (16 1) on testbench [
+          MultiChannel_EMG_IMP:TCA_3:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var AMP_input = "100u"
-Setting var VOS = "1m"
-Setting var freq_input = "500"
+Setting var Amp_input = "100u"
+Setting var Freq_input = "500"
+Setting var Vos = "1m"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_IMP:TCA_DSL_v2:1/netlist
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.30/1/MultiChannel_EMG_IMP:TCA_3:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_IMP:TCA_DSL_v2:1
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.30/1/MultiChannel_EMG_IMP:TCA_3:1
 
 
-*Info*    Creating Netlist for Point ID (7 1)
+*Info*    Creating Netlist for Point ID (16 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Oct  1 12:07:07 2021
-WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the current netlisting session. It had a value
-'_unl' last time netlisting was done in current run directory. Netlists from last
-session cannot be used for incremental netlisting. Therefore re-netlisting the
-design.
-
-End netlisting Oct  1 12:07:07 2021
+Begin Incremental Netlisting Oct  4 14:57:02 2021
+End netlisting Oct  4 14:57:02 2021
 
 Netlisting Statistics:
-	Number of components:   41
+	Number of components:   53
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -73,9 +68,9 @@ compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          MultiChannel_EMG_IMP:TCA_DSL_v2:1 ] for Point ID (7 1).
+          MultiChannel_EMG_IMP:TCA_3:1 ] for Point ID (16 1).
 
-Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_IMP:TCA_DSL_v2:1/psf.
+Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.30/1/MultiChannel_EMG_IMP:TCA_3:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -90,8 +85,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (7 1) on testbench [
-          MultiChannel_EMG_IMP:TCA_DSL_v2:1 ].
+*Info*    Run complete for Point ID (16 1) on testbench [
+          MultiChannel_EMG_IMP:TCA_3:1 ].
 
 
 

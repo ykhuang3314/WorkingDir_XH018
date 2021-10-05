@@ -5,23 +5,23 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 24686
-Memory  available: 50.4227 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 28529
+Memory  available: 59.1691 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1579.5] ( 16 ),  1 [2321.0] ( 17 ),  2 [1287.9] ( 18 )
-                 3 [1200.0] ( 19 ),  4 [1213.0] ( 20 ),  5 [1200.0] ( 21 )
-                 6 [1200.1] ( 22 ),  7 [1805.4] ( 23 )
-        1:       8 [1317.3] ( 24 ),  9 [1258.3] ( 25 ), 10 [1200.0] ( 26 )
-                11 [1200.0] ( 27 ), 12 [1257.4] ( 28 ), 13 [1294.6] ( 29 )
-                14 [1200.0] ( 30 ), 15 [1267.1] ( 31 )
+        0:       0 [1499.9] ( 16 ),  1 [1227.5] ( 17 ),  2 [1363.5] ( 18 )
+                 3 [1286.4] ( 19 ),  4 [1327.4] ( 20 ),  5 [1200.6] ( 21 )
+                 6 [1202.0] ( 22 ),  7 [1720.0] ( 23 )
+        1:       8 [1597.0] ( 24 ),  9 [1200.0] ( 25 ), 10 [1516.1] ( 26 )
+                11 [1457.7] ( 27 ), 12 [1293.5] ( 28 ), 13 [1200.0] ( 29 )
+                14 [1400.1] ( 30 ), 15 [1337.0] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.8 %, 0.4 %, 0.2 %
+System load averages (1min, 5min, 15min) : 1.0 %, 1.3 %, 1.2 %
 Hyperthreading is enabled
 
 
-Simulating `input.scs' on s2424 at 10:23:49 AM, Mon Oct 4, 2021 (process id: 24686).
+Simulating `input.scs' on s2424 at 11:58:29 AM, Mon Oct 4, 2021 (process id: 28529).
 Current working directory: /home/ykhuang/WorkingDir_XH018/Sim/FastBias_nel/spectre/schematic/netlist
 Command line:
     /pkg/cadence/installs/SPECTRE181/tools/bin/spectre -64 input.scs  \
@@ -291,10 +291,10 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/tm_pho.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoa.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dpho.va
-Reading link:  /pkg/cadence/installs/SPECTRE181/tools.lnx86/spectre/etc/ahdl/discipline.h
-Reading file:  /pkg/cadence/installs/SPECTRE181/tools.lnx86/spectre/etc/ahdl/disciplines.vams
 Reading link:  /pkg/cadence/installs/SPECTRE181/tools.lnx86/spectre/etc/ahdl/constants.h
 Reading file:  /pkg/cadence/installs/SPECTRE181/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading link:  /pkg/cadence/installs/SPECTRE181/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /pkg/cadence/installs/SPECTRE181/tools.lnx86/spectre/etc/ahdl/disciplines.vams
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphob.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dphoc.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/iphoto_uv.va
@@ -367,22 +367,22 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
-Time for NDB Parsing: CPU = 424.155 ms, elapsed = 515.226 ms.
-Time accumulated: CPU = 484.605 ms, elapsed = 515.238 ms.
-Peak resident memory used = 70.4 Mbytes.
+Time for NDB Parsing: CPU = 380.505 ms, elapsed = 470.194 ms.
+Time accumulated: CPU = 445.505 ms, elapsed = 470.206 ms.
+Peak resident memory used = 68.1 Mbytes.
 
-Time for Elaboration: CPU = 28.397 ms, elapsed = 28.4002 ms.
-Time accumulated: CPU = 513.154 ms, elapsed = 543.79 ms.
-Peak resident memory used = 78.9 Mbytes.
+Time for Elaboration: CPU = 38.24 ms, elapsed = 38.2428 ms.
+Time accumulated: CPU = 483.93 ms, elapsed = 508.632 ms.
+Peak resident memory used = 77.4 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 1.422 ms, elapsed = 1.42312 ms.
-Time accumulated: CPU = 514.741 ms, elapsed = 545.376 ms.
-Peak resident memory used = 79.6 Mbytes.
+Time for EDB Visiting: CPU = 1.65 ms, elapsed = 1.65105 ms.
+Time accumulated: CPU = 485.74 ms, elapsed = 510.442 ms.
+Peak resident memory used = 78.1 Mbytes.
 
 
 Global user options:
@@ -426,9 +426,9 @@ Output statements:
            .measure 0     
                save 0     
 
-Time for parsing: CPU = 3.634 ms, elapsed = 7.65395 ms.
-Time accumulated: CPU = 518.504 ms, elapsed = 553.159 ms.
-Peak resident memory used = 81.2 Mbytes.
+Time for parsing: CPU = 3.939 ms, elapsed = 9.85098 ms.
+Time accumulated: CPU = 489.827 ms, elapsed = 520.44 ms.
+Peak resident memory used = 79.7 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -450,13 +450,13 @@ Important parameter values:
     gmindc = 1 pS
 
 Maximum value achieved for any signal of each quantity: 
-V: V(I2.G) = 758.2 mV
+V: V(I0.G) = 675.2 mV
 I: I(I5.V0:p) = 0 A
 Convergence achieved in 6 iterations.
-DC simulation time: CPU = 2.564 ms, elapsed = 4.75597 ms.
-Total time required for dc analysis `dcOp': CPU = 2.614 ms, elapsed = 4.80318 ms.
-Time accumulated: CPU = 526.136 ms, elapsed = 562.982 ms.
-Peak resident memory used = 82.5 Mbytes.
+DC simulation time: CPU = 4.549 ms, elapsed = 6.85501 ms.
+Total time required for dc analysis `dcOp': CPU = 4.642 ms, elapsed = 6.94203 ms.
+Time accumulated: CPU = 503.391 ms, elapsed = 536.326 ms.
+Peak resident memory used = 81 Mbytes.
 
 dcOpInfo: writing operating point information to rawfile.
 
@@ -480,9 +480,9 @@ subckts: writing subcircuits to rawfile.
 
 Opening the PSFASCII file ../../../../Device_Characteristics/FastBias_nel/spectre/schematic/psf/subckts.info.subckts ...
 
-Aggregate audit (10:23:50 AM, Mon Oct 4, 2021):
-Time used: CPU = 559 ms, elapsed = 626 ms, util. = 89.3%.
-Time spent in licensing: elapsed = 23.7 ms.
-Peak memory used = 83.9 Mbytes.
-Simulation started at: 10:23:49 AM, Mon Oct 4, 2021, ended at: 10:23:50 AM, Mon Oct 4, 2021, with elapsed time (wall clock): 626 ms.
+Aggregate audit (11:58:30 AM, Mon Oct 4, 2021):
+Time used: CPU = 561 ms, elapsed = 622 ms, util. = 90.1%.
+Time spent in licensing: elapsed = 18 ms.
+Peak memory used = 82.5 Mbytes.
+Simulation started at: 11:58:29 AM, Mon Oct 4, 2021, ended at: 11:58:30 AM, Mon Oct 4, 2021, with elapsed time (wall clock): 622 ms.
 spectre completes with 0 errors, 1 warning, and 1 notice.

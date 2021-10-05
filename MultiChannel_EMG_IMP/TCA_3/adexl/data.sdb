@@ -50,6 +50,11 @@
 						<value>schematic</value>
 					</option>
 				</origoptions>
+				<outputs>
+					<output>Iout_diff_ac_dB
+						<evalType>point</evalType>
+					</output>
+				</outputs>
 			</test>
 		</tests>
 		<vars>
@@ -66,7 +71,13 @@
 				</dependentTests>
 			</var>
 			<var>Vos
-				<value>0</value>
+				<value>{From/To}Auto:0:11:100m{From/To}</value>
+				<dependentTests>
+					<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>CM_DC
+				<value>0.9</value>
 				<dependentTests>
 					<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 				</dependentTests>
@@ -98,7 +109,7 @@
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.4
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.86
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -132,7 +143,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.4</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.86</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -149,6 +160,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -166,6 +182,12 @@
 					</var>
 					<var>Vos
 						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -197,25 +219,25 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:39:26 2021</timestamp>
-			<uuid>{12eacaf7-e51d-485c-9da5-edd5a3f68f09}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<timestamp>Oct 5 13:45:13 2021</timestamp>
+			<uuid>{da7a1106-35b1-4a02-a49e-31c2f68424fd}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.86.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.86.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_103926293</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_134513885</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.86</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.86</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.86.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.86.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.5
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.87
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -249,7 +271,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.5</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.87</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -266,6 +288,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -283,6 +310,12 @@
 					</var>
 					<var>Vos
 						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.4</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -314,25 +347,25 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:40:36 2021</timestamp>
-			<uuid>{021ff6f9-88b2-45a2-82dc-d0832ea394ca}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.5.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<timestamp>Oct 5 13:45:33 2021</timestamp>
+			<uuid>{f838794a-a085-48c7-8b28-f7d8895fe93a}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.87.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.87.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_104036569</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.5</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.5</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_134533250</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.87</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.87</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.5.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.87.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.87.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.6
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.88
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -366,7 +399,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.6</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.88</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -383,6 +416,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -400,6 +438,12 @@
 					</var>
 					<var>Vos
 						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.9</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -431,25 +475,25 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:42:29 2021</timestamp>
-			<uuid>{57164e73-88b2-470d-ae1e-b41ea621b6ef}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.6.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<timestamp>Oct 5 13:52:36 2021</timestamp>
+			<uuid>{431b6054-a5d8-4db9-b30a-a4fbbc83e58c}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.88.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.88.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_104229608</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.6</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.6</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_135236723</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.88</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.88</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.6.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.88.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.88.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.89
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -483,7 +527,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.7</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.89</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -500,6 +544,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -516,7 +565,13 @@
 						</dependentTests>
 					</var>
 					<var>Vos
-						<value>0</value>
+						<value>{From/To}Auto:0:11:100m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.9</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -548,25 +603,159 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:45:15 2021</timestamp>
-			<uuid>{921a14d6-937b-452b-bd74-5b02ae38b56b}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.7.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<timestamp>Oct 5 13:54:05 2021</timestamp>
+			<uuid>{3b4717e3-0634-49e4-b28a-0d963305620b}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.89.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.89.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_104515857</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.7</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.7</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_135405379</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.89</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.89</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.7.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.89.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.89.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>Vos
+						<value>0</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.90
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>MultiChannel_EMG_IMP:TCA_3:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCA_3</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_IMP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.90</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCA_3</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_IMP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Amp_input
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Freq_input
+						<value>500</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vos
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 5 16:48:03 2021</timestamp>
+			<uuid>{9d429118-4882-4ace-bdb3-ebdaaba4066c}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.90.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.90.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_164803329</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.90</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.90</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.90.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.90.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.91
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -600,7 +789,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.8</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.91</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -617,6 +806,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -634,6 +828,12 @@
 					</var>
 					<var>Vos
 						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.9</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -665,25 +865,25 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:46:02 2021</timestamp>
-			<uuid>{6b2039f7-1e82-46af-acec-bd63ef1c89e8}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.8.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<timestamp>Oct 5 16:48:33 2021</timestamp>
+			<uuid>{a43ff657-fd27-440a-83df-b251d9fc71e3}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.91.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.91.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_104602366</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.8</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.8</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_164833591</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.91</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.91</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.8.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.91.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.91.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.92
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -717,7 +917,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.9</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.92</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -734,6 +934,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -751,6 +956,12 @@
 					</var>
 					<var>Vos
 						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.9</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -782,25 +993,25 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:49:05 2021</timestamp>
-			<uuid>{7aa6c580-bd3a-4d54-ab7a-68312420d5f8}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.9.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<timestamp>Oct 5 16:49:18 2021</timestamp>
+			<uuid>{d308f13c-b6e1-4a4e-beb7-589a4ed2f77a}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.92.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.92.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_104905287</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.9</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.9</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_164918699</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.92</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.92</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.9.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.92.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.92.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.10
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.93
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -834,7 +1045,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.10</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.93</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -851,6 +1062,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -868,6 +1084,12 @@
 					</var>
 					<var>Vos
 						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.9</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -899,25 +1121,25 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:51:23 2021</timestamp>
-			<uuid>{bfd3968a-ef0c-49bc-9070-9773ef9b3fb6}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.10.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<timestamp>Oct 5 16:49:59 2021</timestamp>
+			<uuid>{901ad386-a374-4774-bb7f-1460dcc6f4bc}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.93.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.93.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_105123924</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.10</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_164959474</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.93</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.93</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.93.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.93.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.11
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.94
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -951,7 +1173,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.11</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.94</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -968,6 +1190,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -985,6 +1212,12 @@
 					</var>
 					<var>Vos
 						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.9</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -1016,25 +1249,25 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:52:03 2021</timestamp>
-			<uuid>{e2d4d95b-0382-4795-8fd9-a3af82fac668}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<timestamp>Oct 5 16:50:12 2021</timestamp>
+			<uuid>{a58f474a-128d-4704-97af-798748bd4f6d}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.94.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.94.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_105203739</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.11</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_165012684</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.94</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.94</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.94.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.94.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.12
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.95
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1068,7 +1301,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.12</value>
+								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.95</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1085,6 +1318,11 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>Iout_diff_ac_dB
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -1101,7 +1339,13 @@
 						</dependentTests>
 					</var>
 					<var>Vos
-						<value>0</value>
+						<value>{From/To}Auto:0:11:100m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_DC
+						<value>0.9</value>
 						<dependentTests>
 							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
 						</dependentTests>
@@ -1133,139 +1377,28 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Oct 4 10:53:06 2021</timestamp>
-			<uuid>{4e2896e6-f926-40cc-a47d-646c32edb3a4}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.12.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
+			<timestamp>Oct 5 16:53:29 2021</timestamp>
+			<uuid>{d06e5cde-9382-47a5-8e68-eb55869c39c9}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.95.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.95.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_105306255</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.12</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.12</simdir>
+			<localpsfdir>/tmp/s2424_ykhuang_165329485</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.95</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.95</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.12.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.13
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>MultiChannel_EMG_IMP:TCA_3:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>TCA_3</value>
-							</option>
-							<option>lib
-								<value>MultiChannel_EMG_IMP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.13</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>TCA_3</value>
-							</option>
-							<option>lib
-								<value>MultiChannel_EMG_IMP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.95.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.95.log</runlogfile>
+			<schematicpoint>
 				<vars>
-					<var>Amp_input
-						<value>100u</value>
-						<dependentTests>
-							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Freq_input
-						<value>500</value>
-						<dependentTests>
-							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
-						</dependentTests>
-					</var>
 					<var>Vos
 						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">MultiChannel_EMG_IMP:TCA_3:1</dependentTest>
-						</dependentTests>
 					</var>
 				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Replace</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Oct 4 10:59:10 2021</timestamp>
-			<uuid>{bd2a6fe8-36b2-4343-9e69-61af8eb090f7}</uuid>
-			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.13.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_ykhuang_105910521</localpsfdir>
-			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.13</psfdir>
-			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.13</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.13.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
-			<schematicpoint></schematicpoint>
+			</schematicpoint>
 			<test>all</test>
 		</historyentry>
 	</history>

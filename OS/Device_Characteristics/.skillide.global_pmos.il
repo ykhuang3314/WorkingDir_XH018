@@ -16,28 +16,28 @@ NF2 = 1
 
 ; ** PMOS3 **
 VDS3 = 0.5
-IDS3 = 600n
-L3 = 350n
-WF3 = 5.0u
+IDS3 = 300n
+L3 = 500n
+WF3 = 10.0u
 NF3 = 10
 
 ; ** PMOS4 **
 VDS4 = 0.5
-IDS4 = 600n
-L4 = 350n
-WF4 = 8.0u
+IDS4 = 300n
+L4 = 500n
+WF4 = 5.0u
 NF4 = 10
 
 ; ** PMOS5 **
 VDS5 = 0.3
-IDS5 = 5u
-L5 = 300n
-WF5 = 25.0u
+IDS5 = 300n
+L5 = 1u
+WF5 = 15.0u
 NF5 = 10
 
 ; ** PMOS6 **
 VDS6 = 1.0
-IDS6 = 5u
-L6 = 5u
-WF6 = 3.0u
+IDS6 = 300n
+L6 = 1u
+WF6 = 8.0u
 NF6 = 10

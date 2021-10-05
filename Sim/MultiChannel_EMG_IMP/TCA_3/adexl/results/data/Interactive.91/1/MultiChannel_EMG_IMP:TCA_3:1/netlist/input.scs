@@ -1,0 +1,174 @@
+// Generated for: spectre
+// Generated on: Oct  5 16:48:06 2021
+// Design library name: MultiChannel_EMG_IMP
+// Design cell name: TCA_3
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters CM_DC=0.9 Amp_input=100u Freq_input=500 Vos=0
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=tm
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: PseudoResistor_10GOhm
+// View name: schematic
+subckt PseudoResistor_10GOhm A B
+    M7 (net8 net8 B net8) pel w=6u l=1u as=2.25e-12 ad=1.62e-12 \
+        ps=9.75e-06 pd=6.54e-06 nrs=0.045 nrd=0.045 m=(1)*(4) \
+        par1=((1)*(4))
+    M6 (net9 net9 A net9) pel w=6u l=1u as=2.25e-12 ad=1.62e-12 \
+        ps=9.75e-06 pd=6.54e-06 nrs=0.045 nrd=0.045 m=(1)*(4) \
+        par1=((1)*(4))
+    M5 (net7 net7 net9 net9) pel w=6u l=1u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(1)*(1) \
+        par1=((1)*(1))
+    M4 (net7 net7 net8 net8) pel w=6u l=1u as=2.88e-12 ad=2.88e-12 \
+        ps=1.296e-05 pd=1.296e-05 nrs=0.045 nrd=0.045 m=(1)*(1) \
+        par1=((1)*(1))
+ends PseudoResistor_10GOhm
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: TCA_3
+// View name: schematic
+C0 (LPFoutp LPFoutn) capacitor c=2p
+M24 (net025 LPFoutn net073 net073) neli w=20u l=500n as=9.6e-12 ad=5.4e-12 \
+        ps=4.096e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(2) \
+        par1=((1)*(2))
+M23 (net067 LPFoutp net062 net062) neli w=20u l=500n as=9.6e-12 ad=5.4e-12 \
+        ps=4.096e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(2) \
+        par1=((1)*(2))
+M9 (VDDA VSn net036 net036) neli w=4u l=1u as=1.248e-12 ad=1.08e-12 \
+        ps=5.424e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(10) \
+        par1=((1)*(10))
+M8 (VDDA VSp net020 net020) neli w=4u l=1u as=1.248e-12 ad=1.08e-12 \
+        ps=5.424e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(10) \
+        par1=((1)*(10))
+V6 (net029 VCM) vsource dc=Vos type=dc
+V2 (VCM 0) vsource dc=CM_DC type=dc
+V4 (VDDA 0) vsource dc=1.8 type=dc
+I24 (VDDA net06) isource dc=50n type=dc
+R6 (net062 net073) resistor r=500K
+R0 (VSp VSn) resistor r=25K
+V1 (VCM Vinn) vsource mag=500.0m type=sine ampl=Amp_input/2 \
+        freq=Freq_input
+V0 (Vinp net029) vsource mag=500.0m type=sine ampl=Amp_input/2 \
+        freq=Freq_input
+M46 (net025 net08 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M45 (net067 net08 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M42 (net015 net015 net079 net079) pel w=10u l=500n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M41 (net8 net8 net054 net054) pel w=10u l=500n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M39 (net017 net013 net018 net018) pel w=2u l=10u as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+M38 (net013 net013 net08 net08) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M34 (net018 net08 VDDA VDDA) pel w=2u l=10u as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+M33 (net08 net08 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M28 (net073 net025 VDDA VDDA) pel w=10u l=4u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M27 (net062 net067 VDDA VDDA) pel w=10u l=4u as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M4 (net09 net09 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M3 (net13 net13 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M11 (net35 Vinn VSn VSn) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+M10 (0 net35 net015 net015) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+M31 (VSn net025 VDDA VDDA) pel w=10u l=4u as=2.91e-12 ad=2.7e-12 \
+        ps=1.1582e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(20) \
+        par1=((1)*(20))
+M0 (VSp net09 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10))
+M6 (0 net36 net8 net8) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+M30 (VSp net067 VDDA VDDA) pel w=10u l=4u as=2.91e-12 ad=2.7e-12 \
+        ps=1.1582e-05 pd=1.054e-05 nrs=0.027 nrd=0.027 m=(1)*(20) \
+        par1=((1)*(20))
+M5 (VSn net13 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10))
+M1 (net36 Vinp VSp VSp) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+IPRB0 (net13 net079) iprobe
+IPRB1 (net09 net054) iprobe
+M48 (net062 net04 0 0) nel w=1u l=15.0u as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+M47 (net073 net04 0 0) nel w=1u l=15.0u as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+M44 (net020 net04 0 0) nel w=1u l=15.0u as=4.8e-13 ad=2.7e-13 ps=2.96e-06 \
+        pd=1.54e-06 nrs=0.27 nrd=0.27 m=(1)*(2) par1=((1)*(2)) xf_subext=0
+M43 (net036 net04 0 0) nel w=1u l=15.0u as=4.8e-13 ad=2.7e-13 ps=2.96e-06 \
+        pd=1.54e-06 nrs=0.27 nrd=0.27 m=(1)*(2) par1=((1)*(2)) xf_subext=0
+M40 (net017 net017 net061 0) nel w=750.0n l=15.0u as=3.6e-13 ad=2.025e-13 \
+        ps=2.46e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(2) par1=((1)*(2)) \
+        xf_subext=0
+M37 (net013 net06 net069 0) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M36 (net06 net06 net04 0) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M35 (net061 net061 0 0) nel w=750.0n l=15.0u as=3.6e-13 ad=2.025e-13 \
+        ps=2.46e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(2) par1=((1)*(2)) \
+        xf_subext=0
+M32 (net069 net04 0 0) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 ps=2.96e-06 \
+        pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+M29 (net04 net04 0 0) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 ps=2.96e-06 \
+        pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+M15 (net35 net061 0 0) nel w=750.0n l=15.0u as=2.15625e-13 ad=2.025e-13 \
+        ps=1.3875e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(24) \
+        par1=((1)*(24)) xf_subext=0
+M2 (net36 net061 0 0) nel w=750.0n l=15.0u as=2.15625e-13 ad=2.025e-13 \
+        ps=1.3875e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(24) \
+        par1=((1)*(24)) xf_subext=0
+I26 (LPFoutn net036) PseudoResistor_10GOhm
+I25 (net020 LPFoutp) PseudoResistor_10GOhm
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+ac ac start=0.01 stop=100M dec=20 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save IPRB1:in IPRB0:in M30:1 M31:1 
+saveOptions options save=allpub

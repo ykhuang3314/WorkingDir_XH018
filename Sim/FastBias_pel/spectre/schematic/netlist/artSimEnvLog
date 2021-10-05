@@ -12,38 +12,40 @@ simulate...
 Spectre (R) Circuit Simulator
 Version 18.1.0.516.isr12 64bit -- 25 Oct 2019
 
+
 Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved
         worldwide. Cadence and Spectre are registered trademarks of Cadence
-
         Design Systems, Inc. All others are the property of their respective
         holders.
+
+
 
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
         Security, Inc.
 
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 25062
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 26818
 
-Memory  available: 50.4190 GB  physical: 67.2863 GB
+Memory  available: 59.0841 GB  physical: 67.2863 GB
 
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1443.8] ( 16 ),  1 [1447.4] ( 17 ),  2 [1200.0] ( 18 )
-                 3 [1264.2] ( 19 ),  4 [1328.6] ( 20 ),  5 [1238.4] ( 21 )
-                 6 [1497.4] ( 22 ),  7 [1389.1] ( 23 )
-        1:       8 [2197.1] ( 24 ),  9 [1296.4] ( 25 ), 10 [1316.6] ( 26 )
-                11 [1400.0] ( 27 ), 12 [1318.7] ( 28 ), 13 [1200.9] ( 29 )
-                14 [1271.3] ( 30 ), 15 [1200.0] ( 31 )
+        0:       0 [2013.6] ( 16 ),  1 [1742.3] ( 17 ),  2 [1200.1] ( 18 )
+                 3 [1377.7] ( 19 ),  4 [1745.8] ( 20 ),  5 [1295.5] ( 21 )
+                 6 [1308.8] ( 22 ),  7 [1485.6] ( 23 )
+        1:       8 [2986.5] ( 24 ),  9 [3020.1] ( 25 ), 10 [1200.0] ( 26 )
+                11 [1290.8] ( 27 ), 12 [1200.0] ( 28 ), 13 [1200.0] ( 29 )
+                14 [1199.7] ( 30 ), 15 [1200.0] ( 31 )
         
-System load averages (1min, 5min, 15min) : 0.7 %, 0.3 %, 0.2 %
+System load averages (1min, 5min, 15min) : 1.6 %, 1.3 %, 1.2 %
 Hyperthreading is enabled
 
 
 
-Simulating `input.scs' on s2424 at 10:27:41 AM, Mon Oct 4, 2021 (process id:
-        25062).
+Simulating `input.scs' on s2424 at 11:55:30 AM, Mon Oct 4, 2021 (process id:
+        26818).
 
 Current working directory:
         /home/ykhuang/WorkingDir_XH018/Sim/FastBias_pel/spectre/schematic/netlist
@@ -1047,19 +1049,18 @@ Reading file:
 Reading file: 
         /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
 
-Time for NDB Parsing: CPU = 403.032 ms, elapsed = 492.629 ms.
+Time for NDB Parsing: CPU = 409.655 ms, elapsed = 498.144 ms.
 
-Time accumulated: CPU = 466.166 ms, elapsed = 492.64 ms.
+Time accumulated: CPU = 472.933 ms, elapsed = 498.156 ms.
 
-Peak resident memory used = 70.1 Mbytes.
+Peak resident memory used = 68.1 Mbytes.
 
 
 
-Time for Elaboration: CPU = 36.232 ms, elapsed = 36.2349 ms.
+Time for Elaboration: CPU = 43.518 ms, elapsed = 43.5219 ms.
+Time accumulated: CPU = 516.724 ms, elapsed = 541.948 ms.
 
-Time accumulated: CPU = 502.572 ms, elapsed = 529.049 ms.
-
-Peak resident memory used = 79.3 Mbytes.
+Peak resident memory used = 77.3 Mbytes.
 
 
 
@@ -1069,17 +1070,15 @@ Warning from spectre during hierarchy flattening.
 
     WARNING (SPECTRE-17101): The value 'psf' specified using the
         'checklimitdest' option will no longer be supported in future
-
         releases.
 
 
 
 
-Time for EDB Visiting: CPU = 1.695 ms, elapsed = 1.69611 ms.
+Time for EDB Visiting: CPU = 2.134 ms, elapsed = 2.13504 ms.
+Time accumulated: CPU = 519.061 ms, elapsed = 544.285 ms.
 
-Time accumulated: CPU = 504.44 ms, elapsed = 530.916 ms.
-
-Peak resident memory used = 80.1 Mbytes.
+Peak resident memory used = 78.1 Mbytes.
 
 
 
@@ -1163,11 +1162,11 @@ Output statements:
 
 
 
-Time for parsing: CPU = 3.938 ms, elapsed = 9.77087 ms.
+Time for parsing: CPU = 4.278 ms, elapsed = 9.70507 ms.
 
-Time accumulated: CPU = 508.516 ms, elapsed = 540.824 ms.
+Time accumulated: CPU = 523.515 ms, elapsed = 554.165 ms.
 
-Peak resident memory used = 81.7 Mbytes.
+Peak resident memory used = 79.7 Mbytes.
 
 
 
@@ -1180,10 +1179,12 @@ Pre-Simulation Summary
 
 ******************
 DC Analysis `dcOp'
+
 ******************
 
 
 Opening the PSF file
+
         ../../../../Device_Characteristics/FastBias_pel/spectre/schematic/psf/dcOp.dc
         ...
 
@@ -1204,23 +1205,22 @@ Important parameter values:
     gmindc = 1 pS
 
 
-
 Maximum value achieved for any signal of each quantity: 
 
 V: V(I0.S) = 1.8 V
 
-I: I(I4.V1:p) = 847.7e-24 A
+I: I(I4.V1:p) = 762.3e-24 A
 
-Convergence achieved in 13 iterations.
+Convergence achieved in 7 iterations.
 
-DC simulation time: CPU = 5.001 ms, elapsed = 7.25508 ms.
+DC simulation time: CPU = 3.4 ms, elapsed = 6.66094 ms.
 
-Total time required for dc analysis `dcOp': CPU = 5.092 ms, elapsed = 7.34091
+Total time required for dc analysis `dcOp': CPU = 3.462 ms, elapsed = 6.71887
         ms.
 
-Time accumulated: CPU = 522.821 ms, elapsed = 557.381 ms.
+Time accumulated: CPU = 534.079 ms, elapsed = 567.988 ms.
 
-Peak resident memory used = 83 Mbytes.
+Peak resident memory used = 81 Mbytes.
 
 
 
@@ -1274,16 +1274,16 @@ Opening the PSFASCII file
         ...
 
 
-Aggregate audit (10:27:42 AM, Mon Oct 4, 2021):
+Aggregate audit (11:55:30 AM, Mon Oct 4, 2021):
 
-Time used: CPU = 580 ms, elapsed = 647 ms, util. = 89.8%.
+Time used: CPU = 585 ms, elapsed = 650 ms, util. = 90.1%.
 
-Time spent in licensing: elapsed = 23.4 ms.
+Time spent in licensing: elapsed = 23.1 ms.
 
-Peak memory used = 84.5 Mbytes.
+Peak memory used = 82.5 Mbytes.
 
-Simulation started at: 10:27:41 AM, Mon Oct 4, 2021, ended at: 10:27:42 AM, Mon
-        Oct 4, 2021, with elapsed time (wall clock): 647 ms.
+Simulation started at: 11:55:30 AM, Mon Oct 4, 2021, ended at: 11:55:30 AM, Mon
+        Oct 4, 2021, with elapsed time (wall clock): 650 ms.
 
 spectre completes with 0 errors, 1 warning, and 1 notice.
 

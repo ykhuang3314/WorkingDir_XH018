@@ -1,0 +1,5 @@
+HEADER
+"PSFversion" "1.00"
+"M11n M10n M7n M6n M5n M4n M1n M0n" "PRIMLIB_pel_spectre"
+"V6n V5n V4n V3n V0n V1n" "analogLib_vdc_spectre"
+"IPRB2n IPRB1n IPRB0n" "analogLib_iprobe_spectre"
