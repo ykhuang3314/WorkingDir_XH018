@@ -1,0 +1,2 @@
+netMap,*PseudoResistor_45GOhm,*gnd!,*cds_globals.\gnd! 
+cellMap,*PseudoResistor_45GOhm,*PseudoResistor_45GOhm,*MultiChannel_EMG_IMP,*schematic

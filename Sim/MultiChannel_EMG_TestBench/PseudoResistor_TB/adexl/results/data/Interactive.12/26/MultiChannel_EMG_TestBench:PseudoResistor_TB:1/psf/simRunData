@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"MultiChannel_EMG_TestBench\" \"PseudoResistor_TB\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Oct  7 14:08:54 2021"
+"title" ""
+"analysisList" "()"
+END

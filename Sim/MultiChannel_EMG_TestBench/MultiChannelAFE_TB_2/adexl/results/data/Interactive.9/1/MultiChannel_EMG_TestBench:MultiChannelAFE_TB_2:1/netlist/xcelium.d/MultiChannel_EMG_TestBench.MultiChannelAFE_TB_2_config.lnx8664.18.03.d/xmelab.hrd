@@ -1,0 +1,32 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/WorkingDir_XH018/
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.9/sharedData/CDS/ahdl/input.ahdlSimDB"
+
+MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGen/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGen view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGenMultiFreq view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/FrontEnd_Amplifier/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:FrontEnd_Amplifier view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/LPF_Butter/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:LPF_Butter view:verilogams"
+-SPECTRE_ARGS
+++aps

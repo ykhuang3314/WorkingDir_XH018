@@ -11,9 +11,9 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.4
-	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4.rdb
-	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4/1/MultiChannel_EMG_IMP:TCA_3:1
+	State Name   = MultiChannel_EMG_IMP:TCA_3:1_none_Interactive.126
+	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126.rdb
+	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1
 	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data
 	Project Dir  = /home/ykhuang/WorkingDir_XH018/Sim
 	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_3/adexl
@@ -30,52 +30,45 @@ variable persistNewList redefined
 
 
 
-*Info*    Run start for Point ID (4 1) on testbench [
+*Info*    Run start for Point ID (72 1) on testbench [
           MultiChannel_EMG_IMP:TCA_3:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var Amp_input = "100u"
+Setting var Amp_input = "500u"
+Setting var CM_DC = "0.9"
 Setting var Freq_input = "500"
-Setting var Vos = "0"
+Setting var Vos = "50m"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4/1/MultiChannel_EMG_IMP:TCA_3:1/netlist
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4/1/MultiChannel_EMG_IMP:TCA_3:1
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1
 
 
-*Info*    Creating Netlist for Point ID (4 1)
+*Info*    Creating Netlist for Point ID (72 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Oct  4 10:39:31 2021
-WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the current netlisting session. It had a value
-'_unl' last time netlisting was done in current run directory. Netlists from last
-session cannot be used for incremental netlisting. Therefore re-netlisting the
-design.
+Begin Incremental Netlisting Oct  7 16:00:33 2021
+End netlisting Oct  7 16:00:33 2021
 
-End netlisting Oct  4 10:39:31 2021
-
-Netlisting Statistics:
-	Number of components:   22
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          MultiChannel_EMG_IMP:TCA_3:1 ] for Point ID (4 1).
+          MultiChannel_EMG_IMP:TCA_3:1 ] for Point ID (72 1).
 
-Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.4/1/MultiChannel_EMG_IMP:TCA_3:1/psf.
+Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -89,8 +82,42 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'InjectingCurrent_diff_tran' failed for point:'1' test:'MultiChannel_EMG_IMP:TCA_3:1'
+	Expression:'(IT("/M30/D") - IT("/M31/D"))'
+	because of the following error(s)
+	*Error* difference: can't handle (nil - nil).
+Ensure that the definition of output is correct.
 
-*Info*    Run complete for Point ID (4 1) on testbench [
+WARNING (OCN-6038): Results ac are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+WARNING (OCN-6038): Results ac are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'Iout_diff_ac_dB' failed for point:'1' test:'MultiChannel_EMG_IMP:TCA_3:1'
+	Expression:'dB20((IF("/IPRB1/PLUS") - IF("/IPRB0/PLUS")))'
+	because of the following error(s)
+	*Error* difference: can't handle (nil - nil).
+Ensure that the definition of output is correct.
+
+WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'Iout_diff_tran' failed for point:'1' test:'MultiChannel_EMG_IMP:TCA_3:1'
+	Expression:'(IT("/IPRB1/PLUS") - IT("/IPRB0/PLUS"))'
+	because of the following error(s)
+	*Error* difference: can't handle (nil - nil).
+Ensure that the definition of output is correct.
+
+WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'LPFout_diff_tran' failed for point:'1' test:'MultiChannel_EMG_IMP:TCA_3:1'
+	Expression:'(VT("/LPFoutp") - VT("/LPFoutn"))'
+	because of the following error(s)
+	*Error* difference: can't handle (nil - nil).
+Ensure that the definition of output is correct.
+
+
+*Info*    Run complete for Point ID (72 1) on testbench [
           MultiChannel_EMG_IMP:TCA_3:1 ].
 
 

@@ -1,0 +1,2185 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="1">C0
+				<models>
+					<model enabled="0">config.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">param.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+						<modelsection>"3s"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+						<modelsection>"tm"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+						<modelsection>"wp" "ws"</modelsection>
+					</model>
+					<model enabled="1">dio.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+						<modelsection>"wp" "ws"</modelsection>
+					</model>
+					<model enabled="1">mos.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+						<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+					</model>
+					<model enabled="1">photo.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+						<modelsection>"tm"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+						<modelsection>"wp" "ws"</modelsection>
+					</model>
+					<model enabled="0">xh018.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>PseudoResistor_TB</value>
+					</option>
+					<option>lib
+						<value>MultiChannel_EMG_TestBench</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>PseudoResistor_TB</value>
+					</option>
+					<option>lib
+						<value>MultiChannel_EMG_TestBench</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>state1</value>
+					</option>
+				</origoptions>
+				<outputs></outputs>
+			</test>
+		</tests>
+		<vars>
+			<var>Lp2
+				<value>2u</value>
+				<dependentTests>
+					<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wp2
+				<value>9u</value>
+				<dependentTests>
+					<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>deltaV
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Lp
+				<value>2u</value>
+				<dependentTests>
+					<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VA
+				<value>900m</value>
+				<dependentTests>
+					<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wp
+				<value>3u</value>
+				<dependentTests>
+					<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Replace</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 13:54:09 2021</timestamp>
+			<uuid>{5e4754f5-cca4-4461-9584-a7a807c50019}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_135409966</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 13:59:45 2021</timestamp>
+			<uuid>{da95da71-d086-4105-b5a5-5919600c546f}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_135945818</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 14:01:52 2021</timestamp>
+			<uuid>{7dcb655b-5ea0-4e41-a12d-e1b369f845a9}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_140152985</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 14:03:19 2021</timestamp>
+			<uuid>{cbcb43bc-ea1e-4b13-b28b-7ff0a4d60276}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_140319483</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.10</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>8u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 14:06:25 2021</timestamp>
+			<uuid>{884846d1-b8f7-46b5-a296-b96821890bf7}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_140625133</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.11</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.12
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.12</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>8u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 14:08:20 2021</timestamp>
+			<uuid>{44fb4ea1-24ae-4e17-a670-0c247c6222ba}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.12.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_140820383</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.12</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.12</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.12.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.13
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.13</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>20u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 14:10:33 2021</timestamp>
+			<uuid>{4fac0d45-23ad-4a26-b24c-33094a940631}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.13.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_141033098</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.13</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.13</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.13.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.14
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.14</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>16u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>4u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 14:18:15 2021</timestamp>
+			<uuid>{06668d04-5b5f-430c-928c-6e64cb388d48}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.14.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.14.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_141815865</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.14</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.14</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.14.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.14.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.15
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.15</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 14:29:36 2021</timestamp>
+			<uuid>{c3104802-6ca1-4653-9973-fb814025e745}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.15.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_142936894</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.15.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.16
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.16</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PseudoResistor_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+						<outputs></outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>Lp2
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp2
+						<value>9u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>deltaV
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VA
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:PseudoResistor_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 7 14:32:56 2021</timestamp>
+			<uuid>{2821d77a-1fa6-4c97-a29d-d53040091cdb}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.16.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_143256122</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.16.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

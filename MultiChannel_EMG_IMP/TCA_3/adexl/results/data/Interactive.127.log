@@ -1,0 +1,21 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Oct 11 15:27:19 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_IMP:TCA_3:1	corner	Nominal - 
+	Iout_diff_ac_dB		Error	No
+	Iout_diff_tran		Error	No
+	LPFout_diff_tran		Error	No
+	InjectingCurrent_diff_tran		Error	No
+Design parameters: 
+	Amp_input		500u
+	Freq_input		500
+	Vos		50m
+	CM_DC		900m
+
+Interactive.127
+Number of points completed: 1
+Number of simulation errors: 4
+Interactive.127 completed. 
+Current time: Mon Oct 11 15:27:26 2021 

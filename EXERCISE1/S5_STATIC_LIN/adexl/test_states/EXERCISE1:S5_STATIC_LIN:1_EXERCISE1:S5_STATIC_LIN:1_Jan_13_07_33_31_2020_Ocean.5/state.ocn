@@ -1,0 +1,28 @@
+design( "EXERCISE1" "S5_STATIC_LIN" "schematic")
+modelFile( 
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" "default")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" "3s")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" "tm")
+    '("/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" "tm")
+)
+analysis('pz ?oprobe "/IPRB0"  ?iprobe "/I5"  )
+analysis('dc ?saveOppoint t  ?param "IS_DC"  ?start "-8u"  
+		?stop "8u"  ?step ".1u"  )
+analysis('ac ?start "100"  ?stop "300M"  ?dec "10"  )
+desVar(	  "IS_DC" 0	)
+desVar(	  "R1" 100000	)
+desVar(	  "R2" 400	)
+desVar(	  "IS" 1	)
+envOption(
+	'firstRun  t 
+	'analysisOrder  list("dc" "ac" "pz" "dcmatch" "stb" "tran" "envlp" "lf" "noise" "xf" "sp" "pss" "pac" "pstb" "pnoise" "pxf" "psp" "qpss" "qpac" "qpnoise" "qpxf" "qpsp" "hb" "hbac" "hbstb" "hbnoise" "hbxf" "sens" "acmatch") 
+)
+option( ?categ 'turboOpts
+	'apsplus  t 
+	'uniMode  "APS" 
+)
+temp( 27 ) 

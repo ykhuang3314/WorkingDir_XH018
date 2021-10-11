@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Jan 13 09:27:53 2020 
+Best design point: 1
+Design specs: 
+	EXERCISE1:S5_STATIC_LIN:1	corner	Nominal - 
+Design parameters: 
+	IS_DC		0
+	R1		100K
+	R2		400
+	IS		1
+
+Ocean.22
+Number of points completed: 1
+Number of simulation errors: 0
+Ocean.22 completed. 
+Current time: Mon Jan 13 09:28:09 2020 

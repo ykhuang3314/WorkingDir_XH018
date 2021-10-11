@@ -1,0 +1,7 @@
+SOFTINCLUDE /pkg/cadence/installs/XCELIUM1803/tools/inca/files/IEEE_vhdlams/cds.lib
+include ../../cds.lib
+define MultiChannel_EMG_Model ../MultiChannel_EMG_Model
+define MultiChannel_EMG_IMP ../MultiChannel_EMG_IMP
+define MultiChannel_EMG_TestBench ../MultiChannel_EMG_TestBench
+define worklib ../worklib
+define vhdlspice_skeletons ../vhdlspice_skeletons

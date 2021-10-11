@@ -1,0 +1,6 @@
+desvar,*VOS,*VOS,*10m
+desvar,*VIN_AC,*VIN_AC,*0
+desvar,*VCM_AC,*VCM_AC,*0
+desvar,*VCM,*VCM,*900m
+desvar,*fsig,*fsig,*500
+desvar,*AMP,*AMP,*1m

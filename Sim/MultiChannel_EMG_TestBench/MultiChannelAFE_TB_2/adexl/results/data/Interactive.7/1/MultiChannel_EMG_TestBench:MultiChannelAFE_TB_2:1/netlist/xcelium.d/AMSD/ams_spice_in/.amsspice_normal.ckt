@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+simulator lang=spectre
+include "spiceModels.scs"   topfile=1  
+include "amsControlSpectre.scs"   topfile=1  
+include "ie_card.scs"   topfile=1  
+include ".amsbind.scs"   topfile=1  
+
+subckt _ski_plugin_amspice_dummy_1633942643_
+                 r1 (a b )resistor r=1k 
+                 v1 (a b )vsource dc=1 
+                 ends 
+                 _ski_plugin_amspice_dummy_1633942643_ _ski_plugin_amspice_dummy_1633942643_
+opt_1633942643 options save=nooutput

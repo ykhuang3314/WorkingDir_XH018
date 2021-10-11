@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "MultiChannelAFE_TB_2"
+  repList "spectre spice pspice verilog verilogams behavioral functional systemVerilog schematic veriloga vhdl vhdlams wreal"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/analog"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/schematic" "MultiChannelAFE_TB_2" )
+( "MultiChannel_EMG_IMP/Switch_NMOS/schematic" "Switch_NMOS" )
+( "MultiChannel_EMG_IMP/ChoppingTCA_DSL_imp/schematic" "ChoppingTCA_DSL_imp" )
+( "MultiChannel_EMG_Model/ClockGenMultiFreq/functional" "ClockGenMultiFreq" )
+( "MultiChannel_EMG_IMP/PseudoResistor_45GOhm/schematic" "PseudoResistor_45GOhm" )
+( "MultiChannel_EMG_IMP/Chopper/schematic" "Chopper" )
+ )
+( "ClockGenMultiFreq" "ihnl/cds0/map" )
+( "MultiChannelAFE_TB_2" "ihnl/cds5/map" )
+( "Chopper" "ihnl/cds2/map" )
+( "Switch_NMOS" "ihnl/cds1/map" )
+( "PseudoResistor_45GOhm" "ihnl/cds3/map" )
+( "ChoppingTCA_DSL_imp" "ihnl/cds4/map" )
+ )

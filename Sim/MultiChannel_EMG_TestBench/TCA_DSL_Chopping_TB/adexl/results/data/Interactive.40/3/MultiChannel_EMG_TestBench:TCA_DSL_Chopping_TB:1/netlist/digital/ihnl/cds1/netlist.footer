@@ -1,0 +1,10 @@
+
+Switch_NMOS I5 ( .A(INN), .VSSA(VSSA), .ctrl(CLKB), .B(OUTP));
+
+Switch_NMOS I6 ( .A(INN), .VSSA(VSSA), .ctrl(CLK), .B(OUTN));
+
+Switch_NMOS I4 ( .A(INP), .VSSA(VSSA), .ctrl(CLKB), .B(OUTN));
+
+Switch_NMOS I0 ( .B(OUTP), .A(INP), .VSSA(VSSA), .ctrl(CLK));
+
+endmodule

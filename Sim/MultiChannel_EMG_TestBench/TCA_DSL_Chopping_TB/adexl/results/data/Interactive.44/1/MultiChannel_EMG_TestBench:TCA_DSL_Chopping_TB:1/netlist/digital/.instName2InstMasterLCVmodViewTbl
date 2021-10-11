@@ -1,0 +1,7 @@
+("TCA_DSL_Chopping_TB" "V2") ("analogLib" "vdc" "spectre" "spectre" "MultiChannel_EMG_TestBench" "TCA_DSL_Chopping_TB" "schematic")
+("TCA_DSL_Chopping_TB" "V6") ("analogLib" "vdc" "spectre" "spectre" "MultiChannel_EMG_TestBench" "TCA_DSL_Chopping_TB" "schematic")
+("TCA_DSL_Chopping_TB" "V1") ("analogLib" "vsin" "spectre" "spectre" "MultiChannel_EMG_TestBench" "TCA_DSL_Chopping_TB" "schematic")
+("TCA_DSL_Chopping_TB" "V0") ("analogLib" "vsin" "spectre" "spectre" "MultiChannel_EMG_TestBench" "TCA_DSL_Chopping_TB" "schematic")
+("TCA_DSL_Chopping_TB" "I24") ("analogLib" "idc" "spectre" "spectre" "MultiChannel_EMG_TestBench" "TCA_DSL_Chopping_TB" "schematic")
+("TCA_DSL_Chopping_TB" "V4") ("analogLib" "vdc" "spectre" "spectre" "MultiChannel_EMG_TestBench" "TCA_DSL_Chopping_TB" "schematic")
+("TCA_DSL_Chopping_TB" "I28") ("MultiChannel_EMG_Model" "ClockGen" "functional" "functional" "MultiChannel_EMG_TestBench" "TCA_DSL_Chopping_TB" "schematic")

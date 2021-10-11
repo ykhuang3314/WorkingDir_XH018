@@ -1,0 +1,5 @@
+desvar,*Vos,*Vos,*50m
+desvar,*Freq_input,*Freq_input,*500
+desvar,*CM_DC,*CM_DC,*0.9
+desvar,*Amp_input,*Amp_input,*1m
+desvar,*Fchop,*Fchop,*36

@@ -1,0 +1,5 @@
+simFuncDPLList = '(
+    (nil libName "MultiChannel_EMG_Model" cellName "ClockGenMultiFreq"
+    viewName "functional" filePath "/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v"
+    )
+)

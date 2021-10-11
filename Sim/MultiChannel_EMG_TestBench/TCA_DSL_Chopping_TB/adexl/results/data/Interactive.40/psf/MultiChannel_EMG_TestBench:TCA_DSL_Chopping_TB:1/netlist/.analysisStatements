@@ -1,0 +1,10 @@
+
+ac ac start=1 stop=1G dec=20 annotate=status 
+
+modelParameter info what=models where=rawfile 
+element info what=inst where=rawfile 
+outputParameter info what=output where=rawfile 
+
+save TCA_DSL_Chopping_TB.IPRB1:in TCA_DSL_Chopping_TB.IPRB0:in \
+TCA_DSL_Chopping_TB.M30:1 TCA_DSL_Chopping_TB.M31:1 \
+TCA_DSL_Chopping_TB.V0:p TCA_DSL_Chopping_TB.V1:p 

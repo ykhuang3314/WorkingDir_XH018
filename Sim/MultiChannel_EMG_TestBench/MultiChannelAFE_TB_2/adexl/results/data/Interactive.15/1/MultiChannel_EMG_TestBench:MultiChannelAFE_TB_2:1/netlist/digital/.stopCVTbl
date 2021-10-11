@@ -1,0 +1,11 @@
+("analogLib" "vcvs" "spectre" "spectre") t
+("PRIMLIB" "nel" "spectre" "spectre") t
+("analogLib" "idc" "spectre" "spectre") t
+("analogLib" "res" "spectre" "spectre") t
+("PRIMLIB" "neli" "spectre" "spectre") t
+("analogLib" "cap" "spectre" "spectre") t
+("analogLib" "iprobe" "spectre" "spectre") t
+("analogLib" "vsin" "spectre" "spectre") t
+("PRIMLIB" "rpp1k1" "spectre" "spectre") t
+("analogLib" "vdc" "spectre" "spectre") t
+("PRIMLIB" "pel" "spectre" "spectre") t

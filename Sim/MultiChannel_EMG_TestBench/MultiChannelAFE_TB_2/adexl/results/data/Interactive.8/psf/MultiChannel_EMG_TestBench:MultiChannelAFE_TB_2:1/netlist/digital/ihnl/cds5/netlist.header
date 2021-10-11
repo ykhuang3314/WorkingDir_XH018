@@ -1,0 +1,14 @@
+// Library - MultiChannel_EMG_TestBench, Cell - MultiChannelAFE_TB_2,
+//View - schematic
+// LAST TIME SAVED: Oct 11 10:52:25 2021
+// NETLIST TIME: Oct 11 10:57:35 2021
+`timescale 1ns / 1ps 
+
+`worklib MultiChannel_EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="MultiChannel_EMG_TestBench", dfII_cell="MultiChannelAFE_TB_2", dfII_view="schematic", worklib_name="MultiChannel_EMG_TestBench", view_name="schematic", last_save_time="Oct 11 10:52:25 2021" *)
+
+module MultiChannelAFE_TB_2 ();
+

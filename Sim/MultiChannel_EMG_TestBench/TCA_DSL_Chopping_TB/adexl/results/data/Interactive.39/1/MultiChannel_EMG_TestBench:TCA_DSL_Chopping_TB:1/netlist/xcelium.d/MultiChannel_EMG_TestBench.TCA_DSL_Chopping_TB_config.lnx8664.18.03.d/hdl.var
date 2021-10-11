@@ -1,0 +1,9 @@
+define XMSIMRC	( /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT MultiChannel_EMG_TestBench.TCA_DSL_Chopping_TB:config
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => MultiChannel_EMG_IMP )
+DEFINE LIB_MAP ($LIB_MAP,  => MultiChannel_EMG_TestBench )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT MultiChannel_EMG_TestBench.TCA_DSL_Chopping_TB:config

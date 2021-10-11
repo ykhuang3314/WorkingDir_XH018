@@ -1,0 +1,1 @@
+spectre  input.scs  +escchars +log ../psf/spectre.out  -format psfxl -raw ../psf   +lqtimeout 900 -maxw 5 -maxn 5 -env ade  -ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.123/sharedData/CDS/ahdl/input.ahdlSimDB +logstatus  

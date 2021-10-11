@@ -1,0 +1,3 @@
+"MultiChannel_EMG_IMP.TCA_DSL_imp_v1.schematic.termorder" (("IBIAS" "OUTN" "OUTP" "VDDA" "VINN" "VINP" "VSSA") ("IBIAS" "OUTN" "OUTP" "VDDA" "VINN" "VINP" "VSSA"))
+"MultiChannel_EMG_IMP.PseudoResistor_45GOhm.schematic.termorder" (("A" "B") ("A" "B"))
+"MultiChannel_EMG_IMP.PseudoResistor_10GOhm.schematic.termorder" (("A" "B") ("A" "B"))

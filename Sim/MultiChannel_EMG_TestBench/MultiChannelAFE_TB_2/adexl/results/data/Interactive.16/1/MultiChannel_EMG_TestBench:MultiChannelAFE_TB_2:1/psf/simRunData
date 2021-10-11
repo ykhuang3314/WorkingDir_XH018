@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"MultiChannel_EMG_TestBench\" \"MultiChannelAFE_TB_2\" \"config\" \"\")"
+"simulator" "ams"
+"temperature" "27"
+"host" ""
+"date" "Oct 11 15:57:31 2021"
+"title" ""
+"analysisList" "()"
+END

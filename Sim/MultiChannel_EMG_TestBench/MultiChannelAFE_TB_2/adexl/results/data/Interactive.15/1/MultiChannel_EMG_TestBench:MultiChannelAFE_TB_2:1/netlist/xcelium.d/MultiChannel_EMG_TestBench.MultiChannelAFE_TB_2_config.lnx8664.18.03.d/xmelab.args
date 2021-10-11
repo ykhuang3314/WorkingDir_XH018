@@ -1,0 +1,69 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-amsossirunbind
+.amsbind.scs
+-AMSINPUT
+.amsbind.scs
+-UNBUFFERED
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-timescale
+1ns/1ns
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-NOPARAMERR
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/WorkingDir_XH018/
+-AMSINPUT
+./spiceModels.scs
+-ANALOGCONTROL
+./spiceModels.scs
+-AMSINPUT
+./amsControlSpectre.scs
+-ANALOGCONTROL
+./amsControlSpectre.scs
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.15/sharedData/CDS/ahdl/input.ahdlSimDB"
+-AMSINPUT
+./ie_card.scs
+-ANALOGCONTROL
+./ie_card.scs
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGen/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGen view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGenMultiFreq view:functional"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/FrontEnd_Amplifier/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:FrontEnd_Amplifier view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/LPF_Butter/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:LPF_Butter view:verilogams"
+-SPECTRE_ARGS
+++aps
+-MESSAGES
+MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:schematic
+cds_globals
+-AMSELAB
+-XLMODE
+./xcelium.d/MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2_config.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2_config.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2_config.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

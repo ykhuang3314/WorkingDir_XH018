@@ -1,0 +1,87 @@
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 1) on testbench [
+\o           MultiChannel_EMG_TestBench:TCAimp_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMP = "500u"
+\o Setting var IPULSE_BIAS = "0"
+\o Setting var VCM = "900m"
+\o Setting var VCM_AC = "0"
+\o Setting var VDC_IN = "0"
+\o Setting var VDD = "1.8"
+\o Setting var VDD_AC = "0"
+\o Setting var VD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting var VOS = "0"
+\o Setting var fsig = "500"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:TCAimp_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  8 09:53:42 2021
+\o End netlisting Oct  8 09:53:42 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:TCAimp_TB:1 ] for Point ID (16
+\o           1).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results tran are not available for /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf. Use results() for a list of available results.
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'Vin_diff_tran' failed for point:'1' test:'MultiChannel_EMG_TestBench:TCAimp_TB:1'
+\o 	Expression:'(VT("/VINP") - VT("/VINN"))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 1) on testbench [
+\o           MultiChannel_EMG_TestBench:TCAimp_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 

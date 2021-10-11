@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+// HDL file for Lib - MultiChannel_EMG_Model ,Cell - ClockGen, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/MultiChannel_EMG_Model/ClockGen/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGen view:functional"
+
+// HDL file for Lib - MultiChannel_EMG_Model ,Cell - ClockGenMultiFreq, View - functional
+-amscompilefile "file:${IC_INVOKE_DIR}/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGenMultiFreq view:functional"
+
+// HDL file for Lib - MultiChannel_EMG_Model ,Cell - FrontEnd_Amplifier, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/MultiChannel_EMG_Model/FrontEnd_Amplifier/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:FrontEnd_Amplifier view:verilogams"
+
+// HDL file for Lib - MultiChannel_EMG_Model ,Cell - LPF_Butter, View - verilogams
+-amscompilefile "file:${IC_INVOKE_DIR}/MultiChannel_EMG_Model/LPF_Butter/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:LPF_Butter view:verilogams"
+
+// Create required libraries 
+-makelib MultiChannel_EMG_IMP 
+-makelib MultiChannel_EMG_TestBench 
+-endlib 

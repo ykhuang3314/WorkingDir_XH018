@@ -3,6 +3,64 @@
 	<active>Active Setup
 		<corners>
 			<corner enabled="1">_default</corner>
+			<corner enabled="1">C1
+				<models>
+					<model enabled="0">config.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">param.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+						<modelsection>"3s"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+						<modelsection>"tm"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+						<modelsection>"wp" "ws"</modelsection>
+					</model>
+					<model enabled="1">dio.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+						<modelsection>"tm"</modelsection>
+					</model>
+					<model enabled="1">mos.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+						<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+					</model>
+					<model enabled="1">photo.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+						<modelsection>"tm"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+						<modelsection>"wp" "ws"</modelsection>
+					</model>
+					<model enabled="0">xh018.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+				</models>
+			</corner>
 		</corners>
 		<extensions>
 			<extension>Parasitics
@@ -14,7 +72,7 @@
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>MultiChannel_EMG_TestBench:TCAimp_TB:1
+			<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
@@ -50,46 +108,2452 @@
 						<value>schematic</value>
 					</option>
 				</origoptions>
+				<outputs>
+					<output>Input Referred Noise
+						<evalType>point</evalType>
+					</output>
+				</outputs>
 			</test>
 		</tests>
 		<vars>
 			<var>VCM
 				<value>900m</value>
 				<dependentTests>
-					<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VCM_AC
 				<value>0</value>
 				<dependentTests>
-					<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VOS
 				<value>0</value>
 				<dependentTests>
-					<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>AMP
-				<value>100u</value>
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VIN_AC
+				<value>1</value>
+				<dependentTests>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>fsig
+				<value>500</value>
+				<dependentTests>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>IPULSE_BIAS
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VD_PULSE
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VDD
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VDD_AC
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VIN_PULSE
+				<value>1m</value>
 				<dependentTests>
 					<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
 				</dependentTests>
 			</var>
-			<var>VIN_AC
+			<var>VDC_IN
 				<value>0</value>
 				<dependentTests>
 					<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
 				</dependentTests>
 			</var>
-			<var>fsig
-				<value>40k</value>
-				<dependentTests>
-					<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
-				</dependentTests>
-			</var>
 		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Replace</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
 	</active>
-	<history>History</history>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.15
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.15</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 8 09:48:58 2021</timestamp>
+			<uuid>{03b6a515-090d-4872-b53e-e2b689b97ed9}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.15.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.15.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_094858891</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.15</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.15</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.15.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.15.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.16
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.16</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 8 09:53:38 2021</timestamp>
+			<uuid>{e3ff5f10-9f2f-4500-8a2d-8282a6837aa5}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.16.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_095338687</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.16.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.16.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.17
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.17</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 8 15:11:14 2021</timestamp>
+			<uuid>{3faba54d-15a6-43d1-b19f-471bc8cd816f}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.17.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.17.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_151114627</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.17</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.17</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.17.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.17.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.18
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.18</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 8 15:11:24 2021</timestamp>
+			<uuid>{9a9b508d-ffc9-41f5-9e0b-8f980f3ffad8}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.18.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.18.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_151124893</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.18</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.18</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.18.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.18.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.19
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.19</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 8 15:12:38 2021</timestamp>
+			<uuid>{52d49b0a-438e-434d-a6e8-971657e70472}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.19.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.19.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_151238980</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.19</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.19</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.19.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.19.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.20
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.20</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 11 08:35:18 2021</timestamp>
+			<uuid>{ef75cdce-a4e7-46af-a606-f87d40f02310}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.20.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.20.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_083518778</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.20</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.20</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.20.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.20.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.21
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.21</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 11 08:41:28 2021</timestamp>
+			<uuid>{b2baeb03-2f39-4c50-8b02-bd5e1c3a40a9}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.21.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_084129071</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.21</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.21</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.21.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.21.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.22
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.22</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>400u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 11 10:41:50 2021</timestamp>
+			<uuid>{ea3765e6-87b1-4e8a-bdee-ad18a9ba121d}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.22.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_104150171</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.22</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.22</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.22.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.23
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.23</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>400u</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 11 10:42:13 2021</timestamp>
+			<uuid>{f22e689f-8825-4dac-ae5d-f09679aa699b}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.23.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_104213671</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.23</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.23</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.23.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.24
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">config.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">param.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs</modelfile>
+								<modelsection>"3s"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="1">dio.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">mos.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs</modelfile>
+								<modelsection>"wo" "wp" "ws" "wz"</modelsection>
+							</model>
+							<model enabled="1">photo.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs</modelfile>
+								<modelsection>"tm"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs</modelfile>
+								<modelsection>"wp" "ws"</modelsection>
+							</model>
+							<model enabled="0">xh018.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/xh018.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>MultiChannel_EMG_TestBench:TCAimp_TB:1_none_Interactive.24</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>TCAimp_TB</value>
+							</option>
+							<option>lib
+								<value>MultiChannel_EMG_TestBench</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>Input Referred Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fsig
+						<value>500</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IPULSE_BIAS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">MultiChannel_EMG_TestBench:TCAimp_TB:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 11 11:35:26 2021</timestamp>
+			<uuid>{5a1f8c9f-8b79-422e-aa7b-66c0ded12d13}</uuid>
+			<resultsname>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.24.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_ykhuang_113526145</localpsfdir>
+			<psfdir>/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.24</psfdir>
+			<simdir>$AXL_PROJECT_DIR/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.24</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCAimp_TB/adexl/results/data/Interactive.24.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.24.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
 </setupdb>

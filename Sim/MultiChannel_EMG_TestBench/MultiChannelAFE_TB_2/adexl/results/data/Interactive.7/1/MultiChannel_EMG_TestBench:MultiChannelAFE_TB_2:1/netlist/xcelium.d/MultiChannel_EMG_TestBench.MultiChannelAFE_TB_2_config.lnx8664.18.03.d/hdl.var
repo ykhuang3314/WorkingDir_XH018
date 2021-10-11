@@ -1,0 +1,3 @@
+define XMSIMRC	( /pkg/cadence/installs/XCELIUM1803/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:config

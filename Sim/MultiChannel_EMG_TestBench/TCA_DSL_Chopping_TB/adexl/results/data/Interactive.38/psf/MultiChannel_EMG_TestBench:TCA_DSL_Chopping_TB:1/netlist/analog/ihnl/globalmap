@@ -1,0 +1,16 @@
+CADENCE IHNL04120
+$model
+MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/schematic MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/schematic/schematic/MultiChannel_EMG_TestBench_TCA_DSL_Chopping_TB_config/1 TCA_DSL_Chopping_TB
+MultiChannel_EMG_IMP/PseudoResistor_45GOhm/schematic MultiChannel_EMG_IMP/PseudoResistor_45GOhm/schematic/schematic/MultiChannel_EMG_TestBench_TCA_DSL_Chopping_TB_config/0 PseudoResistor_45GOhm
+MultiChannel_EMG_IMP/Chopper/schematic MultiChannel_EMG_IMP/Chopper/schematic/schematic/MultiChannel_EMG_TestBench_TCA_DSL_Chopping_TB_config/0 Chopper
+MultiChannel_EMG_IMP/Switch_NMOS/schematic MultiChannel_EMG_IMP/Switch_NMOS/schematic/schematic/MultiChannel_EMG_TestBench_TCA_DSL_Chopping_TB_config/0 Switch_NMOS
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+Vos Vos
+CM_DC CM_DC
+Amp_input Amp_input
+Freq_input Freq_input
+$endparam

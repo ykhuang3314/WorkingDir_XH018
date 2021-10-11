@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-DELAY_MODE
+None
+-NOVITALACCL
+-ACCESS
+r
+-AMSPARTINFO
+../psf/partition.info
+-RNM_PARTINFO
+-MODELINCDIR
+/home/ykhuang/WorkingDir_XH018/
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.42/sharedData/CDS/ahdl/input.ahdlSimDB"
+
+MultiChannel_EMG_TestBench.TCA_DSL_Chopping_TB:schematic
+
+cds_globals
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGen/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGen view:functional"
+-SPECTRE_ARGS
+++aps

@@ -1,0 +1,5 @@
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: TCA_DSL_imp_v1
+// View name: schematic
+subckt TCA_DSL_imp_v1 IBIAS OUTN OUTP VDDA VINN VINP VSSA

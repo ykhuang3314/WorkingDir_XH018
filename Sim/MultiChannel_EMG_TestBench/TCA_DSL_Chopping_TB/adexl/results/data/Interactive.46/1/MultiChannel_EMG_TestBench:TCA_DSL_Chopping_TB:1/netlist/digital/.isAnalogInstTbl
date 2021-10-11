@@ -1,0 +1,13 @@
+("MultiChannel_EMG_Model" "ClockGen" "functional" nil) nil
+("PRIMLIB" "nel" "spectre" nil) t
+("analogLib" "idc" "spectre" spectreSrcPrim) t
+("PRIMLIB" "neli" "spectre" nil) t
+("analogLib" "cap" "spectre" nil) t
+("MultiChannel_EMG_IMP" "PseudoResistor_45GOhm" "schematic" nil) nil
+("PRIMLIB" "rpp1k1" "spectre" nil) t
+("analogLib" "iprobe" "spectre" nil) t
+("analogLib" "vsin" "spectre" spectreSrcPrim) t
+("MultiChannel_EMG_IMP" "Switch_NMOS" "schematic" nil) nil
+("MultiChannel_EMG_IMP" "Chopper" "schematic" nil) nil
+("analogLib" "vdc" "spectre" spectreSrcPrim) t
+("PRIMLIB" "pel" "spectre" nil) t

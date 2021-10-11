@@ -1,0 +1,4239 @@
+\# Program start time:     UTC 2021.10.07 12:29:44.092
+\# Local time: CEST (UTC+02:00) 2021.10.07 14:29:44.092
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
+\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso7925 -mpshost s2424 -davinciService DaVinciService_7925_1633380151 -log /home/ykhuang/WorkingDir_XH018/logs_ykhuang/logs0/Job192.log -licenseLockFileName /home/ykhuang/WorkingDir_XH018/.tmp_ykhuang/.s2424_7925 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 192
+\# Host name (type):	s2424 (x86_64)
+\# Operating system:	Linux 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 17615)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        528 MB
+\# Available memory:	     54,682 MB
+\# System memory:	     96,361 MB
+\# Maximum memory size:	     95,990 MB
+\# Max mem available:	     54,839 MB
+\# Initial memory used:	        157 MB
+\#        process size:	      1,382 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		ykhuang
+\o Working Directory:	s2424:/home/ykhuang/WorkingDir_XH018
+\# Process Id:		17923
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt.
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\# Memory report: using         260 MB, process size 1,478 MB at UTC 2021.10.07 12:29:46.038
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso7925, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 17923 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\o Loading .cdsinit for the XH018 X-Fab XKit.
+\o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
+\o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
+\o ** Info: PDK loadpath is "./.xkit/setup/xh018/cadence/PDK"
+\o Loading XfPcellCore.cxt
+\o Loading XfSktTools.cxt
+\o Loading XfTechXh018.cxt
+\o nil
+\o Initializing library.
+\o Finished Initializing Library .
+\o     Generic PcellKit: 'production' loaded.
+\o     Generic Pcell Skill Tools: 'production' loaded.
+\o Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+\o "XfDtbSkill package succesfully loaded."
+\o     Generic Dcells Tool Box: 'Dcells_Toolbox_v1.2.0' loaded.
+\o     LOAD THE ENVIRONMENT FILE
+\o  --> Setting the required PDK definitions...
+\o     GDSII LAYER MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable"
+\o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
+\o Use model setup from PDK...
+\o Loading spectrei.cxt 
+\# Memory report: using         389 MB, process size 1,686 MB at UTC 2021.10.07 12:29:48.007
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading vdsil.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o  --> Finished setting the required PDK definitions
+\o  --> Setting the recommended EDA tool defaults...
+\o  --> Finished setting the recommended EDA tool defaults
+\o     LOAD DEFAULT BINDKEYS
+\o Loading viva.cxt 
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\a _treeSetOpcGUI(t)
+\r t
+\o Loading vqp.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = MultiChannel_EMG_TestBench
+\o 	Cell         = PseudoResistor_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.15
+\o 	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15.rdb
+\o 	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/1/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data
+\o 	Project Dir  = /home/ykhuang/WorkingDir_XH018/Sim
+\o 	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o INFO (TECH-150003): The technology database "analogLib" has been automatically
+\o updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
+\o  - Menu "XKit Utilities" installed to CIW.
+\o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
+\o     INFO: To customize this setup, please use the following environment variables:
+\o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
+\o                              e.g.:
+\o                              setenv CUSTOM_SCRIPT_PATH /path/to/my/script/LoadMyScripts.csh
+\o           CUSTOM_SKILL_PATH - should point to your master skill load file
+\o                              e.g.:
+\o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
+\o  -> END LOAD ".cdsinit" FILE
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 1) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Lp = "2u"
+\o Setting var Lp2 = "2u"
+\o Setting var VA = "900m"
+\o Setting var Wp = "3u"
+\o Setting var Wp2 = "10u"
+\o Setting var deltaV = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/1/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/1/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:29:50 2021
+\o End netlisting Oct  7 14:29:50 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 1).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/1/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 1) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 2) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/2/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/2/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:29:52 2021
+\o End netlisting Oct  7 14:29:52 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 2).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/2/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 2) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 3) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/3/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/3/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:29:53 2021
+\o End netlisting Oct  7 14:29:53 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 3).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/3/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\# Available memory:         54,435 MB at UTC 2021.10.07 12:29:54.017
+\# Memory report: Maximum memory size now 54,903 MB at UTC 2021.10.07 12:29:54.017
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.10.07 12:29:54.017
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 3) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 4) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/4/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/4/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:29:55 2021
+\o End netlisting Oct  7 14:29:55 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 4).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/4/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 4) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 5) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/5/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/5/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:29:56 2021
+\o End netlisting Oct  7 14:29:56 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 5).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/5/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 5) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 6) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/6/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/6/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:29:58 2021
+\o End netlisting Oct  7 14:29:58 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 6).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/6/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 6) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 7) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/7/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/7/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 7)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:29:59 2021
+\o End netlisting Oct  7 14:29:59 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 7).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/7/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 7) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 8) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/8/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/8/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 8)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:00 2021
+\o End netlisting Oct  7 14:30:00 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 8).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/8/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 8) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 9) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/9/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/9/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 9)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:02 2021
+\o End netlisting Oct  7 14:30:02 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 9).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/9/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 9) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 10) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/10/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/10/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 10)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:03 2021
+\o End netlisting Oct  7 14:30:03 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 10).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/10/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 10) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 11) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/11/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/11/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:04 2021
+\o End netlisting Oct  7 14:30:04 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 11).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/11/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 11) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 12) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/12/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/12/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 12)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:05 2021
+\o End netlisting Oct  7 14:30:05 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 12).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/12/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 12) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 13) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/13/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/13/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:07 2021
+\o End netlisting Oct  7 14:30:07 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 13).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/13/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 13) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 14) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/14/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/14/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 14)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:08 2021
+\o End netlisting Oct  7 14:30:08 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 14).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/14/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 14) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 15) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/15/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/15/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 15)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:09 2021
+\o End netlisting Oct  7 14:30:09 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 15).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/15/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 15) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 16) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/16/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/16/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:10 2021
+\o End netlisting Oct  7 14:30:10 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 16).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/16/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 16) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 17) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/17/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/17/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:11 2021
+\o End netlisting Oct  7 14:30:11 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 17).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/17/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 17) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 18) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/18/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/18/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 18)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:13 2021
+\o End netlisting Oct  7 14:30:13 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 18).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/18/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 18) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 19) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/19/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/19/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:14 2021
+\o End netlisting Oct  7 14:30:14 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 19).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/19/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 19) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 20) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/20/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/20/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 20)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:15 2021
+\o End netlisting Oct  7 14:30:15 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 20).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/20/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 20) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 21) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/21/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/21/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 21)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:16 2021
+\o End netlisting Oct  7 14:30:16 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 21).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/21/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 21) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 22) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/22/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/22/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:17 2021
+\o End netlisting Oct  7 14:30:17 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 22).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/22/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 22) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 23) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/23/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/23/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 23)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:19 2021
+\o End netlisting Oct  7 14:30:19 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 23).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/23/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 23) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 24) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/24/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/24/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 24)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:20 2021
+\o End netlisting Oct  7 14:30:20 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 24).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/24/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 24) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 25) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/25/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/25/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 25)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:21 2021
+\o End netlisting Oct  7 14:30:21 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 25).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/25/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 25) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 26) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/26/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/26/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 26)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:22 2021
+\o End netlisting Oct  7 14:30:22 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 26).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/26/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 26) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 27) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/27/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/27/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 27)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:23 2021
+\o End netlisting Oct  7 14:30:23 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 27).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/27/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 27) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 28) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/28/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/28/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 28)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:25 2021
+\o End netlisting Oct  7 14:30:25 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 28).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/28/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 28) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 29) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/29/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/29/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 29)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:26 2021
+\o End netlisting Oct  7 14:30:26 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 29).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/29/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 29) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 30) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/30/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/30/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:27 2021
+\o End netlisting Oct  7 14:30:27 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 30).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/30/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 30) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 31) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/31/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/31/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:28 2021
+\o End netlisting Oct  7 14:30:28 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 31).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/31/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 31) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 32) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/32/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/32/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 32)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:30 2021
+\o End netlisting Oct  7 14:30:30 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 32).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/32/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 32) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 33) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/33/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/33/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 33)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:30:31 2021
+\o End netlisting Oct  7 14:30:31 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (15 33).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.15/33/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 33) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = MultiChannel_EMG_TestBench
+\o 	Cell         = PseudoResistor_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MultiChannel_EMG_TestBench:PseudoResistor_TB:1_state1_Interactive.16
+\o 	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16.rdb
+\o 	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data
+\o 	Project Dir  = /home/ykhuang/WorkingDir_XH018/Sim
+\o 	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o variable oasisVariableValue redefined
+\o variable persistNewList redefined
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 1) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Lp = "2u"
+\o Setting var Lp2 = "2u"
+\o Setting var VA = "900m"
+\o Setting var Wp = "3u"
+\o Setting var Wp2 = "9u"
+\o Setting var deltaV = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:32:59 2021
+\o End netlisting Oct  7 14:32:59 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 1).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/1/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 1) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 2) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/2/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/2/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:01 2021
+\o End netlisting Oct  7 14:33:01 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 2).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/2/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 2) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 3) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/3/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/3/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:02 2021
+\o End netlisting Oct  7 14:33:02 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 3).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/3/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 3) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 4) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/4/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/4/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:03 2021
+\o End netlisting Oct  7 14:33:03 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 4).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/4/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 4) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 5) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/5/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/5/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:04 2021
+\o End netlisting Oct  7 14:33:04 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 5).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/5/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 5) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 6) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/6/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/6/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:06 2021
+\o End netlisting Oct  7 14:33:06 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 6).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/6/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 6) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 7) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/7/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/7/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 7)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:07 2021
+\o End netlisting Oct  7 14:33:07 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 7).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/7/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 7) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 8) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/8/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/8/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 8)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:08 2021
+\o End netlisting Oct  7 14:33:08 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 8).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/8/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 8) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 9) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/9/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/9/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 9)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:09 2021
+\o End netlisting Oct  7 14:33:09 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 9).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/9/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 9) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 10) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/10/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/10/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 10)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:10 2021
+\o End netlisting Oct  7 14:33:10 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 10).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/10/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 10) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 11) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/11/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/11/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:11 2021
+\o End netlisting Oct  7 14:33:11 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 11).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/11/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 11) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 12) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/12/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/12/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 12)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:13 2021
+\o End netlisting Oct  7 14:33:13 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 12).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/12/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 12) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 13) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/13/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/13/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:14 2021
+\o End netlisting Oct  7 14:33:14 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 13).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/13/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 13) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 14) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/14/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/14/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 14)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:15 2021
+\o End netlisting Oct  7 14:33:15 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 14).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/14/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 14) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 15) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/15/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/15/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 15)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:16 2021
+\o End netlisting Oct  7 14:33:16 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 15).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/15/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 15) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 16) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/16/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/16/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:17 2021
+\o End netlisting Oct  7 14:33:17 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 16).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/16/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 16) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 17) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/17/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/17/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:19 2021
+\o End netlisting Oct  7 14:33:19 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 17).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/17/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 17) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 18) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/18/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/18/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 18)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:20 2021
+\o End netlisting Oct  7 14:33:20 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 18).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/18/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 18) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 19) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/19/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/19/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:21 2021
+\o End netlisting Oct  7 14:33:21 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 19).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/19/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 19) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 20) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/20/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/20/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 20)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:22 2021
+\o End netlisting Oct  7 14:33:22 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 20).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/20/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 20) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 21) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/21/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/21/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 21)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:23 2021
+\o End netlisting Oct  7 14:33:23 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 21).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/21/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 21) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 22) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/22/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/22/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:25 2021
+\o End netlisting Oct  7 14:33:25 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 22).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/22/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 22) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 23) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/23/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/23/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 23)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:26 2021
+\o End netlisting Oct  7 14:33:26 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 23).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/23/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 23) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 24) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/24/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/24/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 24)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:27 2021
+\o End netlisting Oct  7 14:33:27 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 24).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/24/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 24) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 25) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/25/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/25/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 25)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:28 2021
+\o End netlisting Oct  7 14:33:28 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 25).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/25/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 25) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 26) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/26/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/26/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 26)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:29 2021
+\o End netlisting Oct  7 14:33:29 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 26).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/26/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 26) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 27) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/27/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/27/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 27)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:31 2021
+\o End netlisting Oct  7 14:33:31 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 27).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/27/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 27) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 28) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/28/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/28/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 28)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:32 2021
+\o End netlisting Oct  7 14:33:32 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 28).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/28/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 28) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 29) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/29/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/29/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 29)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:33 2021
+\o End netlisting Oct  7 14:33:33 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 29).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/29/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 29) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 30) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/30/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/30/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:34 2021
+\o End netlisting Oct  7 14:33:34 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 30).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/30/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 30) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 31) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/31/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/31/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:36 2021
+\o End netlisting Oct  7 14:33:36 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 31).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/31/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 31) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 32) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/32/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/32/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 32)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:37 2021
+\o End netlisting Oct  7 14:33:37 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 32).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/32/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 32) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 33) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/33/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/33/MultiChannel_EMG_TestBench:PseudoResistor_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 33)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Oct  7 14:33:38 2021
+\o End netlisting Oct  7 14:33:38 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ] for Point
+\o           ID (16 33).
+\o 
+\o Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.16/33/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 33) on testbench [
+\o           MultiChannel_EMG_TestBench:PseudoResistor_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit            477 MB, process size 1,799 MB at UTC 2021.10.07 12:34:37.124
+\# Memory report: peak usage         477 MB, process size 1,799 MB

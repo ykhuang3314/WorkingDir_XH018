@@ -1,0 +1,42 @@
+
+// Library name: MultiChannel_EMG_TestBench
+// Cell name: MultiChannelAFE_TB_2
+// View name: schematic
+// Inherited view list: schematic
+I77 Chopper
+I76 Chopper
+M2 (net4 net024 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M1 (net3 net020 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M4 (net3 net017 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M0 (net4 net022 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+V8 (net26 VIN_CM_CH2) vsource dc=VOS type=dc
+V7 (VCM 0) vsource dc=900m type=dc
+V4 (VDDA 0) vsource dc=1.8 type=dc
+V3 (net30 VIN_CM_CH1) vsource dc=VOS type=dc
+V11 (VIN_CM_CH2 VINN_CH2) vsource mag=VIN_AC/2 type=sine \
+        delay=1/(fsig*16*1) ampl=AMP/2 freq=fsig
+V10 (VINP_CH2 net26) vsource mag=VIN_AC/2 type=sine delay=1/(fsig*16*1) \
+        ampl=AMP/2 freq=fsig
+V9 (VIN_CM_CH2 0) vsource dc=VCM mag=VCM_AC type=sine
+V1 (VIN_CM_CH1 VINN_CH1) vsource mag=VIN_AC/2 type=sine ampl=-AMP/2 \
+        freq=fsig
+V0 (VINP_CH1 net30) vsource mag=VIN_AC/2 type=sine ampl=-AMP/2 freq=fsig
+V2 (VIN_CM_CH1 0) vsource dc=VCM mag=VCM_AC type=sine
+IPRB5 (net4 INN_TIA) iprobe
+IPRB4 (net3 INP_TIA) iprobe
+I38 (VDDA net038) isource dc=50n type=dc
+I1 (VDDA net039) isource dc=50n type=dc
+R3 (INN_TIA VOUTP_TIA) resistor r=500K
+R2 (INP_TIA VOUTN_TIA) resistor r=500K
+E0 (VOUT_CH1 0 LPFOUTP_CH1 LPFOUTN_CH1) vcvs gain=1.0
+E1 (VOUT_CH2 0 LPFOUTP_CH2 LPFOUTN_CH2) vcvs gain=1.0
+I74 ChoppingTCA_DSL_imp
+I73 ChoppingTCA_DSL_imp

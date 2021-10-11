@@ -1,0 +1,8 @@
+Begin Incremental Netlisting Oct  7 10:34:55 2021
+WARNING (OSSHNL-160): The primitive, 'PRIMLIB/cmm5t/spectre', was not used in
+the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+End netlisting Oct  7 10:34:55 2021

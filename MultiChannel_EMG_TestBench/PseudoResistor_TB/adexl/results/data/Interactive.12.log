@@ -1,0 +1,51 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Oct  7 14:08:22 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_0 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_1 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_2 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_3 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_4 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_5 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_6 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_7 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_8 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_9 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_10 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_11 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_12 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_13 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_14 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_15 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_16 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_17 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_18 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_19 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_20 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_21 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_22 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_23 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_24 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_25 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_26 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_27 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_28 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_29 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_30 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	C0_31 - 
+	MultiChannel_EMG_TestBench:PseudoResistor_TB:1	corner	Nominal - 
+Design parameters: 
+	Lp2		2u
+	Wp2		8u
+	deltaV		0
+	Lp		2u
+	VA		900m
+	Wp		2u
+
+Interactive.12
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.12 completed. 
+Current time: Thu Oct  7 14:09:03 2021 

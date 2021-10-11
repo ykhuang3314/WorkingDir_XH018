@@ -1,0 +1,60 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2_config.lnx8664.18.03.d
+-RUNMODE
+-amsossirunbind
+.amsbind.scs
+-CDSLIB
+./xcelium.d/MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2_config.lnx8664.18.03.d/cdsrun.lib
+-ERRORMAX
+50
+-STATUS
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-INCDIR
+/home/ykhuang/WorkingDir_XH018/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/WorkingDir_XH018/
+-AUTO_USE_REFFILE
+-AMSINPUT
+-AUTO_USE_REFFILE
+-AMSINPUT
+-ALLOWREDEFINITION
+./netlist.vams
+-AUTO_USE_REFFILE
+-AMSINPUT
+./cds_globals.vams
+-SNAPSHOT
+MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:config
+-HDLVAR
+./xcelium.d/MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2_config.lnx8664.18.03.d/hdlrun.var
+-xmfatal
+NOTCMP
+/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGen/functional/verilog.v
+/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v
+/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/FrontEnd_Amplifier/verilogams/verilog.vams
+/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/LPF_Butter/verilogams/verilog.vams
+-amscompilefile
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/LPF_Butter/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:LPF_Butter view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/FrontEnd_Amplifier/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:FrontEnd_Amplifier view:verilogams"
+-amscompilefile
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGenMultiFreq view:functional"
+-amscompilefile
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGen/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGen view:functional"
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2_config.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-hastop
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list

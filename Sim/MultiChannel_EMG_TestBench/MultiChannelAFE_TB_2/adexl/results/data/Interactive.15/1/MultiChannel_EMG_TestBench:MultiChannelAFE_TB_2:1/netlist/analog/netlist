@@ -1,0 +1,210 @@
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: Switch_NMOS
+// View name: schematic
+// Inherited view list: schematic
+subckt Switch_NMOS
+    M0 (B ctrl A VSSA) nel w=1u l=180.0n as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+ends Switch_NMOS
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: Chopper
+// View name: schematic
+// Inherited view list: schematic
+subckt Chopper
+    I6 Switch_NMOS
+    I5 Switch_NMOS
+    I4 Switch_NMOS
+    I0 Switch_NMOS
+ends Chopper
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: PseudoResistor_45GOhm
+// View name: schematic
+// Inherited view list: schematic
+subckt PseudoResistor_45GOhm
+    M7 (net8 net8 B net8) pel w=3u l=2u as=1.02e-12 ad=1.02e-12 \
+        ps=4.68e-06 pd=4.68e-06 nrs=0.09 nrd=0.09 m=(1)*(3) par1=((1)*(3))
+    M6 (net9 net9 A net9) pel w=3u l=2u as=1.02e-12 ad=1.02e-12 \
+        ps=4.68e-06 pd=4.68e-06 nrs=0.09 nrd=0.09 m=(1)*(3) par1=((1)*(3))
+    M5 (net7 net7 net9 net9) pel w=3u l=2u as=1.44e-12 ad=1.44e-12 \
+        ps=6.96e-06 pd=6.96e-06 nrs=0.09 nrd=0.09 m=(1)*(1) par1=((1)*(1))
+    M4 (net7 net7 net8 net8) pel w=3u l=2u as=1.44e-12 ad=1.44e-12 \
+        ps=6.96e-06 pd=6.96e-06 nrs=0.09 nrd=0.09 m=(1)*(1) par1=((1)*(1))
+ends PseudoResistor_45GOhm
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: ChoppingTCA_DSL_imp
+// View name: schematic
+// Inherited view list: schematic
+subckt ChoppingTCA_DSL_imp
+    M34 (net29 net23 VDDA VDDA) pel w=2u l=10u as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+    M33 (net23 net23 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M4 (OUTP OUTP VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+    M3 (OUTN OUTN VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+    M0 (VSp OUTP VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10))
+    M5 (VSn OUTN VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10))
+    M30 (I_DSLp net59 VDDA VDDA) pel w=5u l=10u as=1.455e-12 ad=1.35e-12 \
+        ps=6.082e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(20) \
+        par1=((1)*(20))
+    M27 (net50 net52 VDDA VDDA) pel w=5u l=10u as=2.4e-12 ad=2.4e-12 \
+        ps=1.096e-05 pd=1.096e-05 nrs=0.054 nrd=0.054 m=(1)*(1) \
+        par1=((1)*(1))
+    M46 (net59 net23 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M45 (net52 net23 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M39 (net28 net22 net29 net29) pel w=2u l=10u as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+    M38 (net22 net22 net23 net23) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M41 (net66 net66 OUTP OUTP) pel w=10u l=500n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M42 (net74 net74 OUTN OUTN) pel w=10u l=500n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M11 (net37 inn_chop VSn VSn) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+    M1 (net34 inp_chop VSp VSp) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+    M10 (VSSA net37 net74 net74) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+    M6 (VSSA net34 net66 net66) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+    M28 (net88 net59 VDDA VDDA) pel w=5u l=10u as=2.4e-12 ad=2.4e-12 \
+        ps=1.096e-05 pd=1.096e-05 nrs=0.054 nrd=0.054 m=(1)*(1) \
+        par1=((1)*(1))
+    M31 (I_DSLn net52 VDDA VDDA) pel w=5u l=10u as=1.455e-12 ad=1.35e-12 \
+        ps=6.082e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(20) \
+        par1=((1)*(20))
+    I37 Chopper
+    I36 Chopper
+    I40 Chopper
+    M9 (VDDA net85 net84 net84) neli w=4u l=1u as=1.248e-12 ad=1.08e-12 \
+        ps=5.424e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(10) \
+        par1=((1)*(10))
+    M8 (VDDA net81 net43 net43) neli w=4u l=1u as=1.248e-12 ad=1.08e-12 \
+        ps=5.424e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(10) \
+        par1=((1)*(10))
+    M23 (net52 LPFoutp net50 net50) neli w=20u l=500n as=9.6e-12 \
+        ad=5.4e-12 ps=4.096e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 \
+        m=(1)*(2) par1=((1)*(2))
+    M24 (net59 LPFoutn net88 net88) neli w=20u l=500n as=9.6e-12 \
+        ad=5.4e-12 ps=4.096e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 \
+        m=(1)*(2) par1=((1)*(2))
+    M40 (net28 net28 net36 VSSA) nel w=750.0n l=15.0u as=3.6e-13 \
+        ad=2.025e-13 ps=2.46e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(2) \
+        par1=((1)*(2)) xf_subext=0
+    M37 (net22 IBIAS net95 VSSA) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    M36 (IBIAS IBIAS net55 VSSA) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    M48 (net50 net55 VSSA VSSA) nel w=1u l=15.0u as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+    M43 (net84 net55 VSSA VSSA) nel w=1u l=15.0u as=4.8e-13 ad=2.7e-13 \
+        ps=2.96e-06 pd=1.54e-06 nrs=0.27 nrd=0.27 m=(1)*(2) par1=((1)*(2)) \
+        xf_subext=0
+    M44 (net43 net55 VSSA VSSA) nel w=1u l=15.0u as=4.8e-13 ad=2.7e-13 \
+        ps=2.96e-06 pd=1.54e-06 nrs=0.27 nrd=0.27 m=(1)*(2) par1=((1)*(2)) \
+        xf_subext=0
+    M29 (net55 net55 VSSA VSSA) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    M32 (net95 net55 VSSA VSSA) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    M15 (net37 net36 VSSA VSSA) nel w=750.0n l=15.0u as=2.15625e-13 \
+        ad=2.025e-13 ps=1.3875e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 \
+        m=(1)*(24) par1=((1)*(24)) xf_subext=0
+    M2 (net34 net36 VSSA VSSA) nel w=750.0n l=15.0u as=2.15625e-13 \
+        ad=2.025e-13 ps=1.3875e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 \
+        m=(1)*(24) par1=((1)*(24)) xf_subext=0
+    M35 (net36 net36 VSSA VSSA) nel w=750.0n l=15.0u as=3.6e-13 \
+        ad=2.025e-13 ps=2.46e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(2) \
+        par1=((1)*(2)) xf_subext=0
+    M47 (net88 net55 VSSA VSSA) nel w=1u l=15.0u as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+    C6 (net23 VSSA) capacitor c=5p
+    C1 (net55 VSSA) capacitor c=5p
+    C0 (LPFoutp LPFoutn) capacitor c=5p
+    C2 (net36 VSSA) capacitor c=5p
+    R0 (VSp VSn) rpp1k1 l=50.56u w=2u m=1 par1=(1)
+    R1 (net50 net88) rpp1k1 l=1.00528m w=2u m=1 par1=(1)
+    I34 PseudoResistor_45GOhm
+    I35 PseudoResistor_45GOhm
+ends ChoppingTCA_DSL_imp
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_TestBench
+// Cell name: MultiChannelAFE_TB_2
+// View name: schematic
+// Inherited view list: schematic
+I77 Chopper
+I76 Chopper
+M2 (net4 net024 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M1 (net3 net020 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M4 (net3 net017 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M0 (net4 net022 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+V8 (net26 VIN_CM_CH2) vsource dc=VOS type=dc
+V7 (VCM 0) vsource dc=900m type=dc
+V4 (VDDA 0) vsource dc=1.8 type=dc
+V3 (net30 VIN_CM_CH1) vsource dc=VOS type=dc
+V11 (VIN_CM_CH2 VINN_CH2) vsource mag=VIN_AC/2 type=sine \
+        delay=1/(fsig*16*1) ampl=AMP/2 freq=fsig
+V10 (VINP_CH2 net26) vsource mag=VIN_AC/2 type=sine delay=1/(fsig*16*1) \
+        ampl=AMP/2 freq=fsig
+V9 (VIN_CM_CH2 0) vsource dc=VCM mag=VCM_AC type=sine
+V1 (VIN_CM_CH1 VINN_CH1) vsource mag=VIN_AC/2 type=sine ampl=-AMP/2 \
+        freq=fsig
+V0 (VINP_CH1 net30) vsource mag=VIN_AC/2 type=sine ampl=-AMP/2 freq=fsig
+V2 (VIN_CM_CH1 0) vsource dc=VCM mag=VCM_AC type=sine
+IPRB5 (net4 INN_TIA) iprobe
+IPRB4 (net3 INP_TIA) iprobe
+I38 (VDDA net038) isource dc=50n type=dc
+I1 (VDDA net039) isource dc=50n type=dc
+R3 (INN_TIA VOUTP_TIA) resistor r=500K
+R2 (INP_TIA VOUTN_TIA) resistor r=500K
+C1 (INN_TIA VOUTP_TIA) capacitor c=3p
+C0 (INP_TIA VOUTN_TIA) capacitor c=3p
+E0 (VOUT_CH1 0 LPFOUTP_CH1 LPFOUTN_CH1) vcvs gain=1.0
+E1 (VOUT_CH2 0 LPFOUTP_CH2 LPFOUTN_CH2) vcvs gain=1.0
+I74 ChoppingTCA_DSL_imp
+I73 ChoppingTCA_DSL_imp

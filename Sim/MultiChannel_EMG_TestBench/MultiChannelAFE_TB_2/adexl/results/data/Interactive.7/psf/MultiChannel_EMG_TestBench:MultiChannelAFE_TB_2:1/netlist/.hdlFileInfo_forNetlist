@@ -1,0 +1,4 @@
+// HDL file - MultiChannel_EMG_Model, FrontEnd_Amplifier, verilogams.
+// HDL file - MultiChannel_EMG_Model, LPF_Butter, verilogams.
+// HDL file - MultiChannel_EMG_Model, ClockGen, functional.
+// HDL file - MultiChannel_EMG_Model, ClockGenMultiFreq, functional.

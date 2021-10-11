@@ -1,0 +1,6 @@
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: Switch_NMOS
+// View name: schematic
+// Inherited view list: schematic
+subckt Switch_NMOS

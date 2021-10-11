@@ -1,0 +1,36 @@
+
+-UNBUFFERED 
+-cdslib ./cds.lib 
+-errormax 50 
+-status 
+-nowarn DLNOHV 
+-nowarn DLCLAP 
+-v93 
+-incdir ${IC_INVOKE_DIR}/
+-ade 
+-timescale 1ns/1ns 
+-vtimescale 1ns/1ns 
+-delay_mode None 
+-novitalaccl 
+-access r 
+-noparamerr 
+-amspartinfo ../psf/partition.info -rnm_partinfo 
+-modelincdir ${IC_INVOKE_DIR}/
+./spiceModels.scs 
+./amsControlSpectre.scs 
+-input ./probe.tcl 
+-run -exit 
+-xmsimargs "+amsrawdir ../psf" 
+-spectre_args "-ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.41/sharedData/CDS/ahdl/input.ahdlSimDB" 
+ -simcompatible_ams spectre 
+-name MultiChannel_EMG_TestBench.TCA_DSL_Chopping_TB:config  
+-allowredefinition 
+-amsbind 
+-top MultiChannel_EMG_TestBench.TCA_DSL_Chopping_TB:schematic 
+-top cds_globals 
+./netlist.vams 
+./ie_card.scs
+-f ./textInputs
+./cds_globals.vams 
+-l ../psf/xrun.log
+-spectre_args ++aps

@@ -1,0 +1,46 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.516.isr12 64bit -- 25 Oct 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 13049
+Memory  available: 14.8115 GB  physical: 67.2863 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1286.4] ( 16 ),  1 [1427.6] ( 17 ),  2 [1275.1] ( 18 )
+                 3 [3044.8] ( 19 ),  4 [1201.2] ( 20 ),  5 [1294.0] ( 21 )
+                 6 [1200.3] ( 22 ),  7 [2332.6] ( 23 )
+        1:       8 [1270.0] ( 24 ),  9 [1796.9] ( 25 ), 10 [1199.9] ( 26 )
+                11 [1484.8] ( 27 ), 12 [1233.8] ( 28 ), 13 [1278.4] ( 29 )
+                14 [1300.0] ( 30 ), 15 [1283.9] ( 31 )
+        
+System load averages (1min, 5min, 15min) : 3.8 %, 4.0 %, 3.8 %
+Hyperthreading is enabled
+
+
+Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on s2424 at 10:57:23 AM, Mon Oct 11, 2021 (process id: 13049).
+Current working directory: /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=
+Command line:
+    /pkg/cadence/installs/SPECTRE181/tools.lnx86/bin/spectre -64  \
+        ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt -noraw =log  \
+        ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt.log  \
+        -I/home/ykhuang/WorkingDir_XH018/ -token  \
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE37EF13A629E3087F82BEF0460FB7690A83DEEB8537F10B0A126F35737FB71DEA80F9E0E50FB24B0C4528E5D339A7CDFB374B06561CA648AA83DC30C50FB10B0C95E114DAC8A71D30000422B
+
+Loading /pkg/cadence/installs/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /pkg/cadence/installs/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /pkg/cadence/installs/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /pkg/cadence/installs/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /pkg/cadence/installs/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt
+Reading file:  /pkg/cadence/installs/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.amsbind.scs
+Time for NDB Parsing: CPU = 101.355 ms, elapsed = 193.285 ms.
+Time accumulated: CPU = 169.962 ms, elapsed = 193.298 ms.
+Peak resident memory used = 57.5 Mbytes.
+

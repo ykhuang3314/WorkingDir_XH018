@@ -1,0 +1,17 @@
+cellMap,*Chopper,*Chopper,*MultiChannel_EMG_IMP,*schematic
+netMap,*Chopper,*gnd!,*0
+instMap,*Chopper,*I6,*I6
+instMaster,*Chopper,*I6,*MultiChannel_EMG_IMP_Switch_NMOS_schematic,*Switch_NMOS
+instMap,*Chopper,*I5,*I5
+instMaster,*Chopper,*I5,*MultiChannel_EMG_IMP_Switch_NMOS_schematic,*Switch_NMOS
+instMap,*Chopper,*I4,*I4
+instMaster,*Chopper,*I4,*MultiChannel_EMG_IMP_Switch_NMOS_schematic,*Switch_NMOS
+instMap,*Chopper,*I0,*I0
+instMaster,*Chopper,*I0,*MultiChannel_EMG_IMP_Switch_NMOS_schematic,*Switch_NMOS
+portMap,*Chopper,*CLK,*CLK
+portMap,*Chopper,*CLKB,*CLKB
+portMap,*Chopper,*INN,*INN
+portMap,*Chopper,*INP,*INP
+portMap,*Chopper,*OUTN,*OUTN
+portMap,*Chopper,*OUTP,*OUTP
+portMap,*Chopper,*VSSA,*VSSA

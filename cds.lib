@@ -1,4 +1,4 @@
-# File Created by ykhuang at Thu Sep 30 09:55:38 2021
+# File Created by ykhuang at Thu Oct  7 10:25:32 2021
 # assisted by CdsLibEditor
 # ------------------------------------------------------------------------------
 # XKIT library definition files
@@ -32,3 +32,4 @@ DEFINE MultiChannel_EMG_IMP MultiChannel_EMG_IMP
 DEFINE MultiChannel_EMG_TestBench MultiChannel_EMG_TestBench
 DEFINE CHARACTERIZATION CHARACTERIZATION
 DEFINE Device_Characteristics Device_Characteristics
+DEFINE EXERCISE1 EXERCISE1

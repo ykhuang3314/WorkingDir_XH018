@@ -21,8 +21,8 @@ CLK16, CLKB16
 );
 
 
-parameter fchop1 = 16;
-parameter df = 2;
+parameter fchop1 = 32;
+parameter df = 4;
 parameter fchop2 = fchop1+df;
 parameter fchop3 = fchop1+2*df;
 parameter fchop4 = fchop1+3*df;

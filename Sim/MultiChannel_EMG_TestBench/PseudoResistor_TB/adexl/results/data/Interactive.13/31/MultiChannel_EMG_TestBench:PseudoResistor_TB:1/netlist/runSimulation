@@ -1,0 +1,1 @@
+spectre  input.scs  +escchars +log ../psf/spectre.out  -format psfxl -raw ../psf   +lqtimeout 900 -maxw 5 -maxn 5 -env ade  -ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.13/sharedData/Job190/ahdl/input.ahdlSimDB +logstatus  

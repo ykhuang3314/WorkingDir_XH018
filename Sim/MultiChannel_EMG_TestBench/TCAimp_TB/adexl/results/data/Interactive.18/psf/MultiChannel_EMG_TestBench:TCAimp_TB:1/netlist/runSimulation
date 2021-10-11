@@ -1,0 +1,1 @@
+spectre  input.scs  +escchars +log ../../../../Interactive.14/psf/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/spectre.out  -format psfxl -raw ../../../../Interactive.14/psf/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf   ++aps +lqtimeout 900 -maxw 5 -maxn 5 -env ade   

@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"I12n" "TCA_DSL_imp_v1"
+"I1n" "analogLib_idc_spectre"
+"V4n V3n" "analogLib_vdc_spectre"
+"V1n V0n V2n" "analogLib_vsin_spectre"
+"I13n" "analogLib_ipulse_spectre"
+"V6n V5n" "analogLib_vpulse_spectre"
+"M0n M4n" "PRIMLIB_pel_spectre"
+"M2n M1n" "PRIMLIB_nel_spectre"
+"IPRB1n IPRB0n" "analogLib_iprobe_spectre"
+"C1n C0n" "analogLib_cap_spectre"

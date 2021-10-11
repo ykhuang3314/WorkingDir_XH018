@@ -1,0 +1,3 @@
+1633959597 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.13/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.mapi/cds.lib
+1633959597 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.13/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.mapi/dummyMapi.vams
+1633959598 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.13/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.mapi/dummyMapi.vhms

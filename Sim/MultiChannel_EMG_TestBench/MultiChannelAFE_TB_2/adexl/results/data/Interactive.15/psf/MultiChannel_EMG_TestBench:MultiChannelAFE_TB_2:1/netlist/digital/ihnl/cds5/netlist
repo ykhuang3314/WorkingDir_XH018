@@ -1,0 +1,57 @@
+// Library - MultiChannel_EMG_TestBench, Cell - MultiChannelAFE_TB_2,
+//View - schematic
+// LAST TIME SAVED: Oct 11 15:42:58 2021
+// NETLIST TIME: Oct 11 15:46:45 2021
+`timescale 1ns / 1ps 
+
+`worklib MultiChannel_EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="MultiChannel_EMG_TestBench", dfII_cell="MultiChannelAFE_TB_2", dfII_view="schematic", worklib_name="MultiChannel_EMG_TestBench", view_name="schematic", last_save_time="Oct 11 15:42:58 2021" *)
+
+module MultiChannelAFE_TB_2 ();
+
+
+ClockGenMultiFreq #( .fchop11(72), .fchop5(48), .fchop15(88), .fchop10(68) 
+    , .fchop7(56), .fchop13(80), .fchop14(84), .fchop12(76), .fchop3(40) 
+    , .fchop2(36), .fchop6(52), .fchop4(44), .fchop8(60), .fchop16(92), .fchop9(64) 
+     ) I79 ( .CLK1(CLK1), .CLK2(CLK2), .CLK3(CLK3), .CLK4(CLK4), 
+    .CLK5(CLK5), .CLK6(CLK6), .CLK7(CLK7), .CLK8(CLK8), .CLK9(CLK9), 
+    .CLK10(CLK10), .CLK11(CLK11), .CLK12(CLK12), .CLK13(CLK13), 
+    .CLK14(CLK14), .CLK15(CLK15), .CLK16(CLK16), .CLKB1(CLKB1), 
+    .CLKB2(CLKB2), .CLKB3(CLKB3), .CLKB4(CLKB4), .CLKB5(CLKB5), 
+    .CLKB6(CLKB6), .CLKB7(CLKB7), .CLKB8(CLKB8), .CLKB9(CLKB9), 
+    .CLKB10(CLKB10), .CLKB11(CLKB11), .CLKB12(CLKB12), .CLKB13(CLKB13), 
+    .CLKB14(CLKB14), .CLKB15(CLKB15), .CLKB16(CLKB16));
+
+Chopper I77 ( .VSSA(cds_globals.\gnd! ), .CLKB(CLKB1), .CLK(CLK1), 
+    .OUTP(deModOUTP_CH1), .OUTN(deModOUTN_CH1), .INP(VOUTP_TIA), 
+    .INN(VOUTN_TIA));
+
+Chopper I76 ( .VSSA(cds_globals.\gnd! ), .CLKB(CLKB2), .CLK(CLK2), 
+    .OUTP(deModOUTP_CH2), .OUTN(deModOUTN_CH2), .INP(VOUTP_TIA), 
+    .INN(VOUTN_TIA));
+
+LPF_Butter I34 ( .VCM(VCM), .VDDA(VDDA), .VSSA(cds_globals.\gnd! ), 
+    .Voutn(LPFOUTN_CH1), .Voutp(LPFOUTP_CH1), .Vinn(deModOUTN_CH1), 
+    .Vinp(deModOUTP_CH1));
+
+LPF_Butter I35 ( .VCM(VCM), .VDDA(VDDA), .VSSA(cds_globals.\gnd! ), 
+    .Voutn(LPFOUTN_CH2), .Voutp(LPFOUTP_CH2), .Vinn(deModOUTN_CH2), 
+    .Vinp(deModOUTP_CH2));
+
+FrontEnd_Amplifier #( .fp1(100000), .gain(1000) ) I3 ( .VDDA(VDDA), 
+    .VSSA(cds_globals.\gnd! ), .Vcm(VCM), .Vsub(cds_globals.\gnd! ), 
+    .Voutn(VOUTN_TIA), .Voutp(VOUTP_TIA), .Vinn(INN_TIA), 
+    .Vinp(INP_TIA));
+
+ChoppingTCA_DSL_imp I74 ( .IBIAS(net039), .VDDA(VDDA), 
+    .VSSA(cds_globals.\gnd! ), .OUTN(net022), .OUTP(net017), 
+    .CLK(CLK2), .CLKB(CLKB2), .VINN(VINN_CH2), .VINP(VINP_CH2));
+
+ChoppingTCA_DSL_imp I73 ( .IBIAS(net038), .VDDA(VDDA), 
+    .VSSA(cds_globals.\gnd! ), .OUTN(net024), .OUTP(net020), 
+    .CLK(CLK1), .CLKB(CLKB1), .VINN(VINN_CH1), .VINP(VINP_CH1));
+
+endmodule

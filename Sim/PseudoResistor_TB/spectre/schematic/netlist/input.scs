@@ -5,7 +5,7 @@
 // Design view name: schematic
 simulator lang=spectre
 global 0
-parameters Lp2=1u Wp2=24u deltaV=0 Lp=1u VA=900m Wp=6u
+parameters Lp2=1u Wp2=6u deltaV=0 Lp=500n VA=900m Wp=1.5u
 include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/config.scs" section=default
 include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
 include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
@@ -58,7 +58,7 @@ simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
     checklimitdest=psf 
 dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
 dcOpInfo info what=oppoint where=rawfile
-dc dc param=deltaV start=-900m stop=900m oppoint=rawfile maxiters=150 \
+dc dc param=deltaV start=-400m stop=400m oppoint=rawfile maxiters=150 \
     maxsteps=10000 annotate=status
 modelParameter info what=models where=rawfile
 element info what=inst where=rawfile

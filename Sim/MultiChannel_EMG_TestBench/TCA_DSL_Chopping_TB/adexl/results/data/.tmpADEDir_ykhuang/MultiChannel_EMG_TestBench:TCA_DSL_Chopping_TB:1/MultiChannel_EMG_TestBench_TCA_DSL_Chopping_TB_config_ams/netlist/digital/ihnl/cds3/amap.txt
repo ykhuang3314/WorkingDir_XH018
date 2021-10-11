@@ -1,0 +1,15 @@
+netMap,*TCA_DSL_Chopping_TB,*gnd!,*cds_globals.\gnd! 
+instMap,*TCA_DSL_Chopping_TB,*I40,*I40
+instMaster,*TCA_DSL_Chopping_TB,*I40,*MultiChannel_EMG_IMP_Chopper_schematic
+instMap,*TCA_DSL_Chopping_TB,*I37,*I37
+instMaster,*TCA_DSL_Chopping_TB,*I37,*MultiChannel_EMG_IMP_Chopper_schematic
+instMap,*TCA_DSL_Chopping_TB,*I36,*I36
+instMaster,*TCA_DSL_Chopping_TB,*I36,*MultiChannel_EMG_IMP_Chopper_schematic
+instMap,*TCA_DSL_Chopping_TB,*I35,*I35
+instMaster,*TCA_DSL_Chopping_TB,*I35,*MultiChannel_EMG_IMP_PseudoResistor_45GOhm_schematic
+instMap,*TCA_DSL_Chopping_TB,*I34,*I34
+instMaster,*TCA_DSL_Chopping_TB,*I34,*MultiChannel_EMG_IMP_PseudoResistor_45GOhm_schematic
+instMap,*TCA_DSL_Chopping_TB,*I28,*I28
+instMaster,*TCA_DSL_Chopping_TB,*I28,*MultiChannel_EMG_Model_ClockGen_functional
+cellMap,*TCA_DSL_Chopping_TB,*TCA_DSL_Chopping_TB,*MultiChannel_EMG_TestBench,*schematic
+topMap,*TCA_DSL_Chopping_TB

@@ -1,16 +1,16 @@
-\# Program start time:     UTC 2021.10.04 08:35:36.140
-\# Local time: CEST (UTC+02:00) 2021.10.04 10:35:36.140
+\# Program start time:     UTC 2021.10.07 10:19:52.293
+\# Local time: CEST (UTC+02:00) 2021.10.07 12:19:52.293
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
 \o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso10203 -mpshost s2424 -davinciService DaVinciService_10203_1633009502 -log /home/ykhuang/WorkingDir_XH018/logs_ykhuang/logs0/Job185.log -licenseLockFileName /home/ykhuang/WorkingDir_XH018/.tmp_ykhuang/.s2424_10203 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 185
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso7925 -mpshost s2424 -davinciService DaVinciService_7925_1633380151 -log /home/ykhuang/WorkingDir_XH018/logs_ykhuang/logs0/Job185.log -licenseLockFileName /home/ykhuang/WorkingDir_XH018/.tmp_ykhuang/.s2424_7925 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 185
 \# Host name (type):	s2424 (x86_64)
 \# Operating system:	Linux 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
 \# X display name (WxH):	:95 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 26234)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 29358)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x3ffffa (4194298)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        527 MB
-\# Available memory:	     80,206 MB
+\# Initial sbrk value:	        524 MB
+\# Available memory:	     46,556 MB
 \# System memory:	     96,361 MB
-\# Maximum memory size:	     95,991 MB
-\# Max mem available:	     80,363 MB
+\# Maximum memory size:	     95,994 MB
+\# Max mem available:	     46,713 MB
 \# Initial memory used:	        157 MB
 \#        process size:	      1,382 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		ykhuang
 \o Working Directory:	s2424:/home/ykhuang/WorkingDir_XH018
-\# Process Id:		26237
+\# Process Id:		14688
 \o 
 \o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
@@ -65,7 +65,6 @@
 \o Loading socket.cxt 
 \o Loading par.cxt 
 \o Loading alvs.cxt 
-\# Memory report: using         273 MB, process size 1,491 MB at UTC 2021.10.04 08:35:38.089
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
@@ -74,11 +73,12 @@
 \o 
 \o Loading cli.cxt 
 \o Loading cle.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso10203, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso7925, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 26237 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 14688 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# Memory report: using         335 MB, process size 1,633 MB at UTC 2021.10.07 10:19:55.564
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -100,7 +100,6 @@
 \o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
 \o Use model setup from PDK...
 \o Loading spectrei.cxt 
-\# Memory report: using         404 MB, process size 1,701 MB at UTC 2021.10.04 08:35:40.237
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
 \o Loading vdsil.cxt 
@@ -120,6 +119,7 @@
 \p > 
 \a _treeSetOpcGUI(t)
 \r t
+\# Memory report: using         440 MB, process size 1,743 MB at UTC 2021.10.07 10:19:57.169
 \o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
 \o  - Menu "XKit Utilities" installed to CIW.
 \o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
@@ -131,10 +131,12 @@
 \o                              e.g.:
 \o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
 \o  -> END LOAD ".cdsinit" FILE
-\# Available memory:         79,976 MB at UTC 2021.10.04 08:35:46.309
-\# Memory report: Maximum memory size now 80,417 MB at UTC 2021.10.04 08:35:46.309
-\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.10.04 08:35:46.309
+\# Available memory:         46,329 MB at UTC 2021.10.07 10:20:03.309
+\# Memory report: Maximum memory size now 46,770 MB at UTC 2021.10.07 10:20:03.310
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.10.07 10:20:03.310
 \o Job 185 timed out after no activity in 300 seconds.
 \o Loading simui.cxt 
-\# Memory report: on exit            444 MB, process size 1,747 MB at UTC 2021.10.04 08:40:41.340
-\# Memory report: peak usage         444 MB, process size 1,747 MB
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 

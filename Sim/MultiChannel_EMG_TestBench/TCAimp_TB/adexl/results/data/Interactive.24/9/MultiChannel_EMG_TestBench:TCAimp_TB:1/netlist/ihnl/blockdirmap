@@ -1,0 +1,5 @@
+CADENCE IHNL11144
+
+MultiChannel_EMG_IMP TCA_DSL_imp_v1 schematic cds1
+MultiChannel_EMG_TestBench TCAimp_TB schematic cds2
+MultiChannel_EMG_IMP PseudoResistor_45GOhm schematic cds3

@@ -1,0 +1,27 @@
+// Library - MultiChannel_EMG_IMP, Cell - Chopper, View - schematic
+// LAST TIME SAVED: Oct  8 13:23:19 2021
+// NETLIST TIME: Oct 11 15:40:01 2021
+`timescale 1ns / 1ps 
+
+`worklib MultiChannel_EMG_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="MultiChannel_EMG_IMP", dfII_cell="Chopper", dfII_view="schematic", worklib_name="MultiChannel_EMG_IMP", view_name="schematic", last_save_time="Oct  8 13:23:19 2021" *)
+
+module Chopper (INN, INP, OUTN, OUTP, VSSA, CLK, CLKB);
+
+inout  INN, INP, OUTN, OUTP, VSSA;
+
+input  CLK, CLKB;
+
+
+Switch_NMOS I6 ( .A(INN), .VSSA(VSSA), .ctrl(CLK), .B(OUTN));
+
+Switch_NMOS I5 ( .A(INN), .VSSA(VSSA), .ctrl(CLKB), .B(OUTP));
+
+Switch_NMOS I4 ( .A(INP), .VSSA(VSSA), .ctrl(CLKB), .B(OUTN));
+
+Switch_NMOS I0 ( .B(OUTP), .A(INP), .VSSA(VSSA), .ctrl(CLK));
+
+endmodule

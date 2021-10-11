@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct  8 16:48:39 2021
+// Design library name: MultiChannel_EMG_TestBench
+// Design cell name: TCA_DSL_Chopping_TB
+// Design view name: config
+simulator lang=spectre binding=vlog  
+global 0

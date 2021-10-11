@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"M24n M23n M9n M8n" "PRIMLIB_neli_spectre"
+"V6n V2n V4n" "analogLib_vdc_spectre"
+"I24n" "analogLib_idc_spectre"
+"C3n C2n C1n" "PRIMLIB_cmm5t_spectre"
+"V1n V0n" "analogLib_vsin_spectre"
+"M46n M45n M42n M41n M39n M38n M34n M33n M28n M27n M4n M3n M11n M10n M31n M0n M6n M30n M5n M1n" "PRIMLIB_pel_spectre"
+"IPRB0n IPRB1n" "analogLib_iprobe_spectre"
+"M48n M47n M44n M43n M40n M37n M36n M35n M32n M29n M15n M2n" "PRIMLIB_nel_spectre"
+"I26n I25n" "PseudoResistor_10GOhm"
+"R2n R1n R0n" "PRIMLIB_rpp1k1_spectre"

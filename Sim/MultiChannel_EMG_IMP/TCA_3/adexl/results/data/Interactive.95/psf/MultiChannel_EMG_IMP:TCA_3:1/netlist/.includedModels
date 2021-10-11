@@ -1,5 +1,0 @@
-simulator lang=spectre
-include "nel.scs"
-include "neli.scs"
-include "pel.scs"
-include "rpp1k1.scs"

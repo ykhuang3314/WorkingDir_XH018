@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"MultiChannel_EMG_TestBench\" \"TCA_DSL_Chopping_TB\" \"config\" \"\")"
+"simulator" "ams"
+"temperature" "27"
+"host" ""
+"date" "Oct  8 16:48:46 2021"
+"title" ""
+"analysisList" "()"
+END

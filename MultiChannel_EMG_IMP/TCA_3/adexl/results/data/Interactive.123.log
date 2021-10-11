@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Oct  7 11:20:48 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_IMP:TCA_3:1	corner	Nominal - 
+Design parameters: 
+	Amp_input		500u
+	Freq_input		500
+	Vos		50m
+	CM_DC		900m
+
+Interactive.123
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.123 completed. 
+Current time: Thu Oct  7 11:20:57 2021 

@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "PseudoResistor_TB"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/PseudoResistor_TB/adexl/results/data/Interactive.11/25/MultiChannel_EMG_TestBench:PseudoResistor_TB:1/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "MultiChannel_EMG_TestBench/PseudoResistor_TB/schematic" "PseudoResistor_TB" )
+ )
+( "PseudoResistor_TB" "ihnl/cds0/map" )
+ )

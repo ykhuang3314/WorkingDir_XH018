@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// (c) Copyright 2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+// -----------------------------------------------------------------------------
+
+
+// Binding AMSD Control Block for config MultiChannel_EMG_TestBench.TCA_DSL_Chopping_TB:config
+// Created On: Oct  8 16:47:23 2021
+// NOTE      : DO NOT change this system generated file.
+
+amsd {
+	config designtop="MultiChannel_EMG_TestBench.TCA_DSL_Chopping_TB:schematic"
+
+	config cell="nel" view="analogtext"
+	config cell="neli" view="analogtext"
+	config cell="capacitor" view="analogtext"
+	config cell="ClockGen" lib="MultiChannel_EMG_Model" view="functional"
+	config cell="isource" view="analogtext"
+	config cell="vsource" view="analogtext"
+	config cell="PseudoResistor_45GOhm" lib="MultiChannel_EMG_IMP" view="schematic"
+	config cell="Switch_NMOS" lib="MultiChannel_EMG_IMP" view="schematic"
+	config cell="pel" view="analogtext"
+	config cell="rpp1k1" view="analogtext"
+	config cell="iprobe" view="analogtext"
+	config cell="Chopper" lib="MultiChannel_EMG_IMP" view="schematic"
+
+ }

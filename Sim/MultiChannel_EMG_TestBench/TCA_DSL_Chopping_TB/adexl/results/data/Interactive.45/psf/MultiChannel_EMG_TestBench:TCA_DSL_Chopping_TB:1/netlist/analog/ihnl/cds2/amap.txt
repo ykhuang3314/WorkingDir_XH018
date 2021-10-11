@@ -1,0 +1,12 @@
+cellMap,*PseudoResistor_45GOhm,*PseudoResistor_45GOhm,*MultiChannel_EMG_IMP,*schematic
+netMap,*PseudoResistor_45GOhm,*gnd!,*0
+instMap,*PseudoResistor_45GOhm,*M7,*M7
+instMaster,*PseudoResistor_45GOhm,*M7,*PRIMLIB_pel_spectre,*pel
+instMap,*PseudoResistor_45GOhm,*M6,*M6
+instMaster,*PseudoResistor_45GOhm,*M6,*PRIMLIB_pel_spectre,*pel
+instMap,*PseudoResistor_45GOhm,*M5,*M5
+instMaster,*PseudoResistor_45GOhm,*M5,*PRIMLIB_pel_spectre,*pel
+instMap,*PseudoResistor_45GOhm,*M4,*M4
+instMaster,*PseudoResistor_45GOhm,*M4,*PRIMLIB_pel_spectre,*pel
+portMap,*PseudoResistor_45GOhm,*A,*A
+portMap,*PseudoResistor_45GOhm,*B,*B

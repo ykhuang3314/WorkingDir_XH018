@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Oct  8 16:49:27 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1	corner	Nominal - 
+Design parameters: 
+	Amp_input		1m
+	CM_DC		900m
+	Freq_input		500
+	Vos		50m
+	Fchop		32
+
+Interactive.43
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.43 completed. 
+Current time: Fri Oct  8 16:49:53 2021 

@@ -1,0 +1,204 @@
+// Generated for: spectre
+// Generated on: Oct 11 08:35:32 2021
+// Design library name: MultiChannel_EMG_TestBench
+// Design cell name: TCAimp_TB
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters VDC_IN=0 VIN_PULSE=1m IPULSE_BIAS=0 VD_PULSE=0 VDD=1.8 VDD_AC=0 \
+    fsig=500 VIN_AC=1 VOS=0 AMP=0 VCM=900m VCM_AC=0
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=wp
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=wo
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=ws
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: PseudoResistor_45GOhm
+// View name: schematic
+subckt PseudoResistor_45GOhm A B
+    M7 (net8 net8 B net8) pel w=3u l=2u as=1.02e-12 ad=1.02e-12 \
+        ps=4.68e-06 pd=4.68e-06 nrs=0.09 nrd=0.09 m=(1)*(3) par1=((1)*(3))
+    M6 (net9 net9 A net9) pel w=3u l=2u as=1.02e-12 ad=1.02e-12 \
+        ps=4.68e-06 pd=4.68e-06 nrs=0.09 nrd=0.09 m=(1)*(3) par1=((1)*(3))
+    M5 (net7 net7 net9 net9) pel w=3u l=2u as=1.44e-12 ad=1.44e-12 \
+        ps=6.96e-06 pd=6.96e-06 nrs=0.09 nrd=0.09 m=(1)*(1) par1=((1)*(1))
+    M4 (net7 net7 net8 net8) pel w=3u l=2u as=1.44e-12 ad=1.44e-12 \
+        ps=6.96e-06 pd=6.96e-06 nrs=0.09 nrd=0.09 m=(1)*(1) par1=((1)*(1))
+ends PseudoResistor_45GOhm
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: TCA_DSL_imp_v1
+// View name: schematic
+subckt TCA_DSL_imp_v1 IBIAS OUTN OUTP VDDA VINN VINP VSSA
+    R1 (net45 net80) rpp1k1 l=1.00528m w=2u m=1 par1=(1)
+    R0 (VSp VSn) rpp1k1 l=50.56u w=2u m=1 par1=(1)
+    M4 (OUTP OUTP VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+    M3 (OUTN OUTN VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+    M0 (VSp OUTP VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10))
+    M5 (VSn OUTN VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10))
+    M28 (net80 net53 VDDA VDDA) pel w=5u l=10u as=2.4e-12 ad=2.4e-12 \
+        ps=1.096e-05 pd=1.096e-05 nrs=0.054 nrd=0.054 m=(1)*(1) \
+        par1=((1)*(1))
+    M27 (net45 net44 VDDA VDDA) pel w=5u l=10u as=2.4e-12 ad=2.4e-12 \
+        ps=1.096e-05 pd=1.096e-05 nrs=0.054 nrd=0.054 m=(1)*(1) \
+        par1=((1)*(1))
+    M31 (VSn net53 VDDA VDDA) pel w=5u l=10u as=1.455e-12 ad=1.35e-12 \
+        ps=6.082e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(20) \
+        par1=((1)*(20))
+    M30 (VSp net44 VDDA VDDA) pel w=5u l=10u as=1.455e-12 ad=1.35e-12 \
+        ps=6.082e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(20) \
+        par1=((1)*(20))
+    M45 (net44 net19 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M46 (net53 net19 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M38 (net18 net18 net19 net19) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M39 (net22 net18 net23 net23) pel w=2u l=10u as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+    M41 (net60 net60 net61 net61) pel w=10u l=500n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M42 (net68 net68 net69 net69) pel w=10u l=500n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+    M11 (net31 VINN VSn VSn) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+    M1 (net28 VINP VSp VSp) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+    M10 (VSSA net31 net68 net68) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+    M6 (VSSA net28 net60 net60) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+    M34 (net23 net19 VDDA VDDA) pel w=2u l=10u as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+    M33 (net19 net19 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+    M37 (net18 IBIAS net84 VSSA) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    M40 (net22 net22 net30 VSSA) nel w=750.0n l=15.0u as=3.6e-13 \
+        ad=2.025e-13 ps=2.46e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(2) \
+        par1=((1)*(2)) xf_subext=0
+    M47 (net80 net49 VSSA VSSA) nel w=1u l=15.0u as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+    M48 (net45 net49 VSSA VSSA) nel w=1u l=15.0u as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+    M44 (net37 net49 VSSA VSSA) nel w=1u l=15.0u as=4.8e-13 ad=2.7e-13 \
+        ps=2.96e-06 pd=1.54e-06 nrs=0.27 nrd=0.27 m=(1)*(2) par1=((1)*(2)) \
+        xf_subext=0
+    M43 (net76 net49 VSSA VSSA) nel w=1u l=15.0u as=4.8e-13 ad=2.7e-13 \
+        ps=2.96e-06 pd=1.54e-06 nrs=0.27 nrd=0.27 m=(1)*(2) par1=((1)*(2)) \
+        xf_subext=0
+    M32 (net84 net49 VSSA VSSA) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    M15 (net31 net30 VSSA VSSA) nel w=750.0n l=15.0u as=2.15625e-13 \
+        ad=2.025e-13 ps=1.3875e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 \
+        m=(1)*(24) par1=((1)*(24)) xf_subext=0
+    M2 (net28 net30 VSSA VSSA) nel w=750.0n l=15.0u as=2.15625e-13 \
+        ad=2.025e-13 ps=1.3875e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 \
+        m=(1)*(24) par1=((1)*(24)) xf_subext=0
+    M35 (net30 net30 VSSA VSSA) nel w=750.0n l=15.0u as=3.6e-13 \
+        ad=2.025e-13 ps=2.46e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(2) \
+        par1=((1)*(2)) xf_subext=0
+    M36 (IBIAS IBIAS net49 VSSA) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    M29 (net49 net49 VSSA VSSA) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+    C2 (LPFoutp LPFoutn) cmm5t area=2.883e-10 perimeter=68.83u m=10 \
+        par1=(10)
+    I1 (LPFoutn net76) PseudoResistor_45GOhm
+    I0 (net37 LPFoutp) PseudoResistor_45GOhm
+    IPRB1 (OUTP net61) iprobe
+    IPRB0 (OUTN net69) iprobe
+    M9 (VDDA VSn net76 net76) neli w=4u l=1u as=1.248e-12 ad=1.08e-12 \
+        ps=5.424e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(10) \
+        par1=((1)*(10))
+    M8 (VDDA VSp net37 net37) neli w=4u l=1u as=1.248e-12 ad=1.08e-12 \
+        ps=5.424e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(10) \
+        par1=((1)*(10))
+    M24 (net53 LPFoutn net80 net80) neli w=20u l=500n as=9.6e-12 \
+        ad=5.4e-12 ps=4.096e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 \
+        m=(1)*(2) par1=((1)*(2))
+    M23 (net44 LPFoutp net45 net45) neli w=20u l=500n as=9.6e-12 \
+        ad=5.4e-12 ps=4.096e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 \
+        m=(1)*(2) par1=((1)*(2))
+ends TCA_DSL_imp_v1
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_TestBench
+// Cell name: TCAimp_TB
+// View name: schematic
+I12 (net15 net014 net09 VDDA VINN VINP 0) TCA_DSL_imp_v1
+I1 (VDDA net15) isource dc=50n type=dc
+V4 (net020 0) vsource dc=VDD mag=VDD_AC type=dc
+V3 (net03 VCM) vsource dc=VOS type=dc
+V1 (VCM VINN) vsource mag=VIN_AC/2 type=sine ampl=AMP/2 freq=fsig
+V0 (VINP net027) vsource mag=VIN_AC/2 type=sine ampl=AMP/2 freq=fsig
+V2 (VCM 0) vsource dc=VCM mag=VCM_AC type=sine
+I13 (VDDA net15) isource type=pulse val0=0 val1=IPULSE_BIAS period=2m \
+        delay=10u rise=1p fall=1p width=1m
+V6 (net027 net03) vsource type=pulse val0=0 val1=VIN_PULSE period=2m \
+        delay=10u rise=1n fall=1n width=1m
+V5 (VDDA net020) vsource type=pulse val0=0 val1=VD_PULSE period=2m \
+        delay=10u rise=1n fall=1n width=1m
+M0 (net018 net014 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M4 (net028 net09 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M2 (net015 net015 0 0) nel w=2u l=500n as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M1 (net010 net010 0 0) nel w=2u l=500n as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+IPRB1 (net018 net015) iprobe
+IPRB0 (net028 net010) iprobe
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+ac ac start=10m stop=100M dec=20 annotate=status 
+tran tran stop=5m errpreset=conservative write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save IPRB0:in IPRB1:in 
+saveOptions options save=allpub

@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = MultiChannel_EMG_IMP
-	Cell         = TCA_DSL_v3
-	View         = schematic
-	Simulator    = spectre
+	Library      = MultiChannel_EMG_TestBench
+	Cell         = TCA_DSL_Chopping_TB
+	View         = config
+	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = MultiChannel_EMG_IMP:TCA_DSL_v3:1_none_Interactive.25
-	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.25.rdb
-	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.25/1/MultiChannel_EMG_IMP:TCA_DSL_v3:1
-	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data
+	State Name   = MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1_none_Interactive.8
+	Results DB   = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.8.rdb
+	Results Dir  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.8/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1
+	Results Loc  = /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data
 	Project Dir  = /home/ykhuang/WorkingDir_XH018/Sim
-	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl
+	Setup DB loc = /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl
 	File Encoding = 0
 
 
@@ -30,68 +30,131 @@ variable persistNewList redefined
 
 
 
-*Info*    Run start for Point ID (25 1) on testbench [
-          MultiChannel_EMG_IMP:TCA_DSL_v3:1 ].
+*Info*    Run start for Point ID (8 1) on testbench [
+          MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var AMP_input = "100u"
-Setting var VOS = "1m"
-Setting var freq_input = "500"
+Setting var Amp_input = "0"
+Setting var CM_DC = "0.9"
+Setting var Freq_input = "500"
+Setting var Vos = "50m"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.25/1/MultiChannel_EMG_IMP:TCA_DSL_v3:1/netlist
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.8/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.25/1/MultiChannel_EMG_IMP:TCA_DSL_v3:1
+          /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.8/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1
 
 
-*Info*    Creating Netlist for Point ID (25 1)
+*Info*    Creating Netlist for Point ID (8 1)
 
 generate netlist...
+INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+ field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+ analog primitives using the Spectre CDF simulation information.
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Oct  1 13:52:59 2021
-WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the current netlisting session. It had a value
-'_unl' last time netlisting was done in current run directory. Netlists from last
-session cannot be used for incremental netlisting. Therefore re-netlisting the
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.8/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/digital/control
+Begin Netlisting Oct  6 14:22:05 2021
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+"/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.8/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+If you want to print only those cellviews that need to be re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell 'MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/schematic' has no ports. Make sure that this was the intended 
 design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 
-End netlisting Oct  1 13:52:59 2021
 
-Netlisting Statistics:
-	Number of components:   48
 
-	Elapsed time:          1.0s (48.00/s)
-Errors: 0	Warnings: 0
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+cap                         spectre              *Stopping View*  
+neli                        spectre              *Stopping View*  
+vdc                         spectre              *Stopping View*  
+idc                         spectre              *Stopping View*  
+switch                      verilogams           *Stopping View*  
+vsin                        spectre              *Stopping View*  
+pel                         spectre              *Stopping View*  
+iprobe                      spectre              *Stopping View*  
+nel                         spectre              *Stopping View*  
+rpp1k1                      spectre              *Stopping View*  
+ClockGen                    functional           *Stopping View*  
+TCA_DSL_Chopping_TB         schematic                             
+PseudoResistor_10GOhm       schematic                             
+Chopper                     schematic                             
+
+---------- End of netlist configuration information   ----------
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.8/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/analog/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Running netlist assembly..
+........
+End netlisting Oct  6 14:22:14 2021
+INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+To view the modules, right-click the test name on the Tests and Analyses 
+assistant pane and choose Netlist->Display menu option.
+      ...successful.
+create cds_globals...
       ...successful.
 compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          MultiChannel_EMG_IMP:TCA_DSL_v3:1 ] for Point ID (25 1).
+          MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1 ] for
+          Point ID (8 1).
 
-Delete psf data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_DSL_v3/adexl/results/data/Interactive.25/1/MultiChannel_EMG_IMP:TCA_DSL_v3:1/psf.
+Delete simulation data in /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.8/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/psf.
+create cds_globals...
+      ...successful.
 compose simulator input file...
       ...successful.
-start simulator if needed...
+validating simulator hierarchy...
       ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
+running...
+To check for output from compilation, elaboration and simulation run, 
+right-click on the test name, result name, or any value in the "Results" 
+tab of the Outputs section and choose "Output Log" menu option.
 INFO (ADE-3071): Simulation completed successfully.
 reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (25 1) on testbench [
-          MultiChannel_EMG_IMP:TCA_DSL_v3:1 ].
+*Info*    Run complete for Point ID (8 1) on testbench [
+          MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1 ].
 
 
 

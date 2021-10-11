@@ -1,0 +1,15 @@
+
+Chopper I37 ( .VSSA(VSSA), .CLKB(CLKB), .CLK(CLK), .OUTP(net81), 
+    .OUTN(net85), .INP(VSp), .INN(VSn));
+
+Chopper I36 ( .VSSA(VSSA), .CLKB(CLKB), .CLK(CLK), .OUTP(inp_chop), 
+    .OUTN(inn_chop), .INP(VINP), .INN(VINN));
+
+Chopper I40 ( .VSSA(VSSA), .CLKB(CLKB), .CLK(CLK), .OUTP(VSp), 
+    .OUTN(VSn), .INP(I_DSLn), .INN(I_DSLp));
+
+PseudoResistor_45GOhm I34 ( .B(LPFoutp), .A(net43));
+
+PseudoResistor_45GOhm I35 ( .B(net84), .A(LPFoutn));
+
+endmodule

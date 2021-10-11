@@ -1,0 +1,35 @@
+//Verilog-AMS HDL for "MultiChannel_EMG_Model", "switch" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Switch_NMOS (B, ctrl, A, VSSA );
+
+inout B, ctrl, A, VSSA;
+electrical B, ctrl, A, VSSA;
+
+real Reff;
+
+parameter real Ron = 100 from (0:inf); // on-resistance
+parameter real Roff = 1e9 from (Ron:inf); // off-resistance
+parameter real tr = 1n; // rising time
+parameter real tf = 1n; // falling time
+parameter real td = 0; // delay
+parameter real Vth = 0.5; // threshold voltage
+
+analog begin
+
+@(initial_step) begin
+
+	if(V(ctrl) > Vth) Reff = Ron;
+	else Reff = Roff;
+end
+
+@(cross(V(ctrl)-Vth, +1)) Reff = Ron;
+@(cross(V(ctrl)-Vth, -1)) Reff = Roff;
+
+I(A, B) <+ V(A, B)/transition(Reff, td, tr, tf);
+			 //+ white_noise(4* `P_K * $temperature/Reff, "thermal"); 
+
+end
+endmodule

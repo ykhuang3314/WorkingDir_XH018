@@ -1,0 +1,20 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Oct 11, 2021 at 11:48:40 CEST
+xmvlog
+    -use5x
+    -SPECIFICUNIT ClockGenMultiFreq
+    -zparse /tmp/vamsZparywn925
+    -NOWARN DLNOHV
+    -work MultiChannel_EMG_Model
+    -view functional
+    -nostdout
+    -logfile /home/ykhuang/WorkingDir_XH018/.cadence/dfII/TextSupport/Logs/Parser/verilog/MultiChannel_EMG_Model/functional/compile1.log
+    -messages
+    -cdslib /home/ykhuang/WorkingDir_XH018/cds.lib
+    /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v
+
+file: /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v
+	module MultiChannel_EMG_Model.ClockGenMultiFreq:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Oct 11, 2021 at 11:48:40 CEST  (total: 00:00:00)

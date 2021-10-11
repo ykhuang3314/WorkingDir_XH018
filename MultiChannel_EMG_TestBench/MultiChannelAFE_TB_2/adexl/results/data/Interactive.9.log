@@ -1,0 +1,19 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Oct 11 11:37:03 2021 
+Best design point: 1
+Design specs: 
+	MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1	corner	Nominal - 
+Design parameters: 
+	AMP		100u
+	fsig		500
+	VCM		900m
+	VCM_AC		0
+	VIN_AC		0
+	VOS		0
+
+Interactive.9
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.9 completed. 
+Current time: Mon Oct 11 11:37:40 2021 

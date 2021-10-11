@@ -1,0 +1,29 @@
+\w *WARNING* (AMS-2002): Configuration properties have not been specified in Hierarchy Editor for the configuration.
+\w  
+\o _axlToolCloseTestPointOutputLog("/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.44/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/psf/xrun.log")
+\o _axlToolDisplayTestPointOutputLog("session9" "MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1" "/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.45/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/psf/xrun.log")
+\a hiCloseWindow(window(389))
+\r t
+\a _hiSetCurrentWinNum(366)
+\r t
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 

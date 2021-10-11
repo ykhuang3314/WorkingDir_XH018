@@ -1,0 +1,5 @@
+*
+ahdl_include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/dpho.va" -skeletonbus worklib:spice_skeleton -dont_optimize_vars -nclibdir "./xcelium.d/AMSD/ahdl_in"
+ahdl_include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/iphoto_uv.va" -skeletonbus worklib:spice_skeleton -dont_optimize_vars -nclibdir "./xcelium.d/AMSD/ahdl_in"
+ahdl_include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/ispad.va" -skeletonbus worklib:spice_skeleton -dont_optimize_vars -nclibdir "./xcelium.d/AMSD/ahdl_in"
+ahdl_include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/photo/iphoto_apd.va" -skeletonbus worklib:spice_skeleton -dont_optimize_vars -nclibdir "./xcelium.d/AMSD/ahdl_in"

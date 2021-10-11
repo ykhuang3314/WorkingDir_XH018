@@ -1,0 +1,172 @@
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: Switch_NMOS
+// View name: schematic
+// Inherited view list: schematic
+subckt Switch_NMOS
+    M0 (B ctrl A VSSA) nel w=1u l=180.0n as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+ends Switch_NMOS
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: Chopper
+// View name: schematic
+// Inherited view list: schematic
+subckt Chopper
+    I6 Switch_NMOS
+    I5 Switch_NMOS
+    I4 Switch_NMOS
+    I0 Switch_NMOS
+ends Chopper
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: PseudoResistor_45GOhm
+// View name: schematic
+// Inherited view list: schematic
+subckt PseudoResistor_45GOhm
+    M7 (net8 net8 B net8) pel w=3u l=2u as=1.02e-12 ad=1.02e-12 \
+        ps=4.68e-06 pd=4.68e-06 nrs=0.09 nrd=0.09 m=(1)*(3) par1=((1)*(3))
+    M6 (net9 net9 A net9) pel w=3u l=2u as=1.02e-12 ad=1.02e-12 \
+        ps=4.68e-06 pd=4.68e-06 nrs=0.09 nrd=0.09 m=(1)*(3) par1=((1)*(3))
+    M5 (net7 net7 net9 net9) pel w=3u l=2u as=1.44e-12 ad=1.44e-12 \
+        ps=6.96e-06 pd=6.96e-06 nrs=0.09 nrd=0.09 m=(1)*(1) par1=((1)*(1))
+    M4 (net7 net7 net8 net8) pel w=3u l=2u as=1.44e-12 ad=1.44e-12 \
+        ps=6.96e-06 pd=6.96e-06 nrs=0.09 nrd=0.09 m=(1)*(1) par1=((1)*(1))
+ends PseudoResistor_45GOhm
+// End of subcircuit definition.
+
+// Library name: MultiChannel_EMG_TestBench
+// Cell name: TCA_DSL_Chopping_TB
+// View name: schematic
+// Inherited view list: schematic
+C10 (net06 0) capacitor c=5p
+C7 (net061 0) capacitor c=5p
+C6 (net08 0) capacitor c=5p
+C5 (net04 0) capacitor c=5p
+C4 (net025 0) capacitor c=5p
+C3 (net067 0) capacitor c=5p
+C0 (LPFoutp LPFoutn) capacitor c=5p
+M24 (net025 LPFoutn net073 net073) neli w=20u l=500n as=9.6e-12 ad=5.4e-12 \
+        ps=4.096e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(2) \
+        par1=((1)*(2))
+M23 (net067 LPFoutp net062 net062) neli w=20u l=500n as=9.6e-12 ad=5.4e-12 \
+        ps=4.096e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(2) \
+        par1=((1)*(2))
+M9 (VDDA net074 net036 net036) neli w=4u l=1u as=1.248e-12 ad=1.08e-12 \
+        ps=5.424e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(10) \
+        par1=((1)*(10))
+M8 (VDDA net070 net020 net020) neli w=4u l=1u as=1.248e-12 ad=1.08e-12 \
+        ps=5.424e-06 pd=4.54e-06 nrs=0.0675 nrd=0.0675 m=(1)*(10) \
+        par1=((1)*(10))
+V6 (net029 VCM) vsource dc=Vos type=dc
+V2 (VCM 0) vsource dc=CM_DC type=dc
+V4 (VDDA 0) vsource dc=1.8 type=dc
+I24 (VDDA net06) isource dc=50n type=dc
+I40 Chopper
+I37 Chopper
+I36 Chopper
+V1 (VCM net086) vsource mag=500.0m type=sine ampl=Amp_input/2 \
+        freq=Freq_input
+V0 (net089 net029) vsource mag=500.0m type=sine ampl=Amp_input/2 \
+        freq=Freq_input
+M28 (net073 net025 VDDA VDDA) pel w=5u l=10u as=2.4e-12 ad=2.4e-12 \
+        ps=1.096e-05 pd=1.096e-05 nrs=0.054 nrd=0.054 m=(1)*(1) \
+        par1=((1)*(1))
+M46 (net025 net08 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M27 (net062 net067 VDDA VDDA) pel w=5u l=10u as=2.4e-12 ad=2.4e-12 \
+        ps=1.096e-05 pd=1.096e-05 nrs=0.054 nrd=0.054 m=(1)*(1) \
+        par1=((1)*(1))
+M45 (net067 net08 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M41 (net8 net8 net054 net054) pel w=10u l=500n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M39 (net017 net013 net018 net018) pel w=2u l=10u as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+M38 (net013 net013 net08 net08) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M34 (net018 net08 VDDA VDDA) pel w=2u l=10u as=6.24e-13 ad=5.4e-13 \
+        ps=3.024e-06 pd=2.54e-06 nrs=0.135 nrd=0.135 m=(1)*(10) \
+        par1=((1)*(10))
+M33 (net08 net08 VDDA VDDA) pel w=2u l=10u as=9.6e-13 ad=9.6e-13 \
+        ps=4.96e-06 pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) \
+        par1=((1)*(1))
+M4 (OUTP OUTP VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M3 (OUTN OUTN VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M11 (net35 Vinn VSn VSn) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+M10 (0 net35 net015 net015) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+M31 (I_DSLn net025 VDDA VDDA) pel w=5u l=10u as=1.455e-12 ad=1.35e-12 \
+        ps=6.082e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(20) \
+        par1=((1)*(20))
+M0 (VSp OUTP VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10))
+M6 (0 net36 net8 net8) pel w=5u l=350.0n as=1.56e-12 ad=1.35e-12 \
+        ps=6.624e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(10) \
+        par1=((1)*(10))
+M30 (I_DSLp net067 VDDA VDDA) pel w=5u l=10u as=1.455e-12 ad=1.35e-12 \
+        ps=6.082e-06 pd=5.54e-06 nrs=0.054 nrd=0.054 m=(1)*(20) \
+        par1=((1)*(20))
+M5 (VSn OUTN VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.35e-13 \
+        ps=1.224e-06 pd=1.04e-06 nrs=0.54 nrd=0.54 m=(1)*(10) \
+        par1=((1)*(10))
+M42 (net015 net015 net079 net079) pel w=10u l=500n as=4.8e-12 ad=4.8e-12 \
+        ps=2.096e-05 pd=2.096e-05 nrs=0.027 nrd=0.027 m=(1)*(1) \
+        par1=((1)*(1))
+M1 (net36 Vinp VSp VSp) pel w=20u l=500n as=6.24e-12 ad=5.4e-12 \
+        ps=2.4624e-05 pd=2.054e-05 nrs=0.0135 nrd=0.0135 m=(1)*(10) \
+        par1=((1)*(10))
+IPRB0 (OUTN net079) iprobe
+IPRB1 (OUTP net054) iprobe
+M47 (net073 net04 0 0) nel w=1u l=15.0u as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+M48 (net062 net04 0 0) nel w=1u l=15.0u as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+M40 (net017 net017 net061 0) nel w=750.0n l=15.0u as=3.6e-13 ad=2.025e-13 \
+        ps=2.46e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(2) par1=((1)*(2)) \
+        xf_subext=0
+M37 (net013 net06 net069 0) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M36 (net06 net06 net04 0) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 \
+        ps=2.96e-06 pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M35 (net061 net061 0 0) nel w=750.0n l=15.0u as=3.6e-13 ad=2.025e-13 \
+        ps=2.46e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(2) par1=((1)*(2)) \
+        xf_subext=0
+M29 (net04 net04 0 0) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 ps=2.96e-06 \
+        pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+M32 (net069 net04 0 0) nel w=1u l=15.0u as=4.8e-13 ad=4.8e-13 ps=2.96e-06 \
+        pd=2.96e-06 nrs=0.27 nrd=0.27 m=(1)*(1) par1=((1)*(1)) xf_subext=0
+M43 (net036 net04 0 0) nel w=1u l=15.0u as=4.8e-13 ad=2.7e-13 ps=2.96e-06 \
+        pd=1.54e-06 nrs=0.27 nrd=0.27 m=(1)*(2) par1=((1)*(2)) xf_subext=0
+M44 (net020 net04 0 0) nel w=1u l=15.0u as=4.8e-13 ad=2.7e-13 ps=2.96e-06 \
+        pd=1.54e-06 nrs=0.27 nrd=0.27 m=(1)*(2) par1=((1)*(2)) xf_subext=0
+M15 (net35 net061 0 0) nel w=750.0n l=15.0u as=2.15625e-13 ad=2.025e-13 \
+        ps=1.3875e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(24) \
+        par1=((1)*(24)) xf_subext=0
+M2 (net36 net061 0 0) nel w=750.0n l=15.0u as=2.15625e-13 ad=2.025e-13 \
+        ps=1.3875e-06 pd=1.29e-06 nrs=0.36 nrd=0.36 m=(1)*(24) \
+        par1=((1)*(24)) xf_subext=0
+I35 PseudoResistor_45GOhm
+I34 PseudoResistor_45GOhm
+R1 (net062 net073) rpp1k1 l=1.00528m w=2u m=1 par1=(1)
+R0 (VSp VSn) rpp1k1 l=50.56u w=2u m=1 par1=(1)

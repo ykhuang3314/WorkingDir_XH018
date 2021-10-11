@@ -1,0 +1,8 @@
+CADENCE IHNL04126
+
+MultiChannel_EMG_Model ClockGenMultiFreq functional nil functional MultiChannel_EMG_TestBench MultiChannelAFE_TB_2 config 0 cds0
+MultiChannel_EMG_IMP Switch_NMOS schematic nil schematic MultiChannel_EMG_TestBench MultiChannelAFE_TB_2 config 0 cds1
+MultiChannel_EMG_IMP Chopper schematic nil schematic MultiChannel_EMG_TestBench MultiChannelAFE_TB_2 config 0 cds2
+MultiChannel_EMG_IMP PseudoResistor_45GOhm schematic nil schematic MultiChannel_EMG_TestBench MultiChannelAFE_TB_2 config 0 cds3
+MultiChannel_EMG_IMP ChoppingTCA_DSL_imp schematic nil schematic MultiChannel_EMG_TestBench MultiChannelAFE_TB_2 config 0 cds4
+MultiChannel_EMG_TestBench MultiChannelAFE_TB_2 schematic nil schematic MultiChannel_EMG_TestBench MultiChannelAFE_TB_2 config 1 cds5

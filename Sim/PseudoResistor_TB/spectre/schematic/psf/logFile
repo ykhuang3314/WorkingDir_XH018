@@ -1,10 +1,10 @@
 HEADER
 "PSFversion" "1.00"
 "Log Generator" "drlLog rev. 1.0"
-"Log Time Stamp" "Tue Oct  5 16:39:05 2021"
+"Log Time Stamp" "Thu Oct  7 12:30:43 2021"
 "simulator" "spectre"
 "version" "18.1.0.516.isr12"
-"date" "4:39:05 PM, Tue Oct 5, 2021"
+"date" "12:30:43 PM, Thur Oct 7, 2021"
 "design" "// Generated for: spectre"
 "signalNameType" "spectre"
 "simMode" "Spectre"
@@ -49,7 +49,7 @@ VALUE
 "PSF"
 ""
 ("deltaV")
-"DC Analysis `dc': deltaV = (-900e-03 -> 900e-03)"
+"DC Analysis `dc': deltaV = (-400e-03 -> 400e-03)"
 ) PROP(
 "data_type" "scalar"
 )

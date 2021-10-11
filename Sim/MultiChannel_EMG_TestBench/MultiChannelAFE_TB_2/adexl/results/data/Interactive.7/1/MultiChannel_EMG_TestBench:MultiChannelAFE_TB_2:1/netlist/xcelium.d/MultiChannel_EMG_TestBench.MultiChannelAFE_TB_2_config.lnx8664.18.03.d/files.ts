@@ -1,0 +1,7 @@
+1633942637 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/cds.lib
+1633942635 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.amsbind.scs
+1633942637 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/spiceModels.scs
+1633942637 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/amsControlSpectre.scs
+1633942635 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/netlist.vams
+1633942636 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/ie_card.scs
+1633937410 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/cds_globals.vams

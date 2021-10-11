@@ -1,0 +1,7 @@
+1633704404 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.40/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/cds.lib
+1633704402 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.40/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/.amsbind.scs
+1633704404 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.40/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/spiceModels.scs
+1633704403 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.40/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/amsControlSpectre.scs
+1633704402 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.40/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/netlist.vams
+1633704403 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.40/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/ie_card.scs
+1633704402 /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/TCA_DSL_Chopping_TB/adexl/results/data/Interactive.40/1/MultiChannel_EMG_TestBench:TCA_DSL_Chopping_TB:1/netlist/cds_globals.vams

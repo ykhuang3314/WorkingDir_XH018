@@ -1,0 +1,6 @@
+    I6 Switch_NMOS
+    I5 Switch_NMOS
+    I4 Switch_NMOS
+    I0 Switch_NMOS
+ends Chopper
+// End of subcircuit definition.

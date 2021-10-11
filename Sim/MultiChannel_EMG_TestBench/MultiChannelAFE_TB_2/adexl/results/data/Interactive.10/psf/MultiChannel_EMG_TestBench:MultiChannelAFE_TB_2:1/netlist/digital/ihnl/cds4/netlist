@@ -1,0 +1,36 @@
+// Library - MultiChannel_EMG_IMP, Cell - ChoppingTCA_DSL_imp, View -
+//schematic
+// LAST TIME SAVED: Oct  8 16:21:00 2021
+// NETLIST TIME: Oct 11 11:41:18 2021
+`timescale 1ns / 1ps 
+
+`worklib MultiChannel_EMG_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="MultiChannel_EMG_IMP", dfII_cell="ChoppingTCA_DSL_imp", dfII_view="schematic", worklib_name="MultiChannel_EMG_IMP", view_name="schematic", last_save_time="Oct  8 16:21:00 2021" *)
+
+module ChoppingTCA_DSL_imp (OUTN, OUTP, IBIAS, VDDA, VSSA, CLK, CLKB, 
+    VINN, VINP);
+
+output  OUTN, OUTP;
+
+inout  IBIAS, VDDA, VSSA;
+
+input  CLK, CLKB, VINN, VINP;
+
+
+Chopper I37 ( .VSSA(VSSA), .CLKB(CLKB), .CLK(CLK), .OUTP(net81), 
+    .OUTN(net85), .INP(VSp), .INN(VSn));
+
+Chopper I36 ( .VSSA(VSSA), .CLKB(CLKB), .CLK(CLK), .OUTP(inp_chop), 
+    .OUTN(inn_chop), .INP(VINP), .INN(VINN));
+
+Chopper I40 ( .VSSA(VSSA), .CLKB(CLKB), .CLK(CLK), .OUTP(VSp), 
+    .OUTN(VSn), .INP(I_DSLn), .INN(I_DSLp));
+
+PseudoResistor_45GOhm I34 ( .B(LPFoutp), .A(net43));
+
+PseudoResistor_45GOhm I35 ( .B(net84), .A(LPFoutn));
+
+endmodule

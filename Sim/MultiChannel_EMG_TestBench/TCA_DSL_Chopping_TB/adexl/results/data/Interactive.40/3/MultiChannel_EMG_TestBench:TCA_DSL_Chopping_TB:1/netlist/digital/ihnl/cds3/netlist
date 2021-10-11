@@ -1,0 +1,32 @@
+// Library - MultiChannel_EMG_TestBench, Cell - TCA_DSL_Chopping_TB,
+//View - schematic
+// LAST TIME SAVED: Oct  8 16:44:40 2021
+// NETLIST TIME: Oct  8 16:47:18 2021
+`timescale 1ns / 1ps 
+
+`worklib MultiChannel_EMG_TestBench
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="MultiChannel_EMG_TestBench", dfII_cell="TCA_DSL_Chopping_TB", dfII_view="schematic", worklib_name="MultiChannel_EMG_TestBench", view_name="schematic", last_save_time="Oct  8 16:44:40 2021" *)
+
+module TCA_DSL_Chopping_TB ();
+
+
+Chopper I36 ( .VSSA(cds_globals.\gnd! ), .CLKB(CLKB), .CLK(CLK), 
+    .OUTP(Vinp), .OUTN(Vinn), .INP(net089), .INN(net086));
+
+Chopper I37 ( .VSSA(cds_globals.\gnd! ), .CLKB(CLKB), .CLK(CLK), 
+    .OUTP(net070), .OUTN(net074), .INP(VSp), .INN(VSn));
+
+Chopper I40 ( .VSSA(cds_globals.\gnd! ), .CLKB(CLKB), .CLK(CLK), 
+    .OUTP(VSp), .OUTN(VSn), .INP(I_DSLp), .INN(I_DSLn));
+
+PseudoResistor_45GOhm I34 ( .B(LPFoutp), .A(net020));
+
+PseudoResistor_45GOhm I35 ( .B(net036), .A(LPFoutn));
+
+ClockGen #( .FREQ_KHz(cds_globals.Fchop) ) I28 ( .CLK(CLK), 
+    .CLKB(CLKB));
+
+endmodule

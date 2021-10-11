@@ -1,0 +1,5 @@
+cds.lib: ${AMS_CDS_LIB} 
+lib:  MultiChannel_EMG_TestBench 
+cell: TCA_DSL_Chopping_TB 
+view: config 
+topCellLib: MultiChannel_EMG_TestBench 

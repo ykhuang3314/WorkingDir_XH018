@@ -88,3 +88,1606 @@
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrResizeWindow(cdsLibManager list(69 0 1851 1052))
 \a nrResizeWindow(cdsLibManager list(69 27 1851 1025))
+\a nrResizeWindow(cdsLibManager list(1 27 1919 1025))
+\a nrResizeWindow(cdsLibManager list(69 27 1851 1025))
+\a nrResizeWindow(cdsLibManager list(1920 0 1920 1052))
+\a nrResizeWindow(cdsLibManager list(1989 27 1851 1025))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(239 440 1388 824))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(69 0 1851 1172))
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v2"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v3"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v2"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_3"
+\a cdsLibManager->cellLineEdit->value = "TCA_3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 42 58 2 "TCA_3")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->CopyFromLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyToLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyFromLibrary->value = "MultiChannel_EMG_IMP"
+\a copyCellForm->CopyFromCell->value = "TCA_3"
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_IMP"
+\a copyCellForm->CopyToCell->value = "TCA_3"
+\a copyCellForm->ViewsToCopy->value = "adexl schematic"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "CHARACTERIZATION CadenceLibs D_CELLS_3V D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMT D_CELLS_HDMV D_CELLS_JI3V D_CELLS_JIHD D_CELLS_JIHDLL D_CELLS_JIHDMT D_CELLS_JIHDMV D_CELLS_JIM3V D_CELLS_M3V Device_Characteristics DigitalLibs EsdLibs GATES_3V GATES_HD GATES_JI3V GATES_JIHD GATES_JIMT GATES_MT HV_CELLS IO_CELLS_3V IO_CELLS_C1V8 IO_CELLS_C3V IO_CELLS_F3V IO_CELLS_FC1V8 IO_CELLS_FC3V IO_CELLS_JI3V IO_CELLS_JIF3V MultiChannel_EMG_Model MultiChannel_EMG_TestBench PRIMLIB Stimulator_IMP Stimulator_Model Stimulator_TestBench TECH_XH018 TECH_XH018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib ambit analogLib avTech basic cdsDefTechLib connectLib\\nfunctional ieee sample sbaLib std synopsys xfab_connectLib"
+\a nrSetWindowVisibility(copyCellForm "show")
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(719 215 530 659))
+\a copyCellForm->CopyToCell->value = "TCA_DSL_Chopping"
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_TestBench"
+\a copyCellForm->CopyToCell->value = "TCA_DSL_Chopping_TB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "MultiChannel_EMG_TestBench".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(848 478 273 133))
+\o ERROR (CLM-173): One or more of the following problems have occurred:\n      1. The source file does not exist.\n      2. A destination file will be overwritten.\n      3. A destination file is checked out.\n      4. A destination file is opened for edit.\n      5. A destination file conflicts with another.\n      6. A source library file is not valid in a different library.\n      7. A source OpenAccess cellview master file has zero size.
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(848 448 273 133))
+\a nrResizeWindow(copyProblemsDialog list(572 324 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyProblemsDialog list(572 294 825 441))
+\a nrResizeWindow(workingDialogForm list(848 508 273 133))
+\a nrResizeWindow(copyCellForm list(719 185 530 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(848 478 273 133))
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2396 206 1388 824))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1989 27 1851 1025))
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(2651 218 507 559))
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(NewLibShell list(2651 188 507 559))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellListBox->value = "TB_Multi_CH_Behav"
+\a cdsLibManager->cellLineEdit->value = "TB_Multi_CH_Behav"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "ChopperFDM_FrontEnd_TB"
+\a cdsLibManager->cellLineEdit->value = "ChopperFDM_FrontEnd_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "MultiChannelAFE_TB"
+\a cdsLibManager->cellLineEdit->value = "MultiChannelAFE_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 1)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1921 27 1919 1025))
+\a nrResizeWindow(cdsLibManager list(1989 27 1851 1025))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Device_Characteristics"
+\a cdsLibManager->libLineEdit->value = "Device_Characteristics"
+\a cdsLibManager->cellListBox->value = "DC_Bias_nel"
+\a cdsLibManager->cellLineEdit->value = "DC_Bias_nel"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Device_Characteristics"
+\a cdsLibManager->libLineEdit->value = "Device_Characteristics"
+\a cdsLibManager->cellListBox->value = "DC_Bias_nel"
+\a cdsLibManager->cellLineEdit->value = "DC_Bias_nel"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->editLibraryPathButton->value = t
+\o Starting the cdsLibEditor...
+\o MPS request: update library list
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EXERCISE1"
+\a cdsLibManager->libLineEdit->value = "EXERCISE1"
+\a cdsLibManager->cellListBox->value = "S7_BLOCK"
+\a cdsLibManager->cellLineEdit->value = "S7_BLOCK"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_2_2uA"
+\a cdsLibManager->cellLineEdit->value = "TCA_2_2uA"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_3"
+\a cdsLibManager->cellLineEdit->value = "TCA_3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_2_2uA"
+\a cdsLibManager->cellLineEdit->value = "TCA_2_2uA"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_2_2uA"
+\a cdsLibManager->cellLineEdit->value = "TCA_2_2uA"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DC_Bias"
+\a cdsLibManager->cellLineEdit->value = "TCA_DC_Bias"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DC_Bias_v2"
+\a cdsLibManager->cellLineEdit->value = "TCA_DC_Bias_v2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TCA_DC_Bias"
+\a cdsLibManager->cellLineEdit->value = "TCA_DC_Bias"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DC_Bias_v2"
+\a cdsLibManager->cellLineEdit->value = "TCA_DC_Bias_v2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DC_Bias"
+\a cdsLibManager->cellLineEdit->value = "TCA_DC_Bias"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DC_Bias_v2"
+\a cdsLibManager->cellLineEdit->value = "TCA_DC_Bias_v2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_SignalPath_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_SmallSignal"
+\a cdsLibManager->cellLineEdit->value = "TCA_SmallSignal"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_SignalPath_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_SmallSignal"
+\a cdsLibManager->cellLineEdit->value = "TCA_SmallSignal"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_v1"
+\a cdsLibManager->cellLineEdit->value = "TCA_v1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->cellLineEdit->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TCAimp_TB"
+\a cdsLibManager->cellLineEdit->value = "TCAimp_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "TransconductanceAmp_TB"
+\a cdsLibManager->cellLineEdit->value = "TransconductanceAmp_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "EXERCISE1"
+\a cdsLibManager->libLineEdit->value = "EXERCISE1"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "S7_BLOCK_TB"
+\a cdsLibManager->cellLineEdit->value = "S7_BLOCK_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "EXERCISE1"
+\a cdsLibManager->libLineEdit->value = "EXERCISE1"
+\a cdsLibManager->cellListBox->value = "S7_BLOCK_TB"
+\a cdsLibManager->cellLineEdit->value = "S7_BLOCK_TB"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "PseudoResistor_TB"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 1)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "PseudoResistor_TB"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_TestBench"
+\a cdsLibManager->libLineEdit->value = "Stimulator_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->libListBox->value = "Stimulator_Model"
+\a cdsLibManager->libLineEdit->value = "Stimulator_Model"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->cellListBox->value = "switch"
+\a cdsLibManager->cellLineEdit->value = "switch"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->cellListBox->value = "switch"
+\a cdsLibManager->cellLineEdit->value = "switch"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "Chopper"
+\a cdsLibManager->cellLineEdit->value = "Chopper"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "switch"
+\a cdsLibManager->cellLineEdit->value = "switch"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellListBox->value = "Switch"
+\a cdsLibManager->cellLineEdit->value = "Switch"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 45 42 2 "Switch")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrResizeWindow(deleteForm list(2591 315 627 425))
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(2770 452 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting cell "Switch" from library "MultiChannel_EMG_IMP".
+\a nrSetCurrentWindow(cdsLibManager)
+\o Deleted cell 'MultiChannel_EMG_IMP/Switch'.
+\o Deletion of 1 cell done.
+\a nrResizeWindow(workingDialogForm list(2776 461 268 133))
+\a nrResizeWindow(deleteForm list(2591 255 627 425))
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(workingDialogForm)
+\a workingDialogForm->Close->value = t
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2776 431 268 133))
+\a cdsLibManager->cellListBox->value = "Chopper_imp"
+\a cdsLibManager->cellLineEdit->value = "Chopper_imp"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 87 9 2 "Chopper_imp")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrResizeWindow(deleteForm list(2591 315 627 425))
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(2770 482 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting cell "Chopper_imp" from library "MultiChannel_EMG_IMP".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'MultiChannel_EMG_IMP/Chopper_imp'.
+\o Deletion of 1 cell done.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a nrResizeWindow(workingDialogForm list(2770 461 268 133))
+\a nrResizeWindow(deleteForm list(2591 285 627 425))
+\a nrResizeWindow(workingDialogForm list(2770 431 268 133))
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->cellListBox->value = "switch"
+\a cdsLibManager->cellLineEdit->value = "switch"
+\a lmgrLogShowPopup("mainListPopup1" 5 302 2 "switch")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyToLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyFromLibrary->value = "MultiChannel_EMG_Model"
+\a copyCellForm->CopyFromCell->value = "switch"
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_Model"
+\a copyCellForm->CopyToCell->value = "switch"
+\a copyCellForm->ViewsToCopy->value = "symbol verilogams"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "CHARACTERIZATION CadenceLibs D_CELLS_3V D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMT D_CELLS_HDMV D_CELLS_JI3V D_CELLS_JIHD D_CELLS_JIHDLL D_CELLS_JIHDMT D_CELLS_JIHDMV D_CELLS_JIM3V D_CELLS_M3V Device_Characteristics DigitalLibs EXERCISE1 EsdLibs GATES_3V GATES_HD GATES_JI3V GATES_JIHD GATES_JIMT GATES_MT HV_CELLS IO_CELLS_3V IO_CELLS_C1V8 IO_CELLS_C3V IO_CELLS_F3V IO_CELLS_FC1V8 IO_CELLS_FC3V IO_CELLS_JI3V IO_CELLS_JIF3V MultiChannel_EMG_IMP MultiChannel_EMG_TestBench PRIMLIB Stimulator_IMP Stimulator_Model Stimulator_TestBench TECH_XH018 TECH_XH018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib ambit analogLib avTech basic cdsDefTechLib\\nconnectLib functional ieee sample sbaLib std synopsys xfab_connectLib"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyCellForm list(719 215 530 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_IMP"
+\a copyCellForm->CopyToCell->value = "Switch_NMOS"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "MultiChannel_EMG_IMP".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2770 431 273 133))
+\a nrResizeWindow(copyProblemsDialog list(572 324 825 441))
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrResizeWindow(copyProblemsDialog list(572 294 825 441))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyCellForm list(719 185 530 659))
+\a cdsLibManager->cellListBox->value = "Chopper"
+\a cdsLibManager->cellLineEdit->value = "Chopper"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 28 10 2 "Chopper")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyToLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyFromLibrary->value = "MultiChannel_EMG_Model"
+\a copyCellForm->CopyFromCell->value = "Chopper"
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_Model"
+\a copyCellForm->CopyToCell->value = "Chopper"
+\a copyCellForm->ViewsToCopy->value = "schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "CHARACTERIZATION CadenceLibs D_CELLS_3V D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMT D_CELLS_HDMV D_CELLS_JI3V D_CELLS_JIHD D_CELLS_JIHDLL D_CELLS_JIHDMT D_CELLS_JIHDMV D_CELLS_JIM3V D_CELLS_M3V Device_Characteristics DigitalLibs EXERCISE1 EsdLibs GATES_3V GATES_HD GATES_JI3V GATES_JIHD GATES_JIMT GATES_MT HV_CELLS IO_CELLS_3V IO_CELLS_C1V8 IO_CELLS_C3V IO_CELLS_F3V IO_CELLS_FC1V8 IO_CELLS_FC3V IO_CELLS_JI3V IO_CELLS_JIF3V MultiChannel_EMG_IMP MultiChannel_EMG_TestBench PRIMLIB Stimulator_IMP Stimulator_Model Stimulator_TestBench TECH_XH018 TECH_XH018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib ambit analogLib avTech basic cdsDefTechLib\\nconnectLib functional ieee sample sbaLib std synopsys xfab_connectLib"
+\a nrResizeWindow(copyCellForm list(719 215 530 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToLibrary->value = "PRIMLIB"
+\a copyCellForm->CopyToLibrary->value = "Stimulator_IMP"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "Stimulator_IMP".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2768 431 273 133))
+\a nrResizeWindow(copyProblemsDialog list(572 324 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyProblemsDialog list(572 294 825 441))
+\a nrResizeWindow(workingDialogForm list(2768 461 273 133))
+\a nrResizeWindow(copyCellForm list(719 185 530 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrResizeWindow(workingDialogForm list(2768 431 273 133))
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->cellListBox->value = "switch"
+\a cdsLibManager->cellLineEdit->value = "switch"
+\a lmgrLogShowPopup("mainListPopup1" 29 300 2 "switch")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyToLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyFromLibrary->value = "MultiChannel_EMG_Model"
+\a copyCellForm->CopyFromCell->value = "switch"
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_Model"
+\a copyCellForm->CopyToCell->value = "switch"
+\a copyCellForm->ViewsToCopy->value = "symbol verilogams"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "CHARACTERIZATION CadenceLibs D_CELLS_3V D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMT D_CELLS_HDMV D_CELLS_JI3V D_CELLS_JIHD D_CELLS_JIHDLL D_CELLS_JIHDMT D_CELLS_JIHDMV D_CELLS_JIM3V D_CELLS_M3V Device_Characteristics DigitalLibs EXERCISE1 EsdLibs GATES_3V GATES_HD GATES_JI3V GATES_JIHD GATES_JIMT GATES_MT HV_CELLS IO_CELLS_3V IO_CELLS_C1V8 IO_CELLS_C3V IO_CELLS_F3V IO_CELLS_FC1V8 IO_CELLS_FC3V IO_CELLS_JI3V IO_CELLS_JIF3V MultiChannel_EMG_IMP MultiChannel_EMG_TestBench PRIMLIB Stimulator_IMP Stimulator_Model Stimulator_TestBench TECH_XH018 TECH_XH018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib ambit analogLib avTech basic cdsDefTechLib\\nconnectLib functional ieee sample sbaLib std synopsys xfab_connectLib"
+\a nrResizeWindow(copyCellForm list(719 215 530 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_IMP"
+\a copyCellForm->CopyToCell->value = "Switch_NMOS"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "MultiChannel_EMG_IMP".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2776 431 273 133))
+\a nrResizeWindow(copyProblemsDialog list(572 324 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyProblemsDialog list(572 294 825 441))
+\a nrResizeWindow(workingDialogForm list(2768 461 273 133))
+\a nrResizeWindow(copyCellForm list(719 185 530 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrResizeWindow(workingDialogForm list(2768 431 273 133))
+\a cdsLibManager->cellListBox->value = "Chopper"
+\a cdsLibManager->cellLineEdit->value = "Chopper"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 39 14 2 "Chopper")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyToLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyFromLibrary->value = "MultiChannel_EMG_Model"
+\a copyCellForm->CopyFromCell->value = "Chopper"
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_Model"
+\a copyCellForm->CopyToCell->value = "Chopper"
+\a copyCellForm->ViewsToCopy->value = "schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "CHARACTERIZATION CadenceLibs D_CELLS_3V D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMT D_CELLS_HDMV D_CELLS_JI3V D_CELLS_JIHD D_CELLS_JIHDLL D_CELLS_JIHDMT D_CELLS_JIHDMV D_CELLS_JIM3V D_CELLS_M3V Device_Characteristics DigitalLibs EXERCISE1 EsdLibs GATES_3V GATES_HD GATES_JI3V GATES_JIHD GATES_JIMT GATES_MT HV_CELLS IO_CELLS_3V IO_CELLS_C1V8 IO_CELLS_C3V IO_CELLS_F3V IO_CELLS_FC1V8 IO_CELLS_FC3V IO_CELLS_JI3V IO_CELLS_JIF3V MultiChannel_EMG_IMP MultiChannel_EMG_TestBench PRIMLIB Stimulator_IMP Stimulator_Model Stimulator_TestBench TECH_XH018 TECH_XH018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib ambit analogLib avTech basic cdsDefTechLib\\nconnectLib functional ieee sample sbaLib std synopsys xfab_connectLib"
+\a nrResizeWindow(copyCellForm list(719 215 530 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_IMP"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "MultiChannel_EMG_IMP".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2776 431 273 133))
+\a nrResizeWindow(copyProblemsDialog list(572 324 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyProblemsDialog list(572 294 825 441))
+\a nrResizeWindow(workingDialogForm list(2768 461 273 133))
+\a nrResizeWindow(copyCellForm list(719 185 530 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrResizeWindow(workingDialogForm list(2768 431 273 133))
+\a cdsLibManager->libListBox->value = "EXERCISE1"
+\a cdsLibManager->libLineEdit->value = "EXERCISE1"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellListBox->value = "TCA_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Switch_NMOS"
+\a cdsLibManager->cellLineEdit->value = "Switch_NMOS"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a cdsLibManager->fileOpenShellButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Chopper"
+\a cdsLibManager->cellLineEdit->value = "Chopper"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Chopper"
+\a cdsLibManager->cellLineEdit->value = "Chopper"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellListBox->value = "Chopper"
+\a cdsLibManager->cellLineEdit->value = "Chopper"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 59 26 2 "PseudoResistor_10GOhm")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyToLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyFromLibrary->value = "MultiChannel_EMG_IMP"
+\a copyCellForm->CopyFromCell->value = "PseudoResistor_10GOhm"
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_IMP"
+\a copyCellForm->CopyToCell->value = "PseudoResistor_10GOhm"
+\a copyCellForm->ViewsToCopy->value = "schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "CHARACTERIZATION CadenceLibs D_CELLS_3V D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMT D_CELLS_HDMV D_CELLS_JI3V D_CELLS_JIHD D_CELLS_JIHDLL D_CELLS_JIHDMT D_CELLS_JIHDMV D_CELLS_JIM3V D_CELLS_M3V Device_Characteristics DigitalLibs EXERCISE1 EsdLibs GATES_3V GATES_HD GATES_JI3V GATES_JIHD GATES_JIMT GATES_MT HV_CELLS IO_CELLS_3V IO_CELLS_C1V8 IO_CELLS_C3V IO_CELLS_F3V IO_CELLS_FC1V8 IO_CELLS_FC3V IO_CELLS_JI3V IO_CELLS_JIF3V MultiChannel_EMG_Model MultiChannel_EMG_TestBench PRIMLIB Stimulator_IMP Stimulator_Model Stimulator_TestBench TECH_XH018 TECH_XH018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib ambit analogLib avTech basic cdsDefTechLib\\nconnectLib functional ieee sample sbaLib std synopsys xfab_connectLib"
+\a nrResizeWindow(copyCellForm list(719 215 530 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToCell->value = "PseudoResistor_40GOhm"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "MultiChannel_EMG_IMP".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyCellForm list(719 185 530 659))
+\a nrResizeWindow(workingDialogForm list(2768 461 273 133))
+\o Copy succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellListBox->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrResizeWindow(workingDialogForm list(2768 431 273 133))
+\a cdsLibManager->cellListBox->value = "PseudoResistor_40GOhm"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_40GOhm"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 7)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Switch_NMOS"
+\a cdsLibManager->cellLineEdit->value = "Switch_NMOS"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "PseudoResistor_40GOhm"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_40GOhm"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 159 46 2 "PseudoResistor_40GOhm")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "PseudoResistor_40GOhm"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "PseudoResistor_40GOhm"
+\a nrResizeWindow(basicRenameForm list(2775 394 239 190))
+\a nrSetCurrentWindow(basicRenameForm)
+\a basicRenameForm->basicRenameToEdit->value = "PseudoResistor_45GOhm"
+\a basicRenameForm->OK->value = t
+\o Renaming Cell "PseudoResistor_40GOhm" to "PseudoResistor_45GOhm" in library "MultiChannel_EMG_IMP".
+\a nrResizeWindow(workingDialogForm list(2776 461 268 133))
+\a nrSetCurrentWindow(workingDialogForm)
+\a workingDialogForm->Close->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2776 431 268 133))
+\o Rename succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a nrResizeWindow(basicRenameForm list(2785 372 239 190))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EXERCISE1"
+\a cdsLibManager->libLineEdit->value = "EXERCISE1"
+\a cdsLibManager->cellListBox->value = "S7_BLOCK_TB"
+\a cdsLibManager->cellLineEdit->value = "S7_BLOCK_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 17 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EXERCISE1"
+\a cdsLibManager->libLineEdit->value = "EXERCISE1"
+\a cdsLibManager->cellListBox->value = "S7_BLOCK_TB"
+\a cdsLibManager->cellLineEdit->value = "S7_BLOCK_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "S7_BLOCK"
+\a cdsLibManager->cellLineEdit->value = "S7_BLOCK"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 16 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "EXERCISE1"
+\a cdsLibManager->libLineEdit->value = "EXERCISE1"
+\a cdsLibManager->cellListBox->value = "S7_BLOCK"
+\a cdsLibManager->cellLineEdit->value = "S7_BLOCK"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "S7_BLOCK_TB"
+\a cdsLibManager->cellLineEdit->value = "S7_BLOCK_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 1)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v3"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v3"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "TCA_DSL_imp_v1"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_imp_v1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "IdealSARADC_TB_v2"
+\a cdsLibManager->cellLineEdit->value = "IdealSARADC_TB_v2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LPF_Butter_TB"
+\a cdsLibManager->cellLineEdit->value = "LPF_Butter_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "MultiChannelAFE_TB"
+\a cdsLibManager->cellLineEdit->value = "MultiChannelAFE_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Stimulator_IMP"
+\a cdsLibManager->libLineEdit->value = "Stimulator_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Chopper"
+\a cdsLibManager->cellLineEdit->value = "Chopper"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "5bit_BinaryWeightedMirror_ST"
+\a cdsLibManager->cellLineEdit->value = "5bit_BinaryWeightedMirror_ST"
+\a cdsLibManager->cellListBox->value = "CurrentMirror_ST"
+\a cdsLibManager->cellLineEdit->value = "CurrentMirror_ST"
+\a cdsLibManager->cellListBox->value = "Decoder3_8"
+\a cdsLibManager->cellLineEdit->value = "Decoder3_8"
+\a cdsLibManager->cellListBox->value = "M4_MTPCell_v2"
+\a cdsLibManager->cellLineEdit->value = "M4_MTPCell_v2"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "SingleChannel_ST"
+\a cdsLibManager->cellLineEdit->value = "SingleChannel_ST"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "floorplan"
+\a cdsLibManager->cellLineEdit->value = "floorplan"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Chopper"
+\a cdsLibManager->cellLineEdit->value = "Chopper"
+\a cdsLibManager->cellListBox->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->cellListBox->value = "PseudoResistor_45GOhm"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_45GOhm"
+\a cdsLibManager->cellListBox->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellListBox->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->cellLineEdit->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->cellListBox->value = "TCA_DC_Bias"
+\a cdsLibManager->cellLineEdit->value = "TCA_DC_Bias"
+\a cdsLibManager->cellListBox->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v3"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v3"
+\a cdsLibManager->cellListBox->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v3"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v3"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_imp_v1"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_imp_v1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v2"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v3"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_SignalPath_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_SmallSignal"
+\a cdsLibManager->cellLineEdit->value = "TCA_SmallSignal"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_v1"
+\a cdsLibManager->cellLineEdit->value = "TCA_v1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->cellLineEdit->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_SignalPath_1"
+\a cdsLibManager->cellLineEdit->value = "TCA_SignalPath_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->cellLineEdit->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "ChoppingTCA_DSL"
+\a cdsLibManager->cellLineEdit->value = "ChoppingTCA_DSL"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_IMP"
+\a cdsLibManager->cellListBox->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->cellLineEdit->value = "PseudoResistor_10GOhm"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_v2"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_v2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->cellLineEdit->value = "TCA_v3_2uAIbiase"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "TCA_DSL_imp_v1"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_imp_v1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "ChopperFDM_FrontEnd_TB"
+\a cdsLibManager->cellLineEdit->value = "ChopperFDM_FrontEnd_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "ChopperTCA_imp_TB"
+\a cdsLibManager->cellLineEdit->value = "ChopperTCA_imp_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "FrontEnd_Amplifier_TB"
+\a cdsLibManager->cellLineEdit->value = "FrontEnd_Amplifier_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "FrontEnd_SingleChannel_TB"
+\a cdsLibManager->cellLineEdit->value = "FrontEnd_SingleChannel_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "MultiChannelAFE_TB"
+\a cdsLibManager->cellLineEdit->value = "MultiChannelAFE_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 101 164 2 "MultiChannelAFE_TB")
+\a cdsLibManager->cellListBox->value = "TransimpedanceAmp_TB"
+\a cdsLibManager->cellLineEdit->value = "TransimpedanceAmp_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TransconductanceAmp_TB"
+\a cdsLibManager->cellLineEdit->value = "TransconductanceAmp_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TransimpedanceAmp_TB"
+\a cdsLibManager->cellLineEdit->value = "TransimpedanceAmp_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCAimp_StaticLinearity_TB"
+\a cdsLibManager->cellLineEdit->value = "TCAimp_StaticLinearity_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "FrontEnd_SingleChannel_TB"
+\a cdsLibManager->cellLineEdit->value = "FrontEnd_SingleChannel_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "IdealADC_TB"
+\a cdsLibManager->cellLineEdit->value = "IdealADC_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_TB"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCAimp_TB"
+\a cdsLibManager->cellLineEdit->value = "TCAimp_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCAimp_StaticLinearity_TB"
+\a cdsLibManager->cellLineEdit->value = "TCAimp_StaticLinearity_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->cellLineEdit->value = "TCA_DSL_Chopping_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "EMGSingleChannel"
+\a cdsLibManager->cellLineEdit->value = "EMGSingleChannel"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "MultiChannelAFE_TB"
+\a cdsLibManager->cellLineEdit->value = "MultiChannelAFE_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 82 165 2 "MultiChannelAFE_TB")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyToLibrary->value = "CHARACTERIZATION"
+\a copyCellForm->CopyFromLibrary->value = "MultiChannel_EMG_TestBench"
+\a copyCellForm->CopyFromCell->value = "MultiChannelAFE_TB"
+\a copyCellForm->CopyToLibrary->value = "MultiChannel_EMG_TestBench"
+\a copyCellForm->CopyToCell->value = "MultiChannelAFE_TB"
+\a copyCellForm->ViewsToCopy->value = "adexl config schematic"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "CHARACTERIZATION CadenceLibs D_CELLS_3V D_CELLS_HD D_CELLS_HDLL D_CELLS_HDMT D_CELLS_HDMV D_CELLS_JI3V D_CELLS_JIHD D_CELLS_JIHDLL D_CELLS_JIHDMT D_CELLS_JIHDMV D_CELLS_JIM3V D_CELLS_M3V Device_Characteristics DigitalLibs EXERCISE1 EsdLibs GATES_3V GATES_HD GATES_JI3V GATES_JIHD GATES_JIMT GATES_MT HV_CELLS IO_CELLS_3V IO_CELLS_C1V8 IO_CELLS_C3V IO_CELLS_F3V IO_CELLS_FC1V8 IO_CELLS_FC3V IO_CELLS_JI3V IO_CELLS_JIF3V MultiChannel_EMG_IMP MultiChannel_EMG_Model PRIMLIB Stimulator_IMP Stimulator_Model Stimulator_TestBench TECH_XH018 TECH_XH018_HD US_8ths VLG_PRIMITIVES XFABLibs ahdlLib ambit analogLib avTech basic cdsDefTechLib\\nconnectLib functional ieee sample sbaLib std synopsys xfab_connectLib"
+\a nrResizeWindow(copyCellForm list(719 215 530 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToCell->value = "MultiChannelAFE_TB_2"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "MultiChannel_EMG_TestBench".
+\o Processing files to be copied...
+\a nrResizeWindow(workingDialogForm list(2770 461 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyCellForm list(719 185 530 659))
+\a nrResizeWindow(workingDialogForm list(2768 461 273 133))
+\a nrSetCurrentWindow(workingDialogForm)
+\a workingDialogForm->Close->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2768 431 273 133))
+\o Copy succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "MultiChannelAFE_TB"
+\a cdsLibManager->cellLineEdit->value = "MultiChannelAFE_TB"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a cdsLibManager->cellListBox->value = "MultiChannelAFE_TB_2"
+\a cdsLibManager->cellLineEdit->value = "MultiChannelAFE_TB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrResizeWindow(cdsLibManager list(2396 206 1388 824))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "MultiChannelAFE_TB_2"
+\a cdsLibManager->cellLineEdit->value = "MultiChannelAFE_TB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_TestBench"
+\a cdsLibManager->cellListBox->value = "MultiChannelAFE_TB_2"
+\a cdsLibManager->cellLineEdit->value = "MultiChannelAFE_TB_2"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "ClockGen_TB"
+\a cdsLibManager->cellLineEdit->value = "ClockGen_TB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->libLineEdit->value = "MultiChannel_EMG_Model"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "ClockGen"
+\a cdsLibManager->cellLineEdit->value = "ClockGen"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "ClockGenMultiFreq"
+\a cdsLibManager->cellLineEdit->value = "ClockGenMultiFreq"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

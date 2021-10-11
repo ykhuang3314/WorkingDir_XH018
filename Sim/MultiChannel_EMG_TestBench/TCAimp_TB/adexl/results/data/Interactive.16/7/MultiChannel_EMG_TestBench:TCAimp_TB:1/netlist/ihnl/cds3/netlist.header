@@ -1,0 +1,5 @@
+
+// Library name: MultiChannel_EMG_IMP
+// Cell name: PseudoResistor_45GOhm
+// View name: schematic
+subckt PseudoResistor_45GOhm A B

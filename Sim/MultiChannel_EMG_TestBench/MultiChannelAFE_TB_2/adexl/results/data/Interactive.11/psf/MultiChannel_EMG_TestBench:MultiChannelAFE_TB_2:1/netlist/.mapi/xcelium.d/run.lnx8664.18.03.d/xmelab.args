@@ -1,0 +1,35 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.11/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.mapi//xcelium.d/AMSD/ahdlSimDB"
+-amsdlibdir
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.11/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.mapi//xcelium.d/AMSD
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+DLNOHV
+-NOWARN
+DLCLAP
+-V93
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/FrontEnd_Amplifier/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:FrontEnd_Amplifier view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/LPF_Butter/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:LPF_Butter view:verilogams"
+-AMSCOMPILEFILE
+"file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGenMultiFreq view:functional"
+-MESSAGES
+-AMSELAB
+-XLMODE
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.11/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.11/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/cds.lib
+-HDLVAR
+/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.11/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/netlist/.mapi//xcelium.d/run.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

@@ -40,82 +40,82 @@ parameter fchop15 = fchop1+14*df;
 parameter fchop16 = fchop1+15*df;
 parameter DUTY = 50;
 
-ClockGen #(.FREQ(fchop1), .DUTY(DUTY)) CLK1Gen (
+ClockGen #(.FREQ_KHz(fchop1), .DUTY(DUTY)) CLK1Gen (
 .CLK(CLK1),
 .CLKB(CLKB1)
 );
 
-ClockGen #(.FREQ(fchop2), .DUTY(DUTY)) CLK2Gen (
+ClockGen #(.FREQ_KHz(fchop2), .DUTY(DUTY)) CLK2Gen (
 .CLK(CLK2),
 .CLKB(CLKB2)
 );
 
-ClockGen #(.FREQ(fchop3), .DUTY(DUTY)) CLK3Gen (
+ClockGen #(.FREQ_KHz(fchop3), .DUTY(DUTY)) CLK3Gen (
 .CLK(CLK3),
 .CLKB(CLKB3)
 );
 
-ClockGen #(.FREQ(fchop4), .DUTY(DUTY)) CLK4Gen (
+ClockGen #(.FREQ_KHz(fchop4), .DUTY(DUTY)) CLK4Gen (
 .CLK(CLK4),
 .CLKB(CLKB4)
 );
 
-ClockGen #(.FREQ(fchop5), .DUTY(DUTY)) CLK5Gen (
+ClockGen #(.FREQ_KHz(fchop5), .DUTY(DUTY)) CLK5Gen (
 .CLK(CLK5),
 .CLKB(CLKB5)
 );
 
-ClockGen #(.FREQ(fchop6), .DUTY(DUTY)) CLK6Gen (
+ClockGen #(.FREQ_KHz(fchop6), .DUTY(DUTY)) CLK6Gen (
 .CLK(CLK6),
 .CLKB(CLKB6)
 );
 
-ClockGen #(.FREQ(fchop7), .DUTY(DUTY)) CLK7Gen (
+ClockGen #(.FREQ_KHz(fchop7), .DUTY(DUTY)) CLK7Gen (
 .CLK(CLK7),
 .CLKB(CLKB7)
 );
 
-ClockGen #(.FREQ(fchop8), .DUTY(DUTY)) CLK8Gen (
+ClockGen #(.FREQ_KHz(fchop8), .DUTY(DUTY)) CLK8Gen (
 .CLK(CLK8),
 .CLKB(CLKB8)
 );
 
-ClockGen #(.FREQ(fchop9), .DUTY(DUTY)) CLK9Gen (
+ClockGen #(.FREQ_KHz(fchop9), .DUTY(DUTY)) CLK9Gen (
 .CLK(CLK9),
 .CLKB(CLKB9)
 );
 
-ClockGen #(.FREQ(fchop10), .DUTY(DUTY)) CLK10Gen (
+ClockGen #(.FREQ_KHz(fchop10), .DUTY(DUTY)) CLK10Gen (
 .CLK(CLK10),
 .CLKB(CLKB10)
 );
 
-ClockGen #(.FREQ(fchop11), .DUTY(DUTY)) CLK11Gen (
+ClockGen #(.FREQ_KHz(fchop11), .DUTY(DUTY)) CLK11Gen (
 .CLK(CLK11),
 .CLKB(CLKB11)
 );
 
-ClockGen #(.FREQ(fchop12), .DUTY(DUTY)) CLK12Gen (
+ClockGen #(.FREQ_KHz(fchop12), .DUTY(DUTY)) CLK12Gen (
 .CLK(CLK12),
 .CLKB(CLKB12)
 );
 
-ClockGen #(.FREQ(fchop13), .DUTY(DUTY)) CLK13Gen (
+ClockGen #(.FREQ_KHz(fchop13), .DUTY(DUTY)) CLK13Gen (
 .CLK(CLK13),
 .CLKB(CLKB13)
 );
 
-ClockGen #(.FREQ(fchop14), .DUTY(DUTY)) CLK14Gen (
+ClockGen #(.FREQ_KHz(fchop14), .DUTY(DUTY)) CLK14Gen (
 .CLK(CLK14),
 .CLKB(CLKB14)
 );
 
-ClockGen #(.FREQ(fchop15), .DUTY(DUTY)) CLK15Gen (
+ClockGen #(.FREQ_KHz(fchop15), .DUTY(DUTY)) CLK15Gen (
 .CLK(CLK15),
 .CLKB(CLKB15)
 );
 
-ClockGen #(.FREQ(fchop16), .DUTY(DUTY)) CLK16Gen (
+ClockGen #(.FREQ_KHz(fchop16), .DUTY(DUTY)) CLK16Gen (
 .CLK(CLK16),
 .CLKB(CLKB16)
 );

@@ -1,0 +1,21 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Oct 08, 2021 at 12:36:13 CEST
+xmvlog
+    -use5x
+    -SPECIFICUNIT Switch_NMOS
+    -zparse /tmp/vamsZparnyj925
+    -NOWARN DLNOHV
+    -work MultiChannel_EMG_IMP
+    -view verilogams
+    -nostdout
+    -logfile /home/ykhuang/WorkingDir_XH018/.cadence/dfII/TextSupport/Logs/Parser/verilogams/MultiChannel_EMG_IMP/verilogams/compile0.log
+    -messages
+    -ams
+    -cdslib /home/ykhuang/WorkingDir_XH018/cds.lib
+    /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/Switch_NMOS/verilogams/verilog.vams
+
+file: /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_IMP/Switch_NMOS/verilogams/verilog.vams
+	module MultiChannel_EMG_IMP.Switch_NMOS:verilogams
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Oct 08, 2021 at 12:36:14 CEST  (total: 00:00:01)

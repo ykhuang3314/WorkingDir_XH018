@@ -5,23 +5,23 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: ykhuang   Host: s2424   HostID: ED824314   PID: 5053
-Memory  available: 46.5314 GB  physical: 67.2863 GB
+User: ykhuang   Host: s2424   HostID: ED824314   PID: 1876
+Memory  available: 14.6723 GB  physical: 67.2863 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [1299.6] ( 16 ),  1 [1581.6] ( 17 ),  2 [2767.8] ( 18 )
-                 3 [1495.8] ( 19 ),  4 [1882.6] ( 20 ),  5 [1321.3] ( 21 )
-                 6 [2772.5] ( 22 ),  7 [1620.1] ( 23 )
-        1:       8 [2399.9] ( 24 ),  9 [1199.9] ( 25 ), 10 [2735.9] ( 26 )
-                11 [2736.0] ( 27 ), 12 [1200.6] ( 28 ), 13 [1299.9] ( 29 )
-                14 [2747.8] ( 30 ), 15 [1200.0] ( 31 )
+        0:       0 [2339.8] ( 16 ),  1 [1206.7] ( 17 ),  2 [2723.3] ( 18 )
+                 3 [2721.8] ( 19 ),  4 [2720.5] ( 20 ),  5 [2235.6] ( 21 )
+                 6 [1595.9] ( 22 ),  7 [2199.9] ( 23 )
+        1:       8 [2762.1] ( 24 ),  9 [1265.3] ( 25 ), 10 [1728.8] ( 26 )
+                11 [2767.5] ( 27 ), 12 [1396.1] ( 28 ), 13 [2767.5] ( 29 )
+                14 [2757.4] ( 30 ), 15 [1286.9] ( 31 )
         
-System load averages (1min, 5min, 15min) : 21.1 %, 20.6 %, 20.1 %
+System load averages (1min, 5min, 15min) : 19.9 %, 19.9 %, 19.7 %
 Hyperthreading is enabled
 
 
-Simulating `input.scs' on s2424 at 4:39:05 PM, Tue Oct 5, 2021 (process id: 5053).
+Simulating `input.scs' on s2424 at 12:30:42 PM, Thur Oct 7, 2021 (process id: 1876).
 Current working directory: /home/ykhuang/WorkingDir_XH018/Sim/PseudoResistor_TB/spectre/schematic/netlist
 Command line:
     /pkg/cadence/installs/SPECTRE181/tools/bin/spectre -64 input.scs  \
@@ -364,22 +364,22 @@ Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/rmtpl.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/pfuse.scs
 Reading file:  /pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/models/res/s_res.scs
-Time for NDB Parsing: CPU = 349.915 ms, elapsed = 435.097 ms.
-Time accumulated: CPU = 404.784 ms, elapsed = 435.109 ms.
-Peak resident memory used = 70.1 Mbytes.
+Time for NDB Parsing: CPU = 349.145 ms, elapsed = 419.844 ms.
+Time accumulated: CPU = 411.905 ms, elapsed = 419.853 ms.
+Peak resident memory used = 68.1 Mbytes.
 
-Time for Elaboration: CPU = 26.161 ms, elapsed = 26.1641 ms.
-Time accumulated: CPU = 431.089 ms, elapsed = 461.416 ms.
-Peak resident memory used = 79.3 Mbytes.
+Time for Elaboration: CPU = 25.809 ms, elapsed = 25.816 ms.
+Time accumulated: CPU = 437.866 ms, elapsed = 445.819 ms.
+Peak resident memory used = 77.3 Mbytes.
 
 
 Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 1.161 ms, elapsed = 1.16014 ms.
-Time accumulated: CPU = 432.411 ms, elapsed = 462.736 ms.
-Peak resident memory used = 80 Mbytes.
+Time for EDB Visiting: CPU = 1.18 ms, elapsed = 1.18113 ms.
+Time accumulated: CPU = 439.216 ms, elapsed = 447.165 ms.
+Peak resident memory used = 78 Mbytes.
 
 
 Global user options:
@@ -422,9 +422,9 @@ Output statements:
            .measure 0     
                save 1     
 
-Time for parsing: CPU = 3.276 ms, elapsed = 7.48515 ms.
-Time accumulated: CPU = 435.807 ms, elapsed = 470.342 ms.
-Peak resident memory used = 81.6 Mbytes.
+Time for parsing: CPU = 3.248 ms, elapsed = 7.53188 ms.
+Time accumulated: CPU = 442.587 ms, elapsed = 454.82 ms.
+Peak resident memory used = 79.6 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -446,20 +446,20 @@ Important parameter values:
     gmindc = 1 pS
 
 Maximum value achieved for any signal of each quantity: 
-V: V(M1.m1:int_d) = 900 mV
-I: I(V5:p) = 515.3 aA
-Convergence achieved in 18 iterations.
-DC simulation time: CPU = 2.659 ms, elapsed = 4.98796 ms.
-Total time required for dc analysis `dcOp': CPU = 2.707 ms, elapsed = 5.03182 ms.
-Time accumulated: CPU = 443.334 ms, elapsed = 480.196 ms.
-Peak resident memory used = 83 Mbytes.
+V: V(M11.m1:int_d) = 900 mV
+I: I(V5:p) = 399.7 aA
+Convergence achieved in 2 iterations.
+DC simulation time: CPU = 2.349 ms, elapsed = 4.56691 ms.
+Total time required for dc analysis `dcOp': CPU = 2.397 ms, elapsed = 4.61316 ms.
+Time accumulated: CPU = 449.719 ms, elapsed = 464.171 ms.
+Peak resident memory used = 81 Mbytes.
 
 dcOpInfo: writing operating point information to rawfile.
 
 Opening the PSF file ../psf/dcOpInfo.info ...
 
 ************************************************
-DC Analysis `dc': deltaV = (-900e-03 -> 900e-03)
+DC Analysis `dc': deltaV = (-400e-03 -> 400e-03)
 ************************************************
 
 Opening the PSF file ../psf/dc.dc ...
@@ -472,95 +472,95 @@ Important parameter values:
     tempeffects = all
     gmindc = 1 pS
 
-Notice from spectre at deltaV = -900e-03 during DC analysis `dc'.
+Notice from spectre at deltaV = -400e-03 during DC analysis `dc'.
     GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(net027) = -4.92212 mV
+        dV(M6.m1:int_d) = -4.34893 mV
         Use the `gmin_check' option to eliminate or expand this report.
-Notice from spectre at deltaV = -864e-03 during DC analysis `dc'.
+Notice from spectre at deltaV = -384e-03 during DC analysis `dc'.
     GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(net027) = -4.59167 mV
+        dV(M6.m1:int_d) = -3.77454 mV
         Use the `gmin_check' option to eliminate or expand this report.
-Notice from spectre at deltaV = -828e-03 during DC analysis `dc'.
+Notice from spectre at deltaV = -368e-03 during DC analysis `dc'.
     GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(net027) = -4.2575 mV
-        Use the `gmin_check' option to eliminate or expand this report.
-
-    dc: deltaV = -828e-03       (4 %), step = 36e-03          (2 %)
-
-Notice from spectre at deltaV = -792e-03 during DC analysis `dc'.
-    GminDC = 1 pS is large enough to noticeably affect the DC solution.
-        dV(net027) = -3.91963 mV
+        dV(M6.m1:int_d) = -3.19747 mV
         Use the `gmin_check' option to eliminate or expand this report.
 
-    dc: deltaV = -792e-03       (6 %), step = 36e-03          (2 %)
+    dc: deltaV = -368e-03       (4 %), step = 16e-03          (2 %)
 
-Notice from spectre at deltaV = -756e-03 during DC analysis `dc'.
+Notice from spectre at deltaV = -352e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(M6.m1:int_d) = -2.61888 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: deltaV = -352e-03       (6 %), step = 16e-03          (2 %)
+
+Notice from spectre at deltaV = -336e-03 during DC analysis `dc'.
     GminDC = 1 pS is large enough to noticeably affect the DC solution.
         Further occurrences of this notice will be suppressed.
-        dV(net027) = -3.578 mV
+        dV(M6.m1:int_d) = -2.04029 mV
         Further occurrences of this notice will be suppressed.
         Use the `gmin_check' option to eliminate or expand this report.
         Further occurrences of this notice will be suppressed.
 
-    dc: deltaV = -756e-03       (8 %), step = 36e-03          (2 %)
-    dc: deltaV = -720e-03      (10 %), step = 36e-03          (2 %)
-    dc: deltaV = -684e-03      (12 %), step = 36e-03          (2 %)
-    dc: deltaV = -648e-03      (14 %), step = 36e-03          (2 %)
-    dc: deltaV = -612e-03      (16 %), step = 36e-03          (2 %)
-    dc: deltaV = -576e-03      (18 %), step = 36e-03          (2 %)
-    dc: deltaV = -540e-03      (20 %), step = 36e-03          (2 %)
-    dc: deltaV = -504e-03      (22 %), step = 36e-03          (2 %)
-    dc: deltaV = -468e-03      (24 %), step = 36e-03          (2 %)
-    dc: deltaV = -432e-03      (26 %), step = 36e-03          (2 %)
-    dc: deltaV = -396e-03      (28 %), step = 36e-03          (2 %)
-    dc: deltaV = -360e-03      (30 %), step = 36e-03          (2 %)
-    dc: deltaV = -324e-03      (32 %), step = 36e-03          (2 %)
-    dc: deltaV = -288e-03      (34 %), step = 36e-03          (2 %)
-    dc: deltaV = -252e-03      (36 %), step = 36e-03          (2 %)
-    dc: deltaV = -216e-03      (38 %), step = 36e-03          (2 %)
-    dc: deltaV = -180e-03      (40 %), step = 36e-03          (2 %)
-    dc: deltaV = -144e-03      (42 %), step = 36e-03          (2 %)
-    dc: deltaV = -108e-03      (44 %), step = 36e-03          (2 %)
-    dc: deltaV = -72e-03       (46 %), step = 36e-03          (2 %)
-    dc: deltaV = -36e-03       (48 %), step = 36e-03          (2 %)
-    dc: deltaV = 0             (50 %), step = 36e-03          (2 %)
-    dc: deltaV = 36e-03        (52 %), step = 36e-03          (2 %)
-    dc: deltaV = 72e-03        (54 %), step = 36e-03          (2 %)
-    dc: deltaV = 108e-03       (56 %), step = 36e-03          (2 %)
-    dc: deltaV = 144e-03       (58 %), step = 36e-03          (2 %)
-    dc: deltaV = 180e-03       (60 %), step = 36e-03          (2 %)
-    dc: deltaV = 216e-03       (62 %), step = 36e-03          (2 %)
-    dc: deltaV = 252e-03       (64 %), step = 36e-03          (2 %)
-    dc: deltaV = 288e-03       (66 %), step = 36e-03          (2 %)
-    dc: deltaV = 324e-03       (68 %), step = 36e-03          (2 %)
-    dc: deltaV = 360e-03       (70 %), step = 36e-03          (2 %)
-    dc: deltaV = 396e-03       (72 %), step = 36e-03          (2 %)
-    dc: deltaV = 432e-03       (74 %), step = 36e-03          (2 %)
-    dc: deltaV = 468e-03       (76 %), step = 36e-03          (2 %)
-    dc: deltaV = 504e-03       (78 %), step = 36e-03          (2 %)
-    dc: deltaV = 540e-03       (80 %), step = 36e-03          (2 %)
-    dc: deltaV = 576e-03       (82 %), step = 36e-03          (2 %)
-    dc: deltaV = 612e-03       (84 %), step = 36e-03          (2 %)
-    dc: deltaV = 648e-03       (86 %), step = 36e-03          (2 %)
-    dc: deltaV = 684e-03       (88 %), step = 36e-03          (2 %)
-    dc: deltaV = 720e-03       (90 %), step = 36e-03          (2 %)
-    dc: deltaV = 756e-03       (92 %), step = 36e-03          (2 %)
-    dc: deltaV = 792e-03       (94 %), step = 36e-03          (2 %)
-    dc: deltaV = 828e-03       (96 %), step = 36e-03          (2 %)
-    dc: deltaV = 864e-03       (98 %), step = 36e-03          (2 %)
-    dc: deltaV = 900e-03      (100 %), step = 36e-03          (2 %)
+    dc: deltaV = -336e-03       (8 %), step = 16e-03          (2 %)
+    dc: deltaV = -320e-03      (10 %), step = 16e-03          (2 %)
+    dc: deltaV = -304e-03      (12 %), step = 16e-03          (2 %)
+    dc: deltaV = -288e-03      (14 %), step = 16e-03          (2 %)
+    dc: deltaV = -272e-03      (16 %), step = 16e-03          (2 %)
+    dc: deltaV = -256e-03      (18 %), step = 16e-03          (2 %)
+    dc: deltaV = -240e-03      (20 %), step = 16e-03          (2 %)
+    dc: deltaV = -224e-03      (22 %), step = 16e-03          (2 %)
+    dc: deltaV = -208e-03      (24 %), step = 16e-03          (2 %)
+    dc: deltaV = -192e-03      (26 %), step = 16e-03          (2 %)
+    dc: deltaV = -176e-03      (28 %), step = 16e-03          (2 %)
+    dc: deltaV = -160e-03      (30 %), step = 16e-03          (2 %)
+    dc: deltaV = -144e-03      (32 %), step = 16e-03          (2 %)
+    dc: deltaV = -128e-03      (34 %), step = 16e-03          (2 %)
+    dc: deltaV = -112e-03      (36 %), step = 16e-03          (2 %)
+    dc: deltaV = -96e-03       (38 %), step = 16e-03          (2 %)
+    dc: deltaV = -80e-03       (40 %), step = 16e-03          (2 %)
+    dc: deltaV = -64e-03       (42 %), step = 16e-03          (2 %)
+    dc: deltaV = -48e-03       (44 %), step = 16e-03          (2 %)
+    dc: deltaV = -32e-03       (46 %), step = 16e-03          (2 %)
+    dc: deltaV = -16e-03       (48 %), step = 16e-03          (2 %)
+    dc: deltaV = 0             (50 %), step = 16e-03          (2 %)
+    dc: deltaV = 16e-03        (52 %), step = 16e-03          (2 %)
+    dc: deltaV = 32e-03        (54 %), step = 16e-03          (2 %)
+    dc: deltaV = 48e-03        (56 %), step = 16e-03          (2 %)
+    dc: deltaV = 64e-03        (58 %), step = 16e-03          (2 %)
+    dc: deltaV = 80e-03        (60 %), step = 16e-03          (2 %)
+    dc: deltaV = 96e-03        (62 %), step = 16e-03          (2 %)
+    dc: deltaV = 112e-03       (64 %), step = 16e-03          (2 %)
+    dc: deltaV = 128e-03       (66 %), step = 16e-03          (2 %)
+    dc: deltaV = 144e-03       (68 %), step = 16e-03          (2 %)
+    dc: deltaV = 160e-03       (70 %), step = 16e-03          (2 %)
+    dc: deltaV = 176e-03       (72 %), step = 16e-03          (2 %)
+    dc: deltaV = 192e-03       (74 %), step = 16e-03          (2 %)
+    dc: deltaV = 208e-03       (76 %), step = 16e-03          (2 %)
+    dc: deltaV = 224e-03       (78 %), step = 16e-03          (2 %)
+    dc: deltaV = 240e-03       (80 %), step = 16e-03          (2 %)
+    dc: deltaV = 256e-03       (82 %), step = 16e-03          (2 %)
+    dc: deltaV = 272e-03       (84 %), step = 16e-03          (2 %)
+    dc: deltaV = 288e-03       (86 %), step = 16e-03          (2 %)
+    dc: deltaV = 304e-03       (88 %), step = 16e-03          (2 %)
+    dc: deltaV = 320e-03       (90 %), step = 16e-03          (2 %)
+    dc: deltaV = 336e-03       (92 %), step = 16e-03          (2 %)
+    dc: deltaV = 352e-03       (94 %), step = 16e-03          (2 %)
+    dc: deltaV = 368e-03       (96 %), step = 16e-03          (2 %)
+    dc: deltaV = 384e-03       (98 %), step = 16e-03          (2 %)
+    dc: deltaV = 400e-03      (100 %), step = 16e-03          (2 %)
 
 Maximum value achieved for any signal of each quantity: 
-V: V(net05) = 1.8 V
-I: I(V1:p) = 6.741 nA
-DC simulation time: CPU = 33.099 ms, elapsed = 35.3479 ms.
+V: V(net05) = 1.3 V
+I: I(V1:p) = 27.03 pA
+DC simulation time: CPU = 33.15 ms, elapsed = 35.394 ms.
 
-Notice from spectre at deltaV = 900e-03 during DC analysis `dc'.
+Notice from spectre at deltaV = 400e-03 during DC analysis `dc'.
     The value of parameter 'deltaV' has been reset to the original value 0.
 
-Total time required for dc analysis `dc': CPU = 33.133 ms, elapsed = 35.3799 ms.
-Time accumulated: CPU = 479.466 ms, elapsed = 520.886 ms.
-Peak resident memory used = 83.7 Mbytes.
+Total time required for dc analysis `dc': CPU = 33.185 ms, elapsed = 35.429 ms.
+Time accumulated: CPU = 485.793 ms, elapsed = 504.712 ms.
+Peak resident memory used = 81.7 Mbytes.
 
 
 Notice from spectre.
@@ -585,9 +585,9 @@ subckts: writing subcircuits to rawfile.
 
 Opening the PSFASCII file ../psf/subckts.info.subckts ...
 
-Aggregate audit (4:39:05 PM, Tue Oct 5, 2021):
-Time used: CPU = 507 ms, elapsed = 571 ms, util. = 88.8%.
-Time spent in licensing: elapsed = 20.6 ms.
-Peak memory used = 84.6 Mbytes.
-Simulation started at: 4:39:05 PM, Tue Oct 5, 2021, ended at: 4:39:05 PM, Tue Oct 5, 2021, with elapsed time (wall clock): 571 ms.
+Aggregate audit (12:30:43 PM, Thur Oct 7, 2021):
+Time used: CPU = 513 ms, elapsed = 555 ms, util. = 92.5%.
+Time spent in licensing: elapsed = 14.8 ms.
+Peak memory used = 82.6 Mbytes.
+Simulation started at: 12:30:42 PM, Thur Oct 7, 2021, ended at: 12:30:43 PM, Thur Oct 7, 2021, with elapsed time (wall clock): 555 ms.
 spectre completes with 0 errors, 1 warning, and 8 notices.

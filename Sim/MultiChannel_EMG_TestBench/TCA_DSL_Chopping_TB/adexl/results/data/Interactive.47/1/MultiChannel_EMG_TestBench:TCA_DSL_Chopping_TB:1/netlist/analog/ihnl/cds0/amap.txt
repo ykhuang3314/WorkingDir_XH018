@@ -1,0 +1,8 @@
+cellMap,*Switch_NMOS,*Switch_NMOS,*MultiChannel_EMG_IMP,*schematic
+netMap,*Switch_NMOS,*gnd!,*0
+instMap,*Switch_NMOS,*M0,*M0
+instMaster,*Switch_NMOS,*M0,*PRIMLIB_nel_spectre,*nel
+portMap,*Switch_NMOS,*A,*A
+portMap,*Switch_NMOS,*B,*B
+portMap,*Switch_NMOS,*VSSA,*VSSA
+portMap,*Switch_NMOS,*ctrl,*ctrl

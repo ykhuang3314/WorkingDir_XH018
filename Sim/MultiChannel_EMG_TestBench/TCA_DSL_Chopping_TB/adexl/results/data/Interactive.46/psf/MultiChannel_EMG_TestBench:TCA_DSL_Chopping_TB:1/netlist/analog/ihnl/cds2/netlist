@@ -1,0 +1,10 @@
+    M7 (net8 net8 B net8) pel w=3u l=2u as=1.02e-12 ad=1.02e-12 \
+        ps=4.68e-06 pd=4.68e-06 nrs=0.09 nrd=0.09 m=(1)*(3) par1=((1)*(3))
+    M6 (net9 net9 A net9) pel w=3u l=2u as=1.02e-12 ad=1.02e-12 \
+        ps=4.68e-06 pd=4.68e-06 nrs=0.09 nrd=0.09 m=(1)*(3) par1=((1)*(3))
+    M5 (net7 net7 net9 net9) pel w=3u l=2u as=1.44e-12 ad=1.44e-12 \
+        ps=6.96e-06 pd=6.96e-06 nrs=0.09 nrd=0.09 m=(1)*(1) par1=((1)*(1))
+    M4 (net7 net7 net8 net8) pel w=3u l=2u as=1.44e-12 ad=1.44e-12 \
+        ps=6.96e-06 pd=6.96e-06 nrs=0.09 nrd=0.09 m=(1)*(1) par1=((1)*(1))
+ends PseudoResistor_45GOhm
+// End of subcircuit definition.

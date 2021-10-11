@@ -1,0 +1,49 @@
+\w *WARNING* (AMS-2002): Configuration properties have not been specified in Hierarchy Editor for the configuration.
+\w  
+\o _axlToolCloseTestPointOutputLog("/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.6/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/psf/xrun.log")
+\o _axlToolDisplayTestPointOutputLog("session11" "MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1" "/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/1/MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1/psf/xrun.log")
+\a hiSetCurrentWindow(window(407))
+\r t
+\a axlToolTogglePlotOutput("session11" "MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1" 4)
+\r t
+\a axlToolTogglePlotOutput("session11" "MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1" 24)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm11->axlOutputsWidget11 0 "add" 12 6)
+\r t
+\a _axlOutputSetupCurrentChanged(axlOutputsForm11->axlOutputsWidget11 12 6)
+\r t
+\a axlToolTogglePlotOutput("session11" "MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1" 5)
+\r t
+\a axlToolTogglePlotOutput("session11" "MultiChannel_EMG_TestBench:MultiChannelAFE_TB_2:1" 24)
+\r t
+\a (_axlStopSimulation)
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 

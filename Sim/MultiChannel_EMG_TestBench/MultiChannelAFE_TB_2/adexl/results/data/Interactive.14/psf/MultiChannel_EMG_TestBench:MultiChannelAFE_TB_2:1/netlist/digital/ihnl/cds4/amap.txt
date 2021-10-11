@@ -1,0 +1,12 @@
+instMap,*ChoppingTCA_DSL_imp,*I37,*I37
+instMaster,*ChoppingTCA_DSL_imp,*I37,*MultiChannel_EMG_IMP_Chopper_schematic
+instMap,*ChoppingTCA_DSL_imp,*I36,*I36
+instMaster,*ChoppingTCA_DSL_imp,*I36,*MultiChannel_EMG_IMP_Chopper_schematic
+instMap,*ChoppingTCA_DSL_imp,*I40,*I40
+instMaster,*ChoppingTCA_DSL_imp,*I40,*MultiChannel_EMG_IMP_Chopper_schematic
+instMap,*ChoppingTCA_DSL_imp,*I34,*I34
+instMaster,*ChoppingTCA_DSL_imp,*I34,*MultiChannel_EMG_IMP_PseudoResistor_45GOhm_schematic
+instMap,*ChoppingTCA_DSL_imp,*I35,*I35
+instMaster,*ChoppingTCA_DSL_imp,*I35,*MultiChannel_EMG_IMP_PseudoResistor_45GOhm_schematic
+netMap,*ChoppingTCA_DSL_imp,*gnd!,*cds_globals.\gnd! 
+cellMap,*ChoppingTCA_DSL_imp,*ChoppingTCA_DSL_imp,*MultiChannel_EMG_IMP,*schematic

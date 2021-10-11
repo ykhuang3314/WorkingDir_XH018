@@ -1,0 +1,16 @@
+\o ERROR (ADEXL-5033): While simulating run Interactive.123, point 1, test MultiChannel_EMG_IMP:TCA_3:1, received error:
+\o Simulation Error:
+\o  ------------------------------
+\o  Simulator failed to complete the simulation.
+\o The simulator integration (OASIS) has reported an unsuccessful simulation.
+\o While this validity check is dependent on the particular simulator's OASIS integration,
+\o with the default Cadence-provided checks common causes for this failure are:
+\o 1. Missing simulation /psf directory containing simulation output files.
+\o 2. Simulation output files (e.g., PSF) that do not contain any successful analyses.
+\o Check the simulator's output log for more information.
+\o ./runSimulation can be manually run in this directory to check the issue.
+\o For details open log: /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.123/1/MultiChannel_EMG_IMP:TCA_3:1/psf/spectre.out for the point: (69 1)
+\o  ------------------------------
+\o 
+\o For more details, consult the job log file:
+\o /home/ykhuang/WorkingDir_XH018/logs_ykhuang/logs0/Job169.log

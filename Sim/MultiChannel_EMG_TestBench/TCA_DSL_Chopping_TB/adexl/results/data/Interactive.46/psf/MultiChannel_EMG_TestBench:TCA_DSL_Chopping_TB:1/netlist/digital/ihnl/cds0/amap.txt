@@ -1,0 +1,2 @@
+netMap,*Switch_NMOS,*gnd!,*cds_globals.\gnd! 
+cellMap,*Switch_NMOS,*Switch_NMOS,*MultiChannel_EMG_IMP,*schematic

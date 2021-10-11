@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+/home/ykhuang/WorkingDir_XH018/
+-VTIMESCALE
+1ns/1ns
+-MODELINCDIR
+/home/ykhuang/WorkingDir_XH018/
+-SNAPSHOT
+MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:config

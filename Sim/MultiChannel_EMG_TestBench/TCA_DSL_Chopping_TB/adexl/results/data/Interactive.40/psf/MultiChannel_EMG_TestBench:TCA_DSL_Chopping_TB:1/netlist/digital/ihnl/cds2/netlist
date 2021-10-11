@@ -1,0 +1,18 @@
+// Library - MultiChannel_EMG_IMP, Cell - PseudoResistor_45GOhm, View -
+//schematic
+// LAST TIME SAVED: Oct  7 14:34:26 2021
+// NETLIST TIME: Oct  8 16:46:37 2021
+`timescale 1ns / 1ps 
+
+`worklib MultiChannel_EMG_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="MultiChannel_EMG_IMP", dfII_cell="PseudoResistor_45GOhm", dfII_view="schematic", worklib_name="MultiChannel_EMG_IMP", view_name="schematic", last_save_time="Oct  7 14:34:26 2021" *)
+
+module PseudoResistor_45GOhm (A, B);
+
+inout  A, B;
+
+
+endmodule

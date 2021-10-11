@@ -1,0 +1,20 @@
+//Revision 4
+//NOTE
+// Default config view template for AMS netlister(s) in ADE.
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config MultiChannelAFE_TB_2;
+design MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:schematic;
+liblist myLib, MultiChannel_EMG_Model;
+
+viewlist spectre, spice, pspice, verilog, verilogams, behavioral, functional, systemVerilog, schematic, veriloga, vhdl, vhdlams, wreal;
+stoplist spectre;
+
+
+cell MultiChannel_EMG_IMP.Switch_NMOS binding :schematic;
+
+
+endconfig

@@ -1,0 +1,6 @@
+CADENCE IHNL04124
+
+MultiChannel_EMG_IMP Switch_NMOS schematic nil schematic MultiChannel_EMG_TestBench TCA_DSL_Chopping_TB config 0 cds0
+MultiChannel_EMG_IMP Chopper schematic nil schematic MultiChannel_EMG_TestBench TCA_DSL_Chopping_TB config 0 cds1
+MultiChannel_EMG_IMP PseudoResistor_45GOhm schematic nil schematic MultiChannel_EMG_TestBench TCA_DSL_Chopping_TB config 0 cds2
+MultiChannel_EMG_TestBench TCA_DSL_Chopping_TB schematic nil schematic MultiChannel_EMG_TestBench TCA_DSL_Chopping_TB config 1 cds3

@@ -1,0 +1,15 @@
+CADENCE IHNL11140
+$model
+MultiChannel_EMG_TestBench/PseudoResistor_TB/schematic PseudoResistor_TB
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+Wp Wp
+Wp2 Wp2
+deltaV deltaV
+Lp2 Lp2
+VA VA
+Lp Lp
+$endparam

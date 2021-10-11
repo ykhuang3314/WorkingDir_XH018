@@ -1,0 +1,31 @@
+
+// Library name: MultiChannel_EMG_TestBench
+// Cell name: TCAimp_TB
+// View name: schematic
+I12 (net15 net014 net09 VDDA VINN VINP 0) TCA_DSL_imp_v1
+I1 (VDDA net15) isource dc=50n type=dc
+V4 (net020 0) vsource dc=VDD mag=VDD_AC type=dc
+V3 (net03 VCM) vsource dc=VOS type=dc
+V1 (VCM VINN) vsource mag=VIN_AC/2 type=sine ampl=AMP/2 freq=fsig
+V0 (VINP net027) vsource mag=VIN_AC/2 type=sine ampl=AMP/2 freq=fsig
+V2 (VCM 0) vsource dc=VCM mag=VCM_AC type=sine
+I13 (VDDA net15) isource type=pulse val0=0 val1=IPULSE_BIAS period=2m \
+        delay=10u rise=1p fall=1p width=1m
+V6 (net027 net03) vsource type=pulse val0=0 val1=VIN_PULSE period=2m \
+        delay=10u rise=1n fall=1n width=1m
+V5 (VDDA net020) vsource type=pulse val0=0 val1=VD_PULSE period=2m \
+        delay=10u rise=1n fall=1n width=1m
+M0 (net018 net014 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M4 (net019 net09 VDDA VDDA) pel w=500n l=2u as=1.56e-13 ad=1.56e-13 \
+        ps=1.224e-06 pd=1.224e-06 nrs=0.54 nrd=0.54 m=(1)*(5) \
+        par1=((1)*(5))
+M2 (net015 net015 0 0) nel w=2u l=500n as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+M1 (net010 net010 0 0) nel w=2u l=500n as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+IPRB1 (net018 net015) iprobe
+IPRB0 (net019 net010) iprobe

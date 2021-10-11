@@ -1,0 +1,22 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Jan 17 09:06:10 2020 
+Best design point: 1
+Design specs: 
+	EXERCISE1:S7_BLOCK_TB:1:2	corner	Nominal - 
+	dB20(IF("/IPRB0/PLUS"))		Error	No
+	input noise; A / sqrt(Hz)		Error	No
+Design parameters: 
+	FREQ1 (local override)		0
+	FREQ2 (local override)		0
+	IN_AM1 (local override)		0
+	IN_AM2 (local override)		0
+	IPULSE		0
+	VD		1.8
+	VD_AC		0
+
+Interactive.21
+Number of points completed: 1
+Number of simulation errors: 2
+Interactive.21 completed. 
+Current time: Fri Jan 17 09:06:24 2020 

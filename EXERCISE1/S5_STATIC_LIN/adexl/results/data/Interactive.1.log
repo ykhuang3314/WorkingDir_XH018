@@ -1,0 +1,21 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Jan 15 13:44:31 2020 
+Best design point: 1
+Design specs: 
+	EXERCISE1:S5_STATIC_LIN:1	corner	Nominal - 
+	Poles		Error	No
+	Zeros		Error	No
+	deriv(IS("/IPRB0/MINUS"))		Error	No
+	input noise; A / sqrt(Hz)		Error	No
+Design parameters: 
+	IS_DC		0
+	R1		100K
+	R2		400
+	IS		1
+
+Interactive.1
+Number of points completed: 1
+Number of simulation errors: 4
+Interactive.1 completed. 
+Current time: Wed Jan 15 13:44:36 2020 

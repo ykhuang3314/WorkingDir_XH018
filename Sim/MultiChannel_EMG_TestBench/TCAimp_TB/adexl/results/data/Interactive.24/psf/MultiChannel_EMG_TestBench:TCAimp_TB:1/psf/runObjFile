@@ -1,0 +1,298 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Oct 11 11:36:10 2021"
+"date" "Oct 11 11:36:10 2021"
+"simulator" "spectre"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+ "externalSweepVariableCount" 1
+"paramName" "#maeCorner"
+ "#maeCorner_num" 17
+"#maeCorner_name_1" "nom"
+"#maeCorner_name_2" "C1_0"
+"#maeCorner_name_3" "C1_1"
+"#maeCorner_name_4" "C1_2"
+"#maeCorner_name_5" "C1_3"
+"#maeCorner_name_6" "C1_4"
+"#maeCorner_name_7" "C1_5"
+"#maeCorner_name_8" "C1_6"
+"#maeCorner_name_9" "C1_7"
+"#maeCorner_name_10" "C1_8"
+"#maeCorner_name_11" "C1_9"
+"#maeCorner_name_12" "C1_10"
+"#maeCorner_name_13" "C1_11"
+"#maeCorner_name_14" "C1_12"
+"#maeCorner_name_15" "C1_13"
+"#maeCorner_name_16" "C1_14"
+"#maeCorner_name_17" "C1_15"
+ "#maeCorner_param_set_num" 1
+"#maeCorner_param_name_1" "modelFiles"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("modelFiles")
+)
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws" "runObject" (
+(
+"../../../17/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../17/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_15"
+ "#pointID" 17
+"netlistDir" "../../../17/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../17/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws" "runObject" (
+(
+"../../../16/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../16/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_14"
+ "#pointID" 16
+"netlistDir" "../../../16/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../16/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws" "runObject" (
+(
+"../../../15/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../15/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_13"
+ "#pointID" 15
+"netlistDir" "../../../15/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../15/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws" "runObject" (
+(
+"../../../14/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../14/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_12"
+ "#pointID" 14
+"netlistDir" "../../../14/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../14/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws" "runObject" (
+(
+"../../../13/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../13/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_11"
+ "#pointID" 13
+"netlistDir" "../../../13/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../13/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws" "runObject" (
+(
+"../../../12/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../12/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_10"
+ "#pointID" 12
+"netlistDir" "../../../12/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../12/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws" "runObject" (
+(
+"../../../11/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../11/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_9"
+ "#pointID" 11
+"netlistDir" "../../../11/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../11/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws" "runObject" (
+(
+"../../../10/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../10/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_8"
+ "#pointID" 10
+"netlistDir" "../../../10/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../10/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:ws"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp" "runObject" (
+(
+"../../../9/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../9/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_7"
+ "#pointID" 9
+"netlistDir" "../../../9/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../9/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp" "runObject" (
+(
+"../../../8/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../8/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_6"
+ "#pointID" 8
+"netlistDir" "../../../8/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../8/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wz,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp" "runObject" (
+(
+"../../../7/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../7/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_5"
+ "#pointID" 7
+"netlistDir" "../../../7/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../7/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp" "runObject" (
+(
+"../../../6/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../6/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_4"
+ "#pointID" 6
+"netlistDir" "../../../6/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../6/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:ws,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp" "runObject" (
+(
+"../../../5/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../5/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_3"
+ "#pointID" 5
+"netlistDir" "../../../5/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../5/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp" "runObject" (
+(
+"../../../4/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../4/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_2"
+ "#pointID" 4
+"netlistDir" "../../../4/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../4/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wp,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp" "runObject" (
+(
+"../../../3/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../3/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_1"
+ "#pointID" 3
+"netlistDir" "../../../3/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../3/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:ws,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp" "runObject" (
+(
+"../../../2/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../2/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "C1_0"
+ "#pointID" 2
+"netlistDir" "../../../2/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../2/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "param.scs:3s,bip.scs:tm,cap.scs:wp,dio.scs:tm,mos.scs:wo,photo.scs:tm,res.scs:wp"
+)
+
+"modelFiles=config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm" "runObject" (
+(
+"../../../1/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/logFile"
+"../../../1/MultiChannel_EMG_TestBench:TCAimp_TB:1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"#maeCorner" "nom"
+ "#pointID" 1
+"netlistDir" "../../../1/MultiChannel_EMG_TestBench:TCAimp_TB:1/netlist"
+"dataDir" "../../../1/MultiChannel_EMG_TestBench:TCAimp_TB:1"
+"modelFiles" "config.scs:default,param.scs:3s,bip.scs:tm,cap.scs:tm,dio.scs:tm,mos.scs:tm,photo.scs:tm,res.scs:tm"
+)
+
+END

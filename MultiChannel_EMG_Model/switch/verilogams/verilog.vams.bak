@@ -3,10 +3,10 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module switch (out, ctrl, in, VDDA, VSSA );
+module switch (out, ctrl, in, VSSA );
 
-inout out, ctrl, in , VDDA, VSSA;
-electrical out, ctrl, in , VDDA, VSSA;
+inout out, ctrl, in, VSSA;
+electrical out, ctrl, in, VSSA;
 
 real Reff;
 
@@ -15,7 +15,7 @@ parameter real Roff = 1e9 from (Ron:inf); // off-resistance
 parameter real tr = 1n; // rising time
 parameter real tf = 1n; // falling time
 parameter real td = 0; // delay
-parameter real Vth = 0.3; // threshold voltage
+parameter real Vth = 0.5; // threshold voltage
 
 analog begin
 

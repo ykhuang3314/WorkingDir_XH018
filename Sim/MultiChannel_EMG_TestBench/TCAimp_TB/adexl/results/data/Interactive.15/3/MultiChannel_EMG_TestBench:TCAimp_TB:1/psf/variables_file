@@ -1,0 +1,22 @@
+HEADER
+"PSFversion" "1.00"
+"Time Stamp" "Oct  8 09:49:16 2021"
+TYPE
+"variable" STRUCT(
+"value" FLOAT DOUBLE
+) PROP( "key" "element" )
+VALUE
+"VCM_AC" "variable" ( 0 ) PROP( )
+"VCM" "variable" ( 900e-3 ) PROP( )
+"AMP" "variable" ( 500e-6 ) PROP( )
+"VOS" "variable" ( 0 ) PROP( )
+"VIN_AC" "variable" ( 1 ) PROP( )
+"fsig" "variable" ( 500 ) PROP( )
+"VDD_AC" "variable" ( 0 ) PROP( )
+"VDD" "variable" ( 1.8 ) PROP( )
+"VD_PULSE" "variable" ( 0 ) PROP( )
+"IPULSE_BIAS" "variable" ( 0 ) PROP( )
+"VIN_PULSE" "variable" ( 0 ) PROP( )
+"VDC_IN" "variable" ( 0 ) PROP( )
+"temp" "variable" ( 27 ) PROP( )
+END

@@ -1,0 +1,984 @@
+( global ( resolution_type basic ) )
+
+( net MultiChannelAFE_TB_2.CLK1 MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.CLK MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I40.CLK MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I0.ctrl MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I6.ctrl MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I36.CLK MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I0.ctrl MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I6.ctrl MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I37.CLK MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I0.ctrl MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I6.ctrl MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I77.CLK MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I77.I0.ctrl MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I77.I6.ctrl MultiChannelAFE_TB_2.CLK1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I79.CLK1 MultiChannelAFE_TB_2.CLK1 digital/mixed logic )
+( net MultiChannelAFE_TB_2.I79.CLK1Gen.CLK MultiChannelAFE_TB_2.CLK1 digital/mixed logic )
+
+( net MultiChannelAFE_TB_2.CLKB1 MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.CLKB MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I40.CLKB MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I4.ctrl MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I5.ctrl MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I36.CLKB MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I4.ctrl MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I5.ctrl MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I37.CLKB MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I4.ctrl MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I5.ctrl MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I77.CLKB MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I77.I4.ctrl MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I77.I5.ctrl MultiChannelAFE_TB_2.CLKB1 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I79.CLKB1 MultiChannelAFE_TB_2.CLKB1 digital/mixed logic )
+( net MultiChannelAFE_TB_2.I79.CLK1Gen.CLKB MultiChannelAFE_TB_2.CLKB1 digital/mixed logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK1Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK1Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK1Gen.clk_on MultiChannelAFE_TB_2.I79.CLK1Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK1Gen.clk_off MultiChannelAFE_TB_2.I79.CLK1Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK2 MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.CLK MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I40.CLK MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I0.ctrl MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I6.ctrl MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I36.CLK MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I0.ctrl MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I6.ctrl MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I37.CLK MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I0.ctrl MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I6.ctrl MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I76.CLK MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I76.I0.ctrl MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I76.I6.ctrl MultiChannelAFE_TB_2.CLK2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I79.CLK2 MultiChannelAFE_TB_2.CLK2 digital/mixed logic )
+( net MultiChannelAFE_TB_2.I79.CLK2Gen.CLK MultiChannelAFE_TB_2.CLK2 digital/mixed logic )
+
+( net MultiChannelAFE_TB_2.CLKB2 MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.CLKB MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I40.CLKB MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I4.ctrl MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I5.ctrl MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I36.CLKB MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I4.ctrl MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I5.ctrl MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I37.CLKB MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I4.ctrl MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I5.ctrl MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I76.CLKB MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I76.I4.ctrl MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I76.I5.ctrl MultiChannelAFE_TB_2.CLKB2 analog/mixed electrical )
+( net MultiChannelAFE_TB_2.I79.CLKB2 MultiChannelAFE_TB_2.CLKB2 digital/mixed logic )
+( net MultiChannelAFE_TB_2.I79.CLK2Gen.CLKB MultiChannelAFE_TB_2.CLKB2 digital/mixed logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK2Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK2Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK2Gen.clk_on MultiChannelAFE_TB_2.I79.CLK2Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK2Gen.clk_off MultiChannelAFE_TB_2.I79.CLK2Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK3 MultiChannelAFE_TB_2.CLK3 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK3 MultiChannelAFE_TB_2.CLK3 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK3Gen.CLK MultiChannelAFE_TB_2.CLK3 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB3 MultiChannelAFE_TB_2.CLKB3 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB3 MultiChannelAFE_TB_2.CLKB3 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK3Gen.CLKB MultiChannelAFE_TB_2.CLKB3 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK3Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK3Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK3Gen.clk_on MultiChannelAFE_TB_2.I79.CLK3Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK3Gen.clk_off MultiChannelAFE_TB_2.I79.CLK3Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK4 MultiChannelAFE_TB_2.CLK4 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK4 MultiChannelAFE_TB_2.CLK4 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK4Gen.CLK MultiChannelAFE_TB_2.CLK4 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB4 MultiChannelAFE_TB_2.CLKB4 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB4 MultiChannelAFE_TB_2.CLKB4 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK4Gen.CLKB MultiChannelAFE_TB_2.CLKB4 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK4Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK4Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK4Gen.clk_on MultiChannelAFE_TB_2.I79.CLK4Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK4Gen.clk_off MultiChannelAFE_TB_2.I79.CLK4Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK5 MultiChannelAFE_TB_2.CLK5 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK5 MultiChannelAFE_TB_2.CLK5 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK5Gen.CLK MultiChannelAFE_TB_2.CLK5 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB5 MultiChannelAFE_TB_2.CLKB5 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB5 MultiChannelAFE_TB_2.CLKB5 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK5Gen.CLKB MultiChannelAFE_TB_2.CLKB5 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK5Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK5Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK5Gen.clk_on MultiChannelAFE_TB_2.I79.CLK5Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK5Gen.clk_off MultiChannelAFE_TB_2.I79.CLK5Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK6 MultiChannelAFE_TB_2.CLK6 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK6 MultiChannelAFE_TB_2.CLK6 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK6Gen.CLK MultiChannelAFE_TB_2.CLK6 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB6 MultiChannelAFE_TB_2.CLKB6 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB6 MultiChannelAFE_TB_2.CLKB6 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK6Gen.CLKB MultiChannelAFE_TB_2.CLKB6 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK6Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK6Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK6Gen.clk_on MultiChannelAFE_TB_2.I79.CLK6Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK6Gen.clk_off MultiChannelAFE_TB_2.I79.CLK6Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK7 MultiChannelAFE_TB_2.CLK7 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK7 MultiChannelAFE_TB_2.CLK7 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK7Gen.CLK MultiChannelAFE_TB_2.CLK7 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB7 MultiChannelAFE_TB_2.CLKB7 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB7 MultiChannelAFE_TB_2.CLKB7 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK7Gen.CLKB MultiChannelAFE_TB_2.CLKB7 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK7Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK7Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK7Gen.clk_on MultiChannelAFE_TB_2.I79.CLK7Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK7Gen.clk_off MultiChannelAFE_TB_2.I79.CLK7Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK8 MultiChannelAFE_TB_2.CLK8 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK8 MultiChannelAFE_TB_2.CLK8 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK8Gen.CLK MultiChannelAFE_TB_2.CLK8 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB8 MultiChannelAFE_TB_2.CLKB8 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB8 MultiChannelAFE_TB_2.CLKB8 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK8Gen.CLKB MultiChannelAFE_TB_2.CLKB8 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK8Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK8Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK8Gen.clk_on MultiChannelAFE_TB_2.I79.CLK8Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK8Gen.clk_off MultiChannelAFE_TB_2.I79.CLK8Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK9 MultiChannelAFE_TB_2.CLK9 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK9 MultiChannelAFE_TB_2.CLK9 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK9Gen.CLK MultiChannelAFE_TB_2.CLK9 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB9 MultiChannelAFE_TB_2.CLKB9 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB9 MultiChannelAFE_TB_2.CLKB9 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK9Gen.CLKB MultiChannelAFE_TB_2.CLKB9 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK9Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK9Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK9Gen.clk_on MultiChannelAFE_TB_2.I79.CLK9Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK9Gen.clk_off MultiChannelAFE_TB_2.I79.CLK9Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK10 MultiChannelAFE_TB_2.CLK10 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK10 MultiChannelAFE_TB_2.CLK10 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK10Gen.CLK MultiChannelAFE_TB_2.CLK10 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB10 MultiChannelAFE_TB_2.CLKB10 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB10 MultiChannelAFE_TB_2.CLKB10 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK10Gen.CLKB MultiChannelAFE_TB_2.CLKB10 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK10Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK10Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK10Gen.clk_on MultiChannelAFE_TB_2.I79.CLK10Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK10Gen.clk_off MultiChannelAFE_TB_2.I79.CLK10Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK11 MultiChannelAFE_TB_2.CLK11 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK11 MultiChannelAFE_TB_2.CLK11 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK11Gen.CLK MultiChannelAFE_TB_2.CLK11 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB11 MultiChannelAFE_TB_2.CLKB11 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB11 MultiChannelAFE_TB_2.CLKB11 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK11Gen.CLKB MultiChannelAFE_TB_2.CLKB11 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK11Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK11Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK11Gen.clk_on MultiChannelAFE_TB_2.I79.CLK11Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK11Gen.clk_off MultiChannelAFE_TB_2.I79.CLK11Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK12 MultiChannelAFE_TB_2.CLK12 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK12 MultiChannelAFE_TB_2.CLK12 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK12Gen.CLK MultiChannelAFE_TB_2.CLK12 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB12 MultiChannelAFE_TB_2.CLKB12 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB12 MultiChannelAFE_TB_2.CLKB12 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK12Gen.CLKB MultiChannelAFE_TB_2.CLKB12 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK12Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK12Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK12Gen.clk_on MultiChannelAFE_TB_2.I79.CLK12Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK12Gen.clk_off MultiChannelAFE_TB_2.I79.CLK12Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK13 MultiChannelAFE_TB_2.CLK13 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK13 MultiChannelAFE_TB_2.CLK13 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK13Gen.CLK MultiChannelAFE_TB_2.CLK13 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB13 MultiChannelAFE_TB_2.CLKB13 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB13 MultiChannelAFE_TB_2.CLKB13 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK13Gen.CLKB MultiChannelAFE_TB_2.CLKB13 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK13Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK13Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK13Gen.clk_on MultiChannelAFE_TB_2.I79.CLK13Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK13Gen.clk_off MultiChannelAFE_TB_2.I79.CLK13Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK14 MultiChannelAFE_TB_2.CLK14 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK14 MultiChannelAFE_TB_2.CLK14 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK14Gen.CLK MultiChannelAFE_TB_2.CLK14 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB14 MultiChannelAFE_TB_2.CLKB14 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB14 MultiChannelAFE_TB_2.CLKB14 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK14Gen.CLKB MultiChannelAFE_TB_2.CLKB14 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK14Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK14Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK14Gen.clk_on MultiChannelAFE_TB_2.I79.CLK14Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK14Gen.clk_off MultiChannelAFE_TB_2.I79.CLK14Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK15 MultiChannelAFE_TB_2.CLK15 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK15 MultiChannelAFE_TB_2.CLK15 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK15Gen.CLK MultiChannelAFE_TB_2.CLK15 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB15 MultiChannelAFE_TB_2.CLKB15 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB15 MultiChannelAFE_TB_2.CLKB15 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK15Gen.CLKB MultiChannelAFE_TB_2.CLKB15 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK15Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK15Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK15Gen.clk_on MultiChannelAFE_TB_2.I79.CLK15Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK15Gen.clk_off MultiChannelAFE_TB_2.I79.CLK15Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.CLK16 MultiChannelAFE_TB_2.CLK16 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK16 MultiChannelAFE_TB_2.CLK16 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK16Gen.CLK MultiChannelAFE_TB_2.CLK16 digital logic )
+
+( net MultiChannelAFE_TB_2.CLKB16 MultiChannelAFE_TB_2.CLKB16 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLKB16 MultiChannelAFE_TB_2.CLKB16 digital logic )
+( net MultiChannelAFE_TB_2.I79.CLK16Gen.CLKB MultiChannelAFE_TB_2.CLKB16 digital logic )
+
+( net MultiChannelAFE_TB_2.I79.CLK16Gen.clk_pd MultiChannelAFE_TB_2.I79.CLK16Gen.clk_pd digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK16Gen.clk_on MultiChannelAFE_TB_2.I79.CLK16Gen.clk_on digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I79.CLK16Gen.clk_off MultiChannelAFE_TB_2.I79.CLK16Gen.clk_off digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.VOUTN_TIA MultiChannelAFE_TB_2.VOUTN_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I3.Voutn MultiChannelAFE_TB_2.VOUTN_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I76.INN MultiChannelAFE_TB_2.VOUTN_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I76.I5.A MultiChannelAFE_TB_2.VOUTN_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I76.I6.A MultiChannelAFE_TB_2.VOUTN_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I77.INN MultiChannelAFE_TB_2.VOUTN_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I77.I5.A MultiChannelAFE_TB_2.VOUTN_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I77.I6.A MultiChannelAFE_TB_2.VOUTN_TIA analog electrical )
+
+( net MultiChannelAFE_TB_2.deModOUTN_CH1 MultiChannelAFE_TB_2.deModOUTN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I34.Vinn MultiChannelAFE_TB_2.deModOUTN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I77.OUTN MultiChannelAFE_TB_2.deModOUTN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I77.I4.B MultiChannelAFE_TB_2.deModOUTN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I77.I6.B MultiChannelAFE_TB_2.deModOUTN_CH1 analog electrical )
+
+( net MultiChannelAFE_TB_2.I77.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I77.I0.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I77.I4.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I77.I5.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I77.I6.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net cds_globals.\gnd!  MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I0.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I4.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I5.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I6.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I0.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I4.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I5.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I6.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I0.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I4.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I5.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I6.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I0.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I4.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I5.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I6.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I0.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I4.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I5.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I6.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I0.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I4.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I5.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I6.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I3.Vsub MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I3.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I35.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I34.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I76.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I76.I0.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I76.I4.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I76.I5.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+( net MultiChannelAFE_TB_2.I76.I6.VSSA MultiChannelAFE_TB_2.I77.VSSA analog electrical )
+
+( net MultiChannelAFE_TB_2.deModOUTP_CH1 MultiChannelAFE_TB_2.deModOUTP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I34.Vinp MultiChannelAFE_TB_2.deModOUTP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I77.OUTP MultiChannelAFE_TB_2.deModOUTP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I77.I0.B MultiChannelAFE_TB_2.deModOUTP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I77.I5.B MultiChannelAFE_TB_2.deModOUTP_CH1 analog electrical )
+
+( net MultiChannelAFE_TB_2.VOUTP_TIA MultiChannelAFE_TB_2.VOUTP_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I3.Voutp MultiChannelAFE_TB_2.VOUTP_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I76.INP MultiChannelAFE_TB_2.VOUTP_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I76.I0.A MultiChannelAFE_TB_2.VOUTP_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I76.I4.A MultiChannelAFE_TB_2.VOUTP_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I77.INP MultiChannelAFE_TB_2.VOUTP_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I77.I0.A MultiChannelAFE_TB_2.VOUTP_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I77.I4.A MultiChannelAFE_TB_2.VOUTP_TIA analog electrical )
+
+( net MultiChannelAFE_TB_2.deModOUTN_CH2 MultiChannelAFE_TB_2.deModOUTN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I35.Vinn MultiChannelAFE_TB_2.deModOUTN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I76.OUTN MultiChannelAFE_TB_2.deModOUTN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I76.I4.B MultiChannelAFE_TB_2.deModOUTN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I76.I6.B MultiChannelAFE_TB_2.deModOUTN_CH2 analog electrical )
+
+( net MultiChannelAFE_TB_2.deModOUTP_CH2 MultiChannelAFE_TB_2.deModOUTP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I35.Vinp MultiChannelAFE_TB_2.deModOUTP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I76.OUTP MultiChannelAFE_TB_2.deModOUTP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I76.I0.B MultiChannelAFE_TB_2.deModOUTP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I76.I5.B MultiChannelAFE_TB_2.deModOUTP_CH2 analog electrical )
+
+( net MultiChannelAFE_TB_2.LPFOUTP_CH1 MultiChannelAFE_TB_2.LPFOUTP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I34.Voutp MultiChannelAFE_TB_2.LPFOUTP_CH1 analog electrical )
+
+( net MultiChannelAFE_TB_2.LPFOUTN_CH1 MultiChannelAFE_TB_2.LPFOUTN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I34.Voutn MultiChannelAFE_TB_2.LPFOUTN_CH1 analog electrical )
+
+( net MultiChannelAFE_TB_2.VDDA MultiChannelAFE_TB_2.VDDA analog electrical )
+( net MultiChannelAFE_TB_2.I73.VDDA MultiChannelAFE_TB_2.VDDA analog electrical )
+( net MultiChannelAFE_TB_2.I74.VDDA MultiChannelAFE_TB_2.VDDA analog electrical )
+( net MultiChannelAFE_TB_2.I3.VDDA MultiChannelAFE_TB_2.VDDA analog electrical )
+( net MultiChannelAFE_TB_2.I35.VDDA MultiChannelAFE_TB_2.VDDA analog electrical )
+( net MultiChannelAFE_TB_2.I34.VDDA MultiChannelAFE_TB_2.VDDA analog electrical )
+
+( net MultiChannelAFE_TB_2.VCM MultiChannelAFE_TB_2.VCM analog electrical )
+( net MultiChannelAFE_TB_2.I3.Vcm MultiChannelAFE_TB_2.VCM analog electrical )
+( net MultiChannelAFE_TB_2.I35.VCM MultiChannelAFE_TB_2.VCM analog electrical )
+( net MultiChannelAFE_TB_2.I34.VCM MultiChannelAFE_TB_2.VCM analog electrical )
+
+( net MultiChannelAFE_TB_2.I34.scale MultiChannelAFE_TB_2.I34.scale analog None )
+
+( net MultiChannelAFE_TB_2.I34.bPrev MultiChannelAFE_TB_2.I34.bPrev analog None )
+
+( net MultiChannelAFE_TB_2.I34.den MultiChannelAFE_TB_2.I34.den analog None )
+
+( net MultiChannelAFE_TB_2.I34.k MultiChannelAFE_TB_2.I34.k analog None )
+
+( net MultiChannelAFE_TB_2.I34.out MultiChannelAFE_TB_2.I34.out analog None )
+
+( net MultiChannelAFE_TB_2.I34.Vcm_value MultiChannelAFE_TB_2.I34.Vcm_value analog None )
+
+( net MultiChannelAFE_TB_2.LPFOUTP_CH2 MultiChannelAFE_TB_2.LPFOUTP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I35.Voutp MultiChannelAFE_TB_2.LPFOUTP_CH2 analog electrical )
+
+( net MultiChannelAFE_TB_2.LPFOUTN_CH2 MultiChannelAFE_TB_2.LPFOUTN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I35.Voutn MultiChannelAFE_TB_2.LPFOUTN_CH2 analog electrical )
+
+( net MultiChannelAFE_TB_2.I35.scale MultiChannelAFE_TB_2.I35.scale analog None )
+
+( net MultiChannelAFE_TB_2.I35.bPrev MultiChannelAFE_TB_2.I35.bPrev analog None )
+
+( net MultiChannelAFE_TB_2.I35.den MultiChannelAFE_TB_2.I35.den analog None )
+
+( net MultiChannelAFE_TB_2.I35.k MultiChannelAFE_TB_2.I35.k analog None )
+
+( net MultiChannelAFE_TB_2.I35.out MultiChannelAFE_TB_2.I35.out analog None )
+
+( net MultiChannelAFE_TB_2.I35.Vcm_value MultiChannelAFE_TB_2.I35.Vcm_value analog None )
+
+( net MultiChannelAFE_TB_2.INP_TIA MultiChannelAFE_TB_2.INP_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I3.Vinp MultiChannelAFE_TB_2.INP_TIA analog electrical )
+
+( net MultiChannelAFE_TB_2.INN_TIA MultiChannelAFE_TB_2.INN_TIA analog electrical )
+( net MultiChannelAFE_TB_2.I3.Vinn MultiChannelAFE_TB_2.INN_TIA analog electrical )
+
+( net MultiChannelAFE_TB_2.I3.p1 MultiChannelAFE_TB_2.I3.p1 analog electrical )
+
+( net MultiChannelAFE_TB_2.I3.p2 MultiChannelAFE_TB_2.I3.p2 analog electrical )
+
+( net MultiChannelAFE_TB_2.I3.e0 MultiChannelAFE_TB_2.I3.e0 digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I3.er MultiChannelAFE_TB_2.I3.er digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I3.gamma MultiChannelAFE_TB_2.I3.gamma digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I3.q MultiChannelAFE_TB_2.I3.q digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I3.Ks MultiChannelAFE_TB_2.I3.Ks digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I3.Vt MultiChannelAFE_TB_2.I3.Vt digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I3.RF MultiChannelAFE_TB_2.I3.RF digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I3.Cox MultiChannelAFE_TB_2.I3.Cox analog None )
+
+( net MultiChannelAFE_TB_2.I3.pwr_flicker MultiChannelAFE_TB_2.I3.pwr_flicker analog None )
+
+( net MultiChannelAFE_TB_2.I3.pwr_thermal MultiChannelAFE_TB_2.I3.pwr_thermal analog None )
+
+( net MultiChannelAFE_TB_2.I3.Vdd_val MultiChannelAFE_TB_2.I3.Vdd_val analog None )
+
+( net MultiChannelAFE_TB_2.I3.Vss_val MultiChannelAFE_TB_2.I3.Vss_val analog None )
+
+( net MultiChannelAFE_TB_2.I3.Vin MultiChannelAFE_TB_2.I3.Vin digital logic (type rnm) )
+
+( net MultiChannelAFE_TB_2.I3.Vdiff MultiChannelAFE_TB_2.I3.Vdiff analog None )
+
+( net MultiChannelAFE_TB_2.I3.outp MultiChannelAFE_TB_2.I3.outp analog None )
+
+( net MultiChannelAFE_TB_2.I3.outn MultiChannelAFE_TB_2.I3.outn analog None )
+
+( net MultiChannelAFE_TB_2.I74.VSn MultiChannelAFE_TB_2.I74.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.OUTN MultiChannelAFE_TB_2.I74.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I4.B MultiChannelAFE_TB_2.I74.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I6.B MultiChannelAFE_TB_2.I74.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.INN MultiChannelAFE_TB_2.I74.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I5.A MultiChannelAFE_TB_2.I74.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I6.A MultiChannelAFE_TB_2.I74.VSn analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net85 MultiChannelAFE_TB_2.I74.net85 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.OUTN MultiChannelAFE_TB_2.I74.net85 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I4.B MultiChannelAFE_TB_2.I74.net85 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I6.B MultiChannelAFE_TB_2.I74.net85 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net81 MultiChannelAFE_TB_2.I74.net81 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.OUTP MultiChannelAFE_TB_2.I74.net81 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I0.B MultiChannelAFE_TB_2.I74.net81 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I5.B MultiChannelAFE_TB_2.I74.net81 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.VSp MultiChannelAFE_TB_2.I74.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.OUTP MultiChannelAFE_TB_2.I74.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I0.B MultiChannelAFE_TB_2.I74.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I5.B MultiChannelAFE_TB_2.I74.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.INP MultiChannelAFE_TB_2.I74.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I0.A MultiChannelAFE_TB_2.I74.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I37.I4.A MultiChannelAFE_TB_2.I74.VSp analog electrical )
+
+( net MultiChannelAFE_TB_2.VINN_CH2 MultiChannelAFE_TB_2.VINN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I74.VINN MultiChannelAFE_TB_2.VINN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.INN MultiChannelAFE_TB_2.VINN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I5.A MultiChannelAFE_TB_2.VINN_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I6.A MultiChannelAFE_TB_2.VINN_CH2 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.inn_chop MultiChannelAFE_TB_2.I74.inn_chop analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.OUTN MultiChannelAFE_TB_2.I74.inn_chop analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I4.B MultiChannelAFE_TB_2.I74.inn_chop analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I6.B MultiChannelAFE_TB_2.I74.inn_chop analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.inp_chop MultiChannelAFE_TB_2.I74.inp_chop analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.OUTP MultiChannelAFE_TB_2.I74.inp_chop analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I0.B MultiChannelAFE_TB_2.I74.inp_chop analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I5.B MultiChannelAFE_TB_2.I74.inp_chop analog electrical )
+
+( net MultiChannelAFE_TB_2.VINP_CH2 MultiChannelAFE_TB_2.VINP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I74.VINP MultiChannelAFE_TB_2.VINP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.INP MultiChannelAFE_TB_2.VINP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I0.A MultiChannelAFE_TB_2.VINP_CH2 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I36.I4.A MultiChannelAFE_TB_2.VINP_CH2 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.I_DSLp MultiChannelAFE_TB_2.I74.I_DSLp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.INN MultiChannelAFE_TB_2.I74.I_DSLp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I5.A MultiChannelAFE_TB_2.I74.I_DSLp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I6.A MultiChannelAFE_TB_2.I74.I_DSLp analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.I_DSLn MultiChannelAFE_TB_2.I74.I_DSLn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.INP MultiChannelAFE_TB_2.I74.I_DSLn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I0.A MultiChannelAFE_TB_2.I74.I_DSLn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I40.I4.A MultiChannelAFE_TB_2.I74.I_DSLn analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net43 MultiChannelAFE_TB_2.I74.net43 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I34.A MultiChannelAFE_TB_2.I74.net43 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.LPFoutp MultiChannelAFE_TB_2.I74.LPFoutp analog electrical )
+( net MultiChannelAFE_TB_2.I74.I34.B MultiChannelAFE_TB_2.I74.LPFoutp analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.I34.net8 MultiChannelAFE_TB_2.I74.I34.net8 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.I34.net9 MultiChannelAFE_TB_2.I74.I34.net9 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.I34.net7 MultiChannelAFE_TB_2.I74.I34.net7 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.LPFoutn MultiChannelAFE_TB_2.I74.LPFoutn analog electrical )
+( net MultiChannelAFE_TB_2.I74.I35.A MultiChannelAFE_TB_2.I74.LPFoutn analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net84 MultiChannelAFE_TB_2.I74.net84 analog electrical )
+( net MultiChannelAFE_TB_2.I74.I35.B MultiChannelAFE_TB_2.I74.net84 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.I35.net8 MultiChannelAFE_TB_2.I74.I35.net8 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.I35.net9 MultiChannelAFE_TB_2.I74.I35.net9 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.I35.net7 MultiChannelAFE_TB_2.I74.I35.net7 analog electrical )
+
+( net MultiChannelAFE_TB_2.net022 MultiChannelAFE_TB_2.net022 analog electrical )
+( net MultiChannelAFE_TB_2.I74.OUTN MultiChannelAFE_TB_2.net022 analog electrical )
+
+( net MultiChannelAFE_TB_2.net017 MultiChannelAFE_TB_2.net017 analog electrical )
+( net MultiChannelAFE_TB_2.I74.OUTP MultiChannelAFE_TB_2.net017 analog electrical )
+
+( net MultiChannelAFE_TB_2.net039 MultiChannelAFE_TB_2.net039 analog electrical )
+( net MultiChannelAFE_TB_2.I74.IBIAS MultiChannelAFE_TB_2.net039 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net23 MultiChannelAFE_TB_2.I74.net23 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net29 MultiChannelAFE_TB_2.I74.net29 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net59 MultiChannelAFE_TB_2.I74.net59 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net52 MultiChannelAFE_TB_2.I74.net52 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net50 MultiChannelAFE_TB_2.I74.net50 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net22 MultiChannelAFE_TB_2.I74.net22 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net28 MultiChannelAFE_TB_2.I74.net28 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net66 MultiChannelAFE_TB_2.I74.net66 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net74 MultiChannelAFE_TB_2.I74.net74 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net37 MultiChannelAFE_TB_2.I74.net37 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net34 MultiChannelAFE_TB_2.I74.net34 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net88 MultiChannelAFE_TB_2.I74.net88 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net36 MultiChannelAFE_TB_2.I74.net36 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net95 MultiChannelAFE_TB_2.I74.net95 analog electrical )
+
+( net MultiChannelAFE_TB_2.I74.net55 MultiChannelAFE_TB_2.I74.net55 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.VSn MultiChannelAFE_TB_2.I73.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.OUTN MultiChannelAFE_TB_2.I73.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I4.B MultiChannelAFE_TB_2.I73.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I6.B MultiChannelAFE_TB_2.I73.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.INN MultiChannelAFE_TB_2.I73.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I5.A MultiChannelAFE_TB_2.I73.VSn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I6.A MultiChannelAFE_TB_2.I73.VSn analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net85 MultiChannelAFE_TB_2.I73.net85 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.OUTN MultiChannelAFE_TB_2.I73.net85 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I4.B MultiChannelAFE_TB_2.I73.net85 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I6.B MultiChannelAFE_TB_2.I73.net85 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net81 MultiChannelAFE_TB_2.I73.net81 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.OUTP MultiChannelAFE_TB_2.I73.net81 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I0.B MultiChannelAFE_TB_2.I73.net81 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I5.B MultiChannelAFE_TB_2.I73.net81 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.VSp MultiChannelAFE_TB_2.I73.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.OUTP MultiChannelAFE_TB_2.I73.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I0.B MultiChannelAFE_TB_2.I73.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I5.B MultiChannelAFE_TB_2.I73.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.INP MultiChannelAFE_TB_2.I73.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I0.A MultiChannelAFE_TB_2.I73.VSp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I37.I4.A MultiChannelAFE_TB_2.I73.VSp analog electrical )
+
+( net MultiChannelAFE_TB_2.VINN_CH1 MultiChannelAFE_TB_2.VINN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I73.VINN MultiChannelAFE_TB_2.VINN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.INN MultiChannelAFE_TB_2.VINN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I5.A MultiChannelAFE_TB_2.VINN_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I6.A MultiChannelAFE_TB_2.VINN_CH1 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.inn_chop MultiChannelAFE_TB_2.I73.inn_chop analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.OUTN MultiChannelAFE_TB_2.I73.inn_chop analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I4.B MultiChannelAFE_TB_2.I73.inn_chop analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I6.B MultiChannelAFE_TB_2.I73.inn_chop analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.inp_chop MultiChannelAFE_TB_2.I73.inp_chop analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.OUTP MultiChannelAFE_TB_2.I73.inp_chop analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I0.B MultiChannelAFE_TB_2.I73.inp_chop analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I5.B MultiChannelAFE_TB_2.I73.inp_chop analog electrical )
+
+( net MultiChannelAFE_TB_2.VINP_CH1 MultiChannelAFE_TB_2.VINP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I73.VINP MultiChannelAFE_TB_2.VINP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.INP MultiChannelAFE_TB_2.VINP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I0.A MultiChannelAFE_TB_2.VINP_CH1 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I36.I4.A MultiChannelAFE_TB_2.VINP_CH1 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.I_DSLp MultiChannelAFE_TB_2.I73.I_DSLp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.INN MultiChannelAFE_TB_2.I73.I_DSLp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I5.A MultiChannelAFE_TB_2.I73.I_DSLp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I6.A MultiChannelAFE_TB_2.I73.I_DSLp analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.I_DSLn MultiChannelAFE_TB_2.I73.I_DSLn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.INP MultiChannelAFE_TB_2.I73.I_DSLn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I0.A MultiChannelAFE_TB_2.I73.I_DSLn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I40.I4.A MultiChannelAFE_TB_2.I73.I_DSLn analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net43 MultiChannelAFE_TB_2.I73.net43 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I34.A MultiChannelAFE_TB_2.I73.net43 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.LPFoutp MultiChannelAFE_TB_2.I73.LPFoutp analog electrical )
+( net MultiChannelAFE_TB_2.I73.I34.B MultiChannelAFE_TB_2.I73.LPFoutp analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.I34.net8 MultiChannelAFE_TB_2.I73.I34.net8 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.I34.net9 MultiChannelAFE_TB_2.I73.I34.net9 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.I34.net7 MultiChannelAFE_TB_2.I73.I34.net7 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.LPFoutn MultiChannelAFE_TB_2.I73.LPFoutn analog electrical )
+( net MultiChannelAFE_TB_2.I73.I35.A MultiChannelAFE_TB_2.I73.LPFoutn analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net84 MultiChannelAFE_TB_2.I73.net84 analog electrical )
+( net MultiChannelAFE_TB_2.I73.I35.B MultiChannelAFE_TB_2.I73.net84 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.I35.net8 MultiChannelAFE_TB_2.I73.I35.net8 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.I35.net9 MultiChannelAFE_TB_2.I73.I35.net9 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.I35.net7 MultiChannelAFE_TB_2.I73.I35.net7 analog electrical )
+
+( net MultiChannelAFE_TB_2.net024 MultiChannelAFE_TB_2.net024 analog electrical )
+( net MultiChannelAFE_TB_2.I73.OUTN MultiChannelAFE_TB_2.net024 analog electrical )
+
+( net MultiChannelAFE_TB_2.net020 MultiChannelAFE_TB_2.net020 analog electrical )
+( net MultiChannelAFE_TB_2.I73.OUTP MultiChannelAFE_TB_2.net020 analog electrical )
+
+( net MultiChannelAFE_TB_2.net038 MultiChannelAFE_TB_2.net038 analog electrical )
+( net MultiChannelAFE_TB_2.I73.IBIAS MultiChannelAFE_TB_2.net038 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net23 MultiChannelAFE_TB_2.I73.net23 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net29 MultiChannelAFE_TB_2.I73.net29 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net59 MultiChannelAFE_TB_2.I73.net59 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net52 MultiChannelAFE_TB_2.I73.net52 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net50 MultiChannelAFE_TB_2.I73.net50 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net22 MultiChannelAFE_TB_2.I73.net22 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net28 MultiChannelAFE_TB_2.I73.net28 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net66 MultiChannelAFE_TB_2.I73.net66 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net74 MultiChannelAFE_TB_2.I73.net74 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net37 MultiChannelAFE_TB_2.I73.net37 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net34 MultiChannelAFE_TB_2.I73.net34 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net88 MultiChannelAFE_TB_2.I73.net88 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net36 MultiChannelAFE_TB_2.I73.net36 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net95 MultiChannelAFE_TB_2.I73.net95 analog electrical )
+
+( net MultiChannelAFE_TB_2.I73.net55 MultiChannelAFE_TB_2.I73.net55 analog electrical )
+
+( net MultiChannelAFE_TB_2.net4 MultiChannelAFE_TB_2.net4 analog electrical )
+
+( net MultiChannelAFE_TB_2.net3 MultiChannelAFE_TB_2.net3 analog electrical )
+
+( net MultiChannelAFE_TB_2.VIN_CM_CH2 MultiChannelAFE_TB_2.VIN_CM_CH2 analog electrical )
+
+( net MultiChannelAFE_TB_2.net26 MultiChannelAFE_TB_2.net26 analog electrical )
+
+( net MultiChannelAFE_TB_2.VIN_CM_CH1 MultiChannelAFE_TB_2.VIN_CM_CH1 analog electrical )
+
+( net MultiChannelAFE_TB_2.net30 MultiChannelAFE_TB_2.net30 analog electrical )
+
+( net MultiChannelAFE_TB_2.VOUT_CH1 MultiChannelAFE_TB_2.VOUT_CH1 analog electrical )
+
+( net MultiChannelAFE_TB_2.VOUT_CH2 MultiChannelAFE_TB_2.VOUT_CH2 analog electrical )
+
+( connect
+   connectLib.L2E_2:module
+   MultiChannelAFE_TB_2.CLK1
+   electrical
+   analog
+   (
+    ( MultiChannelAFE_TB_2.I79.CLK1 logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   MultiChannelAFE_TB_2.CLK2
+   electrical
+   analog
+   (
+    ( MultiChannelAFE_TB_2.I79.CLK2 logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   MultiChannelAFE_TB_2.CLKB1
+   electrical
+   analog
+   (
+    ( MultiChannelAFE_TB_2.I79.CLKB1 logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+( connect
+   connectLib.L2E_2:module
+   MultiChannelAFE_TB_2.CLKB2
+   electrical
+   analog
+   (
+    ( MultiChannelAFE_TB_2.I79.CLKB2 logic digital )
+   )
+   "connect L2E_2 merged logic, electrical"
+   ( (vsup 1.800000000000000) (vlo 0) (vthi (0 + ((((1.800000000000000 + 0) - 0) * 2.000000000000000) / 3.000000000000000))) (vtlo (0 + (((1.800000000000000 + 0) - 0) / 3.000000000000000))) (vhi (1.800000000000000 + 0)) (vx 0) (tr 0.000000000200000) (tf 0.000000000200000) (ttol_t (0.000000000200000 / 10.000000000000000)) (tdelay 0) (rlo (200 == 0)?200:200) (rhi (200 == 0)?200:200) (rx (200 == 0)?200:200) (rz 10000000.000000000000000) (r_SUPPLY 4) (r_PULL 1500.000000000000000) (r_LARGE 9000.000000000000000) (r_WEAK 55000.000000000000000) (r_MEDIUM 320000.000000000000000) (r_SMALL 1900000.000000000000000) )
+)
+(instance MultiChannelAFE_TB_2.I79.CLK1Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK2Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK3Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK4Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK5Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK6Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK7Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK8Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK9Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK10Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK11Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK12Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK13Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK14Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK15Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79.CLK16Gen dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I79 dmixed (type rnm))
+(instance MultiChannelAFE_TB_2.I77.I6.M0 analog)
+(instance MultiChannelAFE_TB_2.I77.I6 analog)
+(instance MultiChannelAFE_TB_2.I77.I5.M0 analog)
+(instance MultiChannelAFE_TB_2.I77.I5 analog)
+(instance MultiChannelAFE_TB_2.I77.I4.M0 analog)
+(instance MultiChannelAFE_TB_2.I77.I4 analog)
+(instance MultiChannelAFE_TB_2.I77.I0.M0 analog)
+(instance MultiChannelAFE_TB_2.I77.I0 analog)
+(instance MultiChannelAFE_TB_2.I77 analog)
+(instance MultiChannelAFE_TB_2.I76.I6.M0 analog)
+(instance MultiChannelAFE_TB_2.I76.I6 analog)
+(instance MultiChannelAFE_TB_2.I76.I5.M0 analog)
+(instance MultiChannelAFE_TB_2.I76.I5 analog)
+(instance MultiChannelAFE_TB_2.I76.I4.M0 analog)
+(instance MultiChannelAFE_TB_2.I76.I4 analog)
+(instance MultiChannelAFE_TB_2.I76.I0.M0 analog)
+(instance MultiChannelAFE_TB_2.I76.I0 analog)
+(instance MultiChannelAFE_TB_2.I76 analog)
+(instance MultiChannelAFE_TB_2.I34 analog)
+(instance MultiChannelAFE_TB_2.I35 analog)
+(instance MultiChannelAFE_TB_2.I3 mixed (type rnm))
+(instance MultiChannelAFE_TB_2.I74.I37.I6.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I37.I6 analog)
+(instance MultiChannelAFE_TB_2.I74.I37.I5.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I37.I5 analog)
+(instance MultiChannelAFE_TB_2.I74.I37.I4.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I37.I4 analog)
+(instance MultiChannelAFE_TB_2.I74.I37.I0.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I37.I0 analog)
+(instance MultiChannelAFE_TB_2.I74.I37 analog)
+(instance MultiChannelAFE_TB_2.I74.I36.I6.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I36.I6 analog)
+(instance MultiChannelAFE_TB_2.I74.I36.I5.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I36.I5 analog)
+(instance MultiChannelAFE_TB_2.I74.I36.I4.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I36.I4 analog)
+(instance MultiChannelAFE_TB_2.I74.I36.I0.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I36.I0 analog)
+(instance MultiChannelAFE_TB_2.I74.I36 analog)
+(instance MultiChannelAFE_TB_2.I74.I40.I6.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I40.I6 analog)
+(instance MultiChannelAFE_TB_2.I74.I40.I5.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I40.I5 analog)
+(instance MultiChannelAFE_TB_2.I74.I40.I4.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I40.I4 analog)
+(instance MultiChannelAFE_TB_2.I74.I40.I0.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.I40.I0 analog)
+(instance MultiChannelAFE_TB_2.I74.I40 analog)
+(instance MultiChannelAFE_TB_2.I74.I34.M7 analog)
+(instance MultiChannelAFE_TB_2.I74.I34.M6 analog)
+(instance MultiChannelAFE_TB_2.I74.I34.M5 analog)
+(instance MultiChannelAFE_TB_2.I74.I34.M4 analog)
+(instance MultiChannelAFE_TB_2.I74.I34 analog)
+(instance MultiChannelAFE_TB_2.I74.I35.M7 analog)
+(instance MultiChannelAFE_TB_2.I74.I35.M6 analog)
+(instance MultiChannelAFE_TB_2.I74.I35.M5 analog)
+(instance MultiChannelAFE_TB_2.I74.I35.M4 analog)
+(instance MultiChannelAFE_TB_2.I74.I35 analog)
+(instance MultiChannelAFE_TB_2.I74.M34 analog)
+(instance MultiChannelAFE_TB_2.I74.M33 analog)
+(instance MultiChannelAFE_TB_2.I74.M4 analog)
+(instance MultiChannelAFE_TB_2.I74.M3 analog)
+(instance MultiChannelAFE_TB_2.I74.M0 analog)
+(instance MultiChannelAFE_TB_2.I74.M5 analog)
+(instance MultiChannelAFE_TB_2.I74.M30 analog)
+(instance MultiChannelAFE_TB_2.I74.M27 analog)
+(instance MultiChannelAFE_TB_2.I74.M46 analog)
+(instance MultiChannelAFE_TB_2.I74.M45 analog)
+(instance MultiChannelAFE_TB_2.I74.M39 analog)
+(instance MultiChannelAFE_TB_2.I74.M38 analog)
+(instance MultiChannelAFE_TB_2.I74.M41 analog)
+(instance MultiChannelAFE_TB_2.I74.M42 analog)
+(instance MultiChannelAFE_TB_2.I74.M11 analog)
+(instance MultiChannelAFE_TB_2.I74.M1 analog)
+(instance MultiChannelAFE_TB_2.I74.M10 analog)
+(instance MultiChannelAFE_TB_2.I74.M6 analog)
+(instance MultiChannelAFE_TB_2.I74.M28 analog)
+(instance MultiChannelAFE_TB_2.I74.M31 analog)
+(instance MultiChannelAFE_TB_2.I74.M9 analog)
+(instance MultiChannelAFE_TB_2.I74.M8 analog)
+(instance MultiChannelAFE_TB_2.I74.M23 analog)
+(instance MultiChannelAFE_TB_2.I74.M24 analog)
+(instance MultiChannelAFE_TB_2.I74.M40 analog)
+(instance MultiChannelAFE_TB_2.I74.M37 analog)
+(instance MultiChannelAFE_TB_2.I74.M36 analog)
+(instance MultiChannelAFE_TB_2.I74.M48 analog)
+(instance MultiChannelAFE_TB_2.I74.M43 analog)
+(instance MultiChannelAFE_TB_2.I74.M44 analog)
+(instance MultiChannelAFE_TB_2.I74.M29 analog)
+(instance MultiChannelAFE_TB_2.I74.M32 analog)
+(instance MultiChannelAFE_TB_2.I74.M15 analog)
+(instance MultiChannelAFE_TB_2.I74.M2 analog)
+(instance MultiChannelAFE_TB_2.I74.M35 analog)
+(instance MultiChannelAFE_TB_2.I74.M47 analog)
+(instance MultiChannelAFE_TB_2.I74.C6 analog)
+(instance MultiChannelAFE_TB_2.I74.C1 analog)
+(instance MultiChannelAFE_TB_2.I74.C0 analog)
+(instance MultiChannelAFE_TB_2.I74.C2 analog)
+(instance MultiChannelAFE_TB_2.I74.R0 analog)
+(instance MultiChannelAFE_TB_2.I74.R1 analog)
+(instance MultiChannelAFE_TB_2.I74 analog)
+(instance MultiChannelAFE_TB_2.I73.I37.I6.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I37.I6 analog)
+(instance MultiChannelAFE_TB_2.I73.I37.I5.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I37.I5 analog)
+(instance MultiChannelAFE_TB_2.I73.I37.I4.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I37.I4 analog)
+(instance MultiChannelAFE_TB_2.I73.I37.I0.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I37.I0 analog)
+(instance MultiChannelAFE_TB_2.I73.I37 analog)
+(instance MultiChannelAFE_TB_2.I73.I36.I6.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I36.I6 analog)
+(instance MultiChannelAFE_TB_2.I73.I36.I5.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I36.I5 analog)
+(instance MultiChannelAFE_TB_2.I73.I36.I4.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I36.I4 analog)
+(instance MultiChannelAFE_TB_2.I73.I36.I0.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I36.I0 analog)
+(instance MultiChannelAFE_TB_2.I73.I36 analog)
+(instance MultiChannelAFE_TB_2.I73.I40.I6.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I40.I6 analog)
+(instance MultiChannelAFE_TB_2.I73.I40.I5.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I40.I5 analog)
+(instance MultiChannelAFE_TB_2.I73.I40.I4.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I40.I4 analog)
+(instance MultiChannelAFE_TB_2.I73.I40.I0.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.I40.I0 analog)
+(instance MultiChannelAFE_TB_2.I73.I40 analog)
+(instance MultiChannelAFE_TB_2.I73.I34.M7 analog)
+(instance MultiChannelAFE_TB_2.I73.I34.M6 analog)
+(instance MultiChannelAFE_TB_2.I73.I34.M5 analog)
+(instance MultiChannelAFE_TB_2.I73.I34.M4 analog)
+(instance MultiChannelAFE_TB_2.I73.I34 analog)
+(instance MultiChannelAFE_TB_2.I73.I35.M7 analog)
+(instance MultiChannelAFE_TB_2.I73.I35.M6 analog)
+(instance MultiChannelAFE_TB_2.I73.I35.M5 analog)
+(instance MultiChannelAFE_TB_2.I73.I35.M4 analog)
+(instance MultiChannelAFE_TB_2.I73.I35 analog)
+(instance MultiChannelAFE_TB_2.I73.M34 analog)
+(instance MultiChannelAFE_TB_2.I73.M33 analog)
+(instance MultiChannelAFE_TB_2.I73.M4 analog)
+(instance MultiChannelAFE_TB_2.I73.M3 analog)
+(instance MultiChannelAFE_TB_2.I73.M0 analog)
+(instance MultiChannelAFE_TB_2.I73.M5 analog)
+(instance MultiChannelAFE_TB_2.I73.M30 analog)
+(instance MultiChannelAFE_TB_2.I73.M27 analog)
+(instance MultiChannelAFE_TB_2.I73.M46 analog)
+(instance MultiChannelAFE_TB_2.I73.M45 analog)
+(instance MultiChannelAFE_TB_2.I73.M39 analog)
+(instance MultiChannelAFE_TB_2.I73.M38 analog)
+(instance MultiChannelAFE_TB_2.I73.M41 analog)
+(instance MultiChannelAFE_TB_2.I73.M42 analog)
+(instance MultiChannelAFE_TB_2.I73.M11 analog)
+(instance MultiChannelAFE_TB_2.I73.M1 analog)
+(instance MultiChannelAFE_TB_2.I73.M10 analog)
+(instance MultiChannelAFE_TB_2.I73.M6 analog)
+(instance MultiChannelAFE_TB_2.I73.M28 analog)
+(instance MultiChannelAFE_TB_2.I73.M31 analog)
+(instance MultiChannelAFE_TB_2.I73.M9 analog)
+(instance MultiChannelAFE_TB_2.I73.M8 analog)
+(instance MultiChannelAFE_TB_2.I73.M23 analog)
+(instance MultiChannelAFE_TB_2.I73.M24 analog)
+(instance MultiChannelAFE_TB_2.I73.M40 analog)
+(instance MultiChannelAFE_TB_2.I73.M37 analog)
+(instance MultiChannelAFE_TB_2.I73.M36 analog)
+(instance MultiChannelAFE_TB_2.I73.M48 analog)
+(instance MultiChannelAFE_TB_2.I73.M43 analog)
+(instance MultiChannelAFE_TB_2.I73.M44 analog)
+(instance MultiChannelAFE_TB_2.I73.M29 analog)
+(instance MultiChannelAFE_TB_2.I73.M32 analog)
+(instance MultiChannelAFE_TB_2.I73.M15 analog)
+(instance MultiChannelAFE_TB_2.I73.M2 analog)
+(instance MultiChannelAFE_TB_2.I73.M35 analog)
+(instance MultiChannelAFE_TB_2.I73.M47 analog)
+(instance MultiChannelAFE_TB_2.I73.C6 analog)
+(instance MultiChannelAFE_TB_2.I73.C1 analog)
+(instance MultiChannelAFE_TB_2.I73.C0 analog)
+(instance MultiChannelAFE_TB_2.I73.C2 analog)
+(instance MultiChannelAFE_TB_2.I73.R0 analog)
+(instance MultiChannelAFE_TB_2.I73.R1 analog)
+(instance MultiChannelAFE_TB_2.I73 analog)
+(instance MultiChannelAFE_TB_2.M2 analog)
+(instance MultiChannelAFE_TB_2.M1 analog)
+(instance MultiChannelAFE_TB_2.M4 analog)
+(instance MultiChannelAFE_TB_2.M0 analog)
+(instance MultiChannelAFE_TB_2.V8 analog)
+(instance MultiChannelAFE_TB_2.V7 analog)
+(instance MultiChannelAFE_TB_2.V4 analog)
+(instance MultiChannelAFE_TB_2.V3 analog)
+(instance MultiChannelAFE_TB_2.V11 analog)
+(instance MultiChannelAFE_TB_2.V10 analog)
+(instance MultiChannelAFE_TB_2.V9 analog)
+(instance MultiChannelAFE_TB_2.V1 analog)
+(instance MultiChannelAFE_TB_2.V0 analog)
+(instance MultiChannelAFE_TB_2.V2 analog)
+(instance MultiChannelAFE_TB_2.IPRB5 analog)
+(instance MultiChannelAFE_TB_2.IPRB4 analog)
+(instance MultiChannelAFE_TB_2.I38 analog)
+(instance MultiChannelAFE_TB_2.I1 analog)
+(instance MultiChannelAFE_TB_2.R3 analog)
+(instance MultiChannelAFE_TB_2.R2 analog)
+(instance MultiChannelAFE_TB_2.C1 analog)
+(instance MultiChannelAFE_TB_2.C0 analog)
+(instance MultiChannelAFE_TB_2.E0 analog)
+(instance MultiChannelAFE_TB_2.E1 analog)
+(instance MultiChannelAFE_TB_2 mixed/dmixed (type rnm))
+(instance cds_globals analog)

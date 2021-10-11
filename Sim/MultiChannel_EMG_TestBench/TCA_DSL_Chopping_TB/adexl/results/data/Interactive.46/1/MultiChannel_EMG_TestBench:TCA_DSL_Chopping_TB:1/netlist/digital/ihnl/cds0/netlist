@@ -1,0 +1,17 @@
+// Library - MultiChannel_EMG_IMP, Cell - Switch_NMOS, View - schematic
+// LAST TIME SAVED: Oct  8 13:23:17 2021
+// NETLIST TIME: Oct 11 08:37:24 2021
+`timescale 1ns / 1ps 
+
+`worklib MultiChannel_EMG_IMP
+`view schematic
+
+(* cds_ams_schematic *) 
+(* dfII_lib="MultiChannel_EMG_IMP", dfII_cell="Switch_NMOS", dfII_view="schematic", worklib_name="MultiChannel_EMG_IMP", view_name="schematic", last_save_time="Oct  8 13:23:17 2021" *)
+
+module Switch_NMOS (A, B, VSSA, ctrl);
+
+inout  A, B, VSSA, ctrl;
+
+
+endmodule

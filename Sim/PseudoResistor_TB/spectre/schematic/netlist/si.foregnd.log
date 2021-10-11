@@ -1,56 +1,18 @@
-Begin Incremental Netlisting Oct  5 15:07:26 2021
-End netlisting Oct  5 15:07:27 2021
-Begin Incremental Netlisting Oct  5 15:39:50 2021
-End netlisting Oct  5 15:39:50 2021
-Begin Incremental Netlisting Oct  5 15:41:22 2021
-End netlisting Oct  5 15:41:22 2021
-Begin Incremental Netlisting Oct  5 15:58:05 2021
-End netlisting Oct  5 15:58:05 2021
-Begin Incremental Netlisting Oct  5 15:58:14 2021
-End netlisting Oct  5 15:58:14 2021
-Begin Incremental Netlisting Oct  5 15:58:54 2021
-End netlisting Oct  5 15:58:54 2021
-Begin Incremental Netlisting Oct  5 16:01:19 2021
-End netlisting Oct  5 16:01:19 2021
-Begin Incremental Netlisting Oct  5 16:02:28 2021
-End netlisting Oct  5 16:02:28 2021
-Begin Incremental Netlisting Oct  5 16:05:56 2021
-End netlisting Oct  5 16:05:56 2021
-Begin Incremental Netlisting Oct  5 16:28:15 2021
-End netlisting Oct  5 16:28:15 2021
-Begin Incremental Netlisting Oct  5 16:30:09 2021
-End netlisting Oct  5 16:30:09 2021
-Begin Incremental Netlisting Oct  5 16:32:03 2021
-WARNING (OSSHNL-226): There are more design variables used in the current
-netlisting session as
-compared to the last session in the current run directory.
-The netlist(s)
-generated in the last netlisting session cannot be reused for
-incremental
-netlisting. Therefore re-netlisting the design.
-
-ERROR (OSSHNL-109): The cellview
-'MultiChannel_EMG_TestBench/PseudoResistor_TB/schematic' has been modified since
-the last extraction. Validate
-that the schematic is correct and run Check and
-Save to correct this error.
-
-End netlisting Oct  5 16:32:03 2021
-Begin Incremental Netlisting Oct  5 16:32:11 2021
-End netlisting Oct  5 16:32:11 2021
-Begin Incremental Netlisting Oct  5 16:32:59 2021
-End netlisting Oct  5 16:32:59 2021
-Begin Incremental Netlisting Oct  5 16:34:43 2021
-End netlisting Oct  5 16:34:43 2021
-Begin Incremental Netlisting Oct  5 16:35:20 2021
-End netlisting Oct  5 16:35:20 2021
-Begin Incremental Netlisting Oct  5 16:35:47 2021
-End netlisting Oct  5 16:35:47 2021
-Begin Incremental Netlisting Oct  5 16:36:13 2021
-End netlisting Oct  5 16:36:13 2021
-Begin Incremental Netlisting Oct  5 16:36:49 2021
-End netlisting Oct  5 16:36:49 2021
-Begin Incremental Netlisting Oct  5 16:38:38 2021
-End netlisting Oct  5 16:38:38 2021
-Begin Incremental Netlisting Oct  5 16:39:04 2021
-End netlisting Oct  5 16:39:04 2021
+Begin Incremental Netlisting Oct  7 12:26:24 2021
+End netlisting Oct  7 12:26:24 2021
+Begin Incremental Netlisting Oct  7 12:26:51 2021
+End netlisting Oct  7 12:26:51 2021
+Begin Incremental Netlisting Oct  7 12:27:10 2021
+End netlisting Oct  7 12:27:10 2021
+Begin Incremental Netlisting Oct  7 12:27:32 2021
+End netlisting Oct  7 12:27:32 2021
+Begin Incremental Netlisting Oct  7 12:28:03 2021
+End netlisting Oct  7 12:28:03 2021
+Begin Incremental Netlisting Oct  7 12:28:46 2021
+End netlisting Oct  7 12:28:46 2021
+Begin Incremental Netlisting Oct  7 12:29:13 2021
+End netlisting Oct  7 12:29:13 2021
+Begin Incremental Netlisting Oct  7 12:30:17 2021
+End netlisting Oct  7 12:30:17 2021
+Begin Incremental Netlisting Oct  7 12:30:42 2021
+End netlisting Oct  7 12:30:42 2021

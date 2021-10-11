@@ -1,0 +1,5 @@
+    M0 (B ctrl A VSSA) nel w=1u l=180.0n as=3.12e-13 ad=3.12e-13 \
+        ps=1.824e-06 pd=1.824e-06 nrs=0.27 nrd=0.27 m=(1)*(5) \
+        par1=((1)*(5)) xf_subext=0
+ends Switch_NMOS
+// End of subcircuit definition.

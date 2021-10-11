@@ -1,0 +1,14 @@
+\o _axlToolCloseTestPointOutputLog("/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.125/1/MultiChannel_EMG_IMP:TCA_3:1/psf/spectre.out")
+\o _axlToolDisplayTestPointOutputLog("session0" "MultiChannel_EMG_IMP:TCA_3:1" "/home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_IMP/TCA_3/adexl/results/data/Interactive.126/1/MultiChannel_EMG_IMP:TCA_3:1/psf/spectre.out")
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 

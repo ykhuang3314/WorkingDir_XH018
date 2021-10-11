@@ -1,0 +1,69 @@
+// Generated for: spectre
+// Generated on: Oct  7 13:54:23 2021
+// Design library name: MultiChannel_EMG_TestBench
+// Design cell name: PseudoResistor_TB
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters Lp2=2u Wp2=9u deltaV=0 Lp=2u VA=900m Wp=3u
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/param.scs" section=3s
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/bip.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/cap.scs" section=ws
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/dio.scs" section=wp
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/mos.scs" section=ws
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/photo.scs" section=tm
+include "/pkg/xfab/XKIT/xh018/cadence/v8_0/spectre/v8_0_1/lpmos/res.scs" section=wp
+
+// Library name: MultiChannel_EMG_TestBench
+// Cell name: PseudoResistor_TB
+// View name: schematic
+M11 (net015 net015 net011 net015) pel w=Wp2 l=Lp2 as=4.8e-07*(Wp2) \
+        ad=4.8e-07*(Wp2) ps=1*2*(4.8e-07+(Wp2)) pd=2*(4.8e-07+(Wp2)) \
+        nrs=2.7e-07/(Wp2) nrd=2.7e-07/(Wp2) m=(1)*(1) par1=((1)*(1))
+M10 (net015 net015 net014 net015) pel w=Wp2 l=Lp2 as=4.8e-07*(Wp2) \
+        ad=4.8e-07*(Wp2) ps=1*2*(4.8e-07+(Wp2)) pd=2*(4.8e-07+(Wp2)) \
+        nrs=2.7e-07/(Wp2) nrd=2.7e-07/(Wp2) m=(1)*(1) par1=((1)*(1))
+M7 (net09 net09 net018 net09) pel w=Wp2 l=Lp2 as=4.8e-07*(Wp2) \
+        ad=4.8e-07*(Wp2) ps=1*2*(4.8e-07+(Wp2)) pd=2*(4.8e-07+(Wp2)) \
+        nrs=2.7e-07/(Wp2) nrd=2.7e-07/(Wp2) m=(1)*(1) par1=((1)*(1))
+M6 (net027 net027 net020 net027) pel w=Wp2 l=Lp2 as=4.8e-07*(Wp2) \
+        ad=4.8e-07*(Wp2) ps=1*2*(4.8e-07+(Wp2)) pd=2*(4.8e-07+(Wp2)) \
+        nrs=2.7e-07/(Wp2) nrd=2.7e-07/(Wp2) m=(1)*(1) par1=((1)*(1))
+M5 (net08 net08 net027 net027) pel w=Wp l=Lp as=4.8e-07*(Wp) \
+        ad=4.8e-07*(Wp) ps=1*2*(4.8e-07+(Wp)) pd=2*(4.8e-07+(Wp)) \
+        nrs=2.7e-07/(Wp) nrd=2.7e-07/(Wp) m=(1)*(1) par1=((1)*(1))
+M4 (net08 net08 net09 net09) pel w=Wp l=Lp as=4.8e-07*(Wp) ad=4.8e-07*(Wp) \
+        ps=1*2*(4.8e-07+(Wp)) pd=2*(4.8e-07+(Wp)) nrs=2.7e-07/(Wp) \
+        nrd=2.7e-07/(Wp) m=(1)*(1) par1=((1)*(1))
+M1 (net6 net6 net01 net01) pel w=Wp l=Lp as=4.8e-07*(Wp) ad=4.8e-07*(Wp) \
+        ps=1*2*(4.8e-07+(Wp)) pd=2*(4.8e-07+(Wp)) nrs=2.7e-07/(Wp) \
+        nrd=2.7e-07/(Wp) m=(1)*(1) par1=((1)*(1))
+M0 (net6 net6 net04 net04) pel w=Wp l=Lp as=4.8e-07*(Wp) ad=4.8e-07*(Wp) \
+        ps=1*2*(4.8e-07+(Wp)) pd=2*(4.8e-07+(Wp)) nrs=2.7e-07/(Wp) \
+        nrd=2.7e-07/(Wp) m=(1)*(1) par1=((1)*(1))
+V6 (net018 0) vsource dc=VA type=dc
+V5 (net029 0) vsource dc=VA+deltaV type=dc
+V4 (net011 0) vsource dc=VA type=dc
+V3 (net07 0) vsource dc=VA+deltaV type=dc
+V1 (net04 0) vsource dc=VA type=dc
+V0 (net05 0) vsource dc=VA+deltaV type=dc
+IPRB2 (net029 net020) iprobe
+IPRB1 (net07 net014) iprobe
+IPRB0 (net05 net01) iprobe
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc param=deltaV start=-400m stop=400m oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save IPRB0:in IPRB2:in IPRB1:in 
+saveOptions options save=allpub

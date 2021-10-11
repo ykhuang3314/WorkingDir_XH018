@@ -1,0 +1,79 @@
+xrun(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.03-s018: Started on Oct 11, 2021 at 10:57:17 CEST
+xrun
+	-f xrunArgs
+		-UNBUFFERED
+		-cdslib ./cds.lib
+		-errormax 50
+		-status
+		-nowarn DLNOHV
+		-nowarn DLCLAP
+		-v93
+		-incdir /home/ykhuang/WorkingDir_XH018/
+		-ade
+		-timescale 1ns/1ns
+		-vtimescale 1ns/1ns
+		-delay_mode None
+		-novitalaccl
+		-access r
+		-noparamerr
+		-amspartinfo ../psf/partition.info
+		-rnm_partinfo
+		-modelincdir /home/ykhuang/WorkingDir_XH018/
+		./spiceModels.scs
+		./amsControlSpectre.scs
+		-input ./probe.tcl
+		-run
+		-exit
+		-xmsimargs "+amsrawdir ../psf"
+		-spectre_args "-ahdllibdir /home/ykhuang/WorkingDir_XH018/Sim/MultiChannel_EMG_TestBench/MultiChannelAFE_TB_2/adexl/results/data/Interactive.7/sharedData/CDS/ahdl/input.ahdlSimDB"
+		-simcompatible_ams spectre
+		-name MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:config
+		-allowredefinition
+		-amsbind
+		-top MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:schematic
+		-top cds_globals
+		./netlist.vams
+		./ie_card.scs
+		-f ./textInputs
+			-amscompilefile "file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGen/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGen view:functional"
+			-amscompilefile "file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v lib:MultiChannel_EMG_Model cell:ClockGenMultiFreq view:functional"
+			-amscompilefile "file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/FrontEnd_Amplifier/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:FrontEnd_Amplifier view:verilogams"
+			-amscompilefile "file:/home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/LPF_Butter/verilogams/verilog.vams lib:MultiChannel_EMG_Model cell:LPF_Butter view:verilogams"
+			-makelib MultiChannel_EMG_IMP
+			-makelib MultiChannel_EMG_TestBench
+			-endlib
+		./cds_globals.vams
+		-l ../psf/xrun.log
+		-spectre_args ++aps
+file: ./netlist.vams
+	module MultiChannel_EMG_TestBench.MultiChannelAFE_TB_2:schematic
+		errors: 0, warnings: 0
+	module MultiChannel_EMG_IMP.Switch_NMOS:schematic
+		errors: 0, warnings: 0
+	module MultiChannel_EMG_IMP.Chopper:schematic
+		errors: 0, warnings: 0
+	module MultiChannel_EMG_IMP.PseudoResistor_45GOhm:schematic
+		errors: 0, warnings: 0
+	module MultiChannel_EMG_IMP.ChoppingTCA_DSL_imp:schematic
+		errors: 0, warnings: 0
+file: ./cds_globals.vams
+	module worklib.cds_globals:vams
+		errors: 0, warnings: 0
+file: /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGen/functional/verilog.v
+	module MultiChannel_EMG_Model.ClockGen:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/ClockGenMultiFreq/functional/verilog.v
+	module MultiChannel_EMG_Model.ClockGenMultiFreq:functional
+		errors: 0, warnings: 0
+file: /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/FrontEnd_Amplifier/verilogams/verilog.vams
+	module MultiChannel_EMG_Model.FrontEnd_Amplifier:verilogams
+		errors: 0, warnings: 0
+file: /home/ykhuang/WorkingDir_XH018/MultiChannel_EMG_Model/LPF_Butter/verilogams/verilog.vams
+	module MultiChannel_EMG_Model.LPF_Butter:verilogams
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/ykhuang/WorkingDir_XH018/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xmvlog: Memory Usage - Current physical: 25.7M, Current virtual: 57.7M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 67.7% cpu)

@@ -1,0 +1,5 @@
+("MultiChannel_EMG_TestBench" "MultiChannelAFE_TB_2" "schematic" nil) 5
+("MultiChannel_EMG_IMP" "ChoppingTCA_DSL_imp" "schematic" nil) 3
+("MultiChannel_EMG_IMP" "PseudoResistor_45GOhm" "schematic" nil) 1
+("MultiChannel_EMG_IMP" "Switch_NMOS" "schematic" nil) 1
+("MultiChannel_EMG_IMP" "Chopper" "schematic" nil) 1
